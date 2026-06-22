@@ -1,37 +1,22 @@
 # Cyber Attribution
 
-A public knowledge repository for manuals, field guides, templates, and analytical notes on cyber attribution.
+A public knowledge repository for structured cyber attribution methodology, references, and analytical notes.
 
 ## Purpose
 
-This repository is intended to host practical and research grounded material on cyber attribution. It is designed for analysts, cyber threat intelligence teams, incident responders, policy advisers, legal advisers, and national security practitioners who need a structured way to reason about the source, sponsorship, intent, and confidence level of cyber operations.
+This repository supports disciplined cyber attribution analysis. It is intended for analysts, cyber threat intelligence teams, incident responders, policy advisers, legal advisers, and national security practitioners who need a structured way to reason about the source, sponsorship, intent, and confidence level of cyber operations.
 
-The repository separates evidence from assessment. It encourages analysts to document what is observed, what is inferred, what is externally sourced, and what remains uncertain.
+The core principle is to separate evidence from assessment. Analysts should document what is observed, what is inferred, what is externally sourced, what remains uncertain, and how confidence is expressed.
 
 ## Scope
 
-The repository covers:
-
-| Area | Content type |
+| Area | Focus |
 | --- | --- |
-| Attribution methodology | Manuals, guides, workflows, maturity models |
-| Evidence evaluation | Evidence matrices, confidence scales, source reliability notes |
-| Technical attribution | Malware, infrastructure, TTPs, victimology, timing, tooling |
-| Strategic attribution | Intent, geopolitical context, campaign continuity, state responsibility |
-| Legal and policy framing | International law references, public attribution considerations |
-| AI age attribution | False flags, synthetic artifacts, automated reasoning, deception, disinformation |
-
-Out of scope:
-
-| Area | Reason |
-| --- | --- |
-| Classified or sensitive operational data | This repository is intended for publishable material only |
-| Unverified actor allegations | Attribution requires evidentiary discipline and confidence language |
-| Offensive tradecraft instructions | The repository is focused on analysis, resilience, and responsible use |
-
-## Repository description
-
-Manuals, guides, templates, and external references for structured cyber attribution analysis.
+| Attribution methodology | Analytical frameworks, workflows, confidence language, and reasoning discipline |
+| Evidence evaluation | Technical evidence, source reliability, alternative hypotheses, and uncertainty |
+| Technical attribution | Malware, infrastructure, TTPs, tooling, timing, victimology, and campaign patterns |
+| Strategic attribution | Intent, geopolitical context, operational continuity, sponsorship, and state responsibility |
+| AI age attribution | False flags, synthetic artifacts, automated analysis, deception, and information operations |
 
 ## Repository structure
 
@@ -39,52 +24,17 @@ Manuals, guides, templates, and external references for structured cyber attribu
 .
 ├── README.md
 ├── LICENSE.md
-├── CITATION.cff
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── REFERENCES.md
-├── REPOSITORY_SETUP.md
-├── methodology/
-│   └── attribution-methodology.md
-├── docs/
-│   ├── README.md
-│   ├── external-resources.md
-│   ├── methodology/
-│   │   ├── attribution-lifecycle.md
-│   │   └── confidence-levels.md
-│   ├── manuals/
-│   │   └── _manual-template.md
-│   └── templates/
-│       ├── attribution-assessment-template.md
-│       └── evidence-matrix-template.md
-└── .github/
-    ├── pull_request_template.md
-    └── ISSUE_TEMPLATE/
-        └── guide-request.md
+└── Methodology/
+    └── attribution-methodology.md
 ```
 
-## Core analytical principle
+## Main document
 
-Attribution is a probabilistic assessment, not a binary conclusion. A good attribution product should state the evidence, competing hypotheses, confidence level, assumptions, and limits.
+Start here:
 
-## Initial guide set
+[Cyber Attribution Methodology](Methodology/attribution-methodology.md)
 
-Start with the following documents:
-
-1. [Attribution methodology](methodology/attribution-methodology.md)
-2. [Attribution lifecycle](docs/methodology/attribution-lifecycle.md)
-3. [Confidence levels](docs/methodology/confidence-levels.md)
-4. [Attribution assessment template](docs/templates/attribution-assessment-template.md)
-5. [Evidence matrix template](docs/templates/evidence-matrix-template.md)
-6. [External resources](docs/external-resources.md)
-
-## Attribution methodology
-
-The core methodology is available here:
-
-[Attribution methodology](methodology/attribution-methodology.md)
-
-The methodology provides a practical workflow for moving from observed evidence to technical, intelligence, legal, and policy attribution. It supports disciplined reasoning by separating facts, inferences, external reporting, confidence language, alternative hypotheses, and decision relevance.
+This document lists common cyber attribution frameworks from academic and industry research. It is intended to serve as the foundation for future manuals, guides, and analytical templates.
 
 ## Analytical layers
 
@@ -94,33 +44,15 @@ The methodology provides a practical workflow for moving from observed evidence 
 | Operational attribution | How was the operation planned and executed? | Campaign model, operational pattern, intrusion lifecycle |
 | Strategic attribution | Why was the operation conducted, and who benefits? | Motive, intent, geopolitical context |
 | Legal attribution | Can conduct be attributed to a state or legally responsible entity? | State responsibility assessment |
-| Policy attribution | Should attribution be made public or used privately for response? | Public attribution, diplomacy, sanctions, legal action, defensive response |
+| Policy attribution | How should the assessment support response? | Public attribution, diplomacy, sanctions, legal action, or defensive response |
 
 ## External reference anchors
 
-This repository links to external resources rather than copying their content. Key anchors include:
+The repository links to external resources rather than copying their content. Key anchors include ODNI cyber attribution guidance, the Diamond Model, MITRE ATT&CK, Attack Flow, STIX 2.1, FIRST TLP 2.0, and legal scholarship on state responsibility and public attribution.
 
-| Resource | Use in this repository |
-| --- | --- |
-| ODNI, _A Guide to Cyber Attribution_ | Baseline reference for public attribution concepts and confidence language |
-| Caltagirone, Pendergast, and Betz, _The Diamond Model of Intrusion Analysis_ | Intrusion event modeling and analytic pivoting |
-| MITRE ATT&CK | TTP mapping and adversary behavior documentation |
-| Attack Flow | Structured representation of adversary behavior chains |
-| Tallinn Manual 2.0 | Legal framing for cyber operations and state responsibility discussions |
-| STIX 2.1 | Structured cyber threat intelligence representation |
-| FIRST TLP 2.0 | Information sharing and sensitivity marking |
+## License
 
-See [REFERENCES.md](REFERENCES.md) for APA 7 style references.
-
-## Recommended license
-
-Recommended license: **Creative Commons Attribution 4.0 International, CC BY 4.0**.
-
-Rationale: this repository is primarily for manuals, guides, templates, and educational material. CC BY 4.0 allows sharing and adaptation, including commercial use, while requiring attribution. If code is added later, consider adding a separate software license such as MIT or Apache 2.0 for the code directory.
-
-## Attribution notice
-
-Unless otherwise stated, original repository content is authored by Yuval Sinay and licensed under CC BY 4.0.
+Original repository content is authored by Yuval Sinay and licensed under CC BY 4.0 unless a specific file states otherwise.
 
 Suggested attribution:
 
