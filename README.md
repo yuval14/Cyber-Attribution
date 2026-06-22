@@ -31,7 +31,7 @@ Out of scope:
 
 ## Recommended repository name
 
-`cyber-attribution-guides`
+`cyber-attribution`
 
 Alternative names:
 
