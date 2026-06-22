@@ -73,6 +73,36 @@ Attribution should not be treated as a single conclusion. It should be structure
 9. Document uncertainty and evidence gaps.
 10. State the attribution assessment clearly and proportionately.
 
+## Common Frameworks for Influence Operations (IIO) Attribution
+
+The following tables provide a reference map of common academic, practitioner, public sector, and industry frameworks that can support IIO attribution analysis.
+
+### Academic Research
+
+| No. | Framework name | Publication year | Reference |
+| --- | --- | --- | --- |
+| 1 | Phase-based tactical analysis of online operations | 2023 | Nimmo, B., & Hutchins, E. (2023). *Phase-based tactical analysis of online operations*. Carnegie Endowment for International Peace. https://carnegieendowment.org/research/2023/03/phase-based-tactical-analysis-of-online-operations |
+
+*Table 1. Frameworks for Influence Operations (IIO) Attribution, Academic Research.*
+
+### Industry Research
+
+| No. | Framework name | Publication year | Reference |
+| --- | --- | --- | --- |
+| 1 | AMITT, Adversarial Misinformation Influence Tactics and Techniques Framework | 2019 | Terp, S. J., & Breuer, P. (2019). *AMITT, Adversarial Misinformation Influence Tactics and Techniques Framework*. https://drive.google.com/file/d/1_4D_QyO2u3IADeYO37en3029IXUPxSZW/view |
+| 2 | MITRE Disinformation Kill Chain Model | 2019, 2021 | Public-Private Analytic Exchange Program. (2019, October). *Combatting targeted disinformation campaigns: A whole-of-society issue*. U.S. Department of Homeland Security. https://permanent.fdlp.gov/gpo150650/ia_combatting-targeted-disinformation-campaigns.pdf; Public-Private Analytic Exchange Program. (2021, August). *Combatting targeted disinformation campaigns: A whole-of-society issue, Part Two*. U.S. Department of Homeland Security. https://www.dhs.gov/sites/default/files/publications/phase_ii_-_combatting_targeted_disinformation.pdf |
+| 3 | The ABCDE Framework for FIMI Analysis | 2020 | Pamment, J. (2020, September). *The EU's role in fighting disinformation: Crafting a disinformation framework*. Carnegie Endowment for International Peace. https://carnegieendowment.org/files/Pamment_-_Crafting_Disinformation_1.pdf |
+| 4 | The Diamond Model for Influence Operations Analysis | 2022 | Recorded Future. (2022, October 6). *The Diamond Model for Influence Operations Analysis*. https://go.recordedfuture.com/hubfs/white-papers/diamond-model-influence-operations-analysis.pdf |
+| 5 | Attributing Information Influence Operations: Identifying Those Responsible for Malicious Behaviour Online | 2022 | Pamment, J., & Smith, V. (2022). *Attributing information influence operations: Identifying those responsible for malicious behaviour online*. NATO Strategic Communications Centre of Excellence and European Centre of Excellence for Countering Hybrid Threats. https://stratcomcoe.org/publications/attributing-information-influence-operations-identifying-those-responsible-for-malicious-behaviour-online/244 |
+| 6 | DISARM, The Disinformation Analysis and Response Measures Framework | 2022 | DISARM Foundation. (2022). *DISARM Framework*. https://www.disarm.foundation/framework |
+| 7 | Addressing attribution: Theorizing a model to identify Russian disinformation campaigns online | 2022 | Canadian Global Affairs Institute. (2022). *Addressing attribution: Theorizing a model to identify Russian disinformation campaigns online*. https://www.cgai.ca/addressing_attribution_theorizing_a_model_to_identify_russian_disinformation_campaigns_online#Defining |
+| 8 | DTAC's Framework for Attributing Influence Operations | 2024 | Microsoft. (2024). *DTAC's framework for attributing influence operations*. https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2024/07/MTAC-Attribution-Model-for-Influence.pdf |
+| 9 | A Framework for Attribution of Information Influence Operations | 2025 | Palmertz, B., Isaksson, E., & Pamment, J. (2025). *A framework for attribution of information influence operations*. Project Adac.io. https://adacio.eu/a-framework-for-attribution-of-information-influence-operations |
+| 10 | FIMI Exposure Matrix: A Systematic Approach to Classifying and Attributing FIMI Infrastructure | 2025 | European External Action Service. (2025). *3rd EEAS report on foreign information manipulation and interference threats*. https://www.eeas.europa.eu/eeas/3rd-eeas-report-foreign-information-manipulation-and-interference-threats_en |
+| 11 | Information Influence Attribution Framework | 2026 | Dikhtiarenko, S., Heap, B., Pamment, J., & Smith, V. (2026). *Attributing Russian information influence operations: Testing the Information Influence Attribution Framework with real-world case studies* (53 pp.; ISBN 978-9934-619-68-7). NATO Strategic Communications Centre of Excellence. |
+
+*Table 2. Frameworks for Influence Operations (IIO) Attribution, Industry Research.*
+
 ## Competing Hypotheses Template
 
 | Hypothesis | Supporting evidence | Contradicting evidence | Evidence gaps | Confidence |
