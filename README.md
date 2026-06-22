@@ -115,7 +115,7 @@ Unless otherwise stated, original repository content is authored by Yuval Sinay 
 
 Suggested attribution:
 
-> Sinay, Y. (2026). _Cyber Attribution Guides_. GitHub. Licensed under CC BY 4.0.
+> Sinay, Y. (2026). _Cyber Attribution_. GitHub. Licensed under CC BY 4.0.
 
 ## Responsible use
 
