@@ -1,6 +1,6 @@
 # Cyber Attribution
 
-A public knowledge repository for structured cyber attribution methodology, references, and analytical notes.
+A public knowledge repository for structured cyber attribution frameworks, references, and analytical notes.
 
 ## Purpose
 
@@ -12,7 +12,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 
 | Area | Focus |
 | --- | --- |
-| Cyber attribution methodology | Analytical frameworks, workflows, confidence language, and reasoning discipline |
+| Cyber attribution frameworks | Analytical frameworks, workflows, confidence language, and reasoning discipline |
 | Influence operations attribution | Frameworks and workflows for Information Influence Operations (IIO) and FIMI analysis |
 | Evidence evaluation | Technical evidence, source reliability, alternative hypotheses, and uncertainty |
 | Technical attribution | Malware, infrastructure, TTPs, tooling, timing, victimology, and campaign patterns |
@@ -25,8 +25,8 @@ The core principle is to separate evidence from assessment. Analysts should docu
 .
 ├── README.md
 ├── LICENSE.md
-└── Methodology/
-    ├── Cyber-Attribution-Methodologies.md
+└── Frameworks/
+    ├── Cyber-Attribution-Frameworks.md
     └── Influence Operations-(IIO)-Attribution.md
 ```
 
@@ -34,11 +34,11 @@ The core principle is to separate evidence from assessment. Analysts should docu
 
 Start here:
 
-[Cyber Attribution Methodologies](Methodology/Cyber-Attribution-Methodologies.md)
+[Cyber Attribution Frameworks](Frameworks/Cyber-Attribution-Frameworks.md)
 
 For information influence operations:
 
-[Influence Operations (IIO) Attribution](Methodology/Influence%20Operations-(IIO)-Attribution.md)
+[Influence Operations (IIO) Attribution](Frameworks/Influence%20Operations-(IIO)-Attribution.md)
 
 ## Analytical layers
 
