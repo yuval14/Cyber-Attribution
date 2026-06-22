@@ -12,6 +12,6 @@ Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
 
 Suggested attribution:
 
-> Sinay, Y. (2026). *Cyber Attribution Guides*. GitHub. Licensed under CC BY 4.0.
+> Sinay, Y. (2026). *Cyber Attribution*. GitHub. Licensed under CC BY 4.0.
 
 Third party material remains under its own license or terms. External resources are referenced by link and are not incorporated into this repository unless explicitly stated.
