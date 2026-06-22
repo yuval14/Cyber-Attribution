@@ -26,7 +26,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── README.md
 ├── LICENSE.md
 └── Methodology/
-    ├── Cyber-Attribution-Methodology.md
+    ├── Cyber-Attribution-Methodologies.md
     └── Influence Operations-(IIO)-Attribution.md
 ```
 
@@ -34,7 +34,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 
 Start here:
 
-[Cyber Attribution Methodology](Methodology/Cyber-Attribution-Methodology.md)
+[Cyber Attribution Methodologies](Methodology/Cyber-Attribution-Methodologies.md)
 
 For information influence operations:
 
