@@ -14,6 +14,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 | --- | --- |
 | Cyber attribution frameworks | Analytical frameworks, workflows, confidence language, and reasoning discipline |
 | Influence operations attribution | Frameworks and workflows for Information Influence Operations (IIO) and FIMI analysis |
+| Investigation techniques | Structured analytic techniques, alternative hypotheses, challenge analysis, and pre-mortem review |
 | Evidence evaluation | Technical evidence, source reliability, alternative hypotheses, and uncertainty |
 | Technical attribution | Malware, infrastructure, TTPs, tooling, timing, victimology, and campaign patterns |
 | Strategic attribution | Intent, geopolitical context, operational continuity, sponsorship, and state responsibility |
@@ -27,7 +28,8 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── LICENSE.md
 └── Frameworks/
     ├── Cyber-Attribution-Frameworks.md
-    └── Influence Operations-(IIO)-Attribution.md
+    ├── Influence Operations-(IIO)-Attribution.md
+    └── Investigation-Techniques.md
 ```
 
 ## Main documents
@@ -39,6 +41,10 @@ Start here:
 For information influence operations:
 
 [Influence Operations (IIO) Attribution](Frameworks/Influence%20Operations-(IIO)-Attribution.md)
+
+For structured investigation techniques:
+
+[Investigation Techniques](Frameworks/Investigation-Techniques.md)
 
 ## Analytical layers
 
@@ -52,7 +58,7 @@ For information influence operations:
 
 ## External reference anchors
 
-The repository links to external resources rather than copying their content. Key anchors include ODNI cyber attribution guidance, the Diamond Model, MITRE ATT&CK, Attack Flow, STIX 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, and legal scholarship on state responsibility and public attribution.
+The repository links to external resources rather than copying their content. Key anchors include ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, and legal scholarship on state responsibility and public attribution.
 
 ## License
 
