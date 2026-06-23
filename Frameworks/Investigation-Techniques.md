@@ -31,30 +31,97 @@ Analysts should continuously look for human fingerprints that indicate adversary
 |---|---|
 | Planning and direction | Define attribution questions, intelligence requirements, scope, confidence thresholds, and legal or policy constraints |
 | Collection | Acquire relevant technical, contextual, operational, and external reporting sources |
-| Processing and exploitation | Normalize, enrich, deconflict, and prepare data for analysis |
+| Processing and exploitation | Normalize, enrich, deconflict, evaluate, and prepare data for analysis |
 | Analysis and production | Apply SATs, evaluate competing explanations, assess confidence, and produce findings |
 | Dissemination | Deliver the assessment with confidence language, caveats, evidence gaps, and decision relevance |
 
+## Confidence Language and Source Evaluation
+
+Structured analysis should be paired with explicit confidence language and source evaluation. In cyber attribution, this prevents analysts from mixing three different questions: what the evidence says, how reliable the source is, and how likely the analytic judgment is.
+
+### FIRST/NATO Words of Estimative Probability (WEP)
+
+Words of Estimative Probability (WEP) standardize likelihood language. They help reduce ambiguity in terms such as likely, possible, and almost certain. Use the scale below as a repository convention for FIRST/NATO style cyber threat intelligence reporting unless a specific organizational, national, or NATO mandated scale is required.
+
+| WEP term | Suggested probability range | Use in cyber attribution |
+|---|---:|---|
+| Almost certain | 90 to 100% | Evidence is strong, independently corroborated, and alternatives are weak |
+| Highly likely | 75 to 89% | Evidence strongly supports the judgment, but meaningful gaps remain |
+| Likely / probable | 55 to 74% | Evidence supports the judgment more than alternatives |
+| Even chance | 45 to 54% | Evidence does not clearly favor one hypothesis |
+| Unlikely | 25 to 44% | Evidence tends to contradict the judgment |
+| Highly unlikely | 10 to 24% | Evidence strongly contradicts the judgment, but residual uncertainty remains |
+| Remote / almost certainly not | 0 to 9% | Judgment is unsupported or contradicted by strong evidence |
+
+Use WEP for the likelihood of the analytic judgment, not for the reliability of a single source. Use analytic confidence separately from likelihood. A judgment can be likely but low confidence if evidence is thin, poorly sourced, or not independently corroborated.
+
+### Admiralty Code / NATO System
+
+The Admiralty Code, also known as the NATO System, uses a two character rating to evaluate collected information. The letter grades source reliability. The number grades information credibility. For example, B2 means a usually reliable source reporting information that is probably true.
+
+#### Source Reliability
+
+| Code | Meaning | Practical interpretation |
+|---|---|---|
+| A | Completely reliable | No doubt about authenticity, trustworthiness, or competence |
+| B | Usually reliable | Minor doubt, but a strong record of valid reporting |
+| C | Fairly reliable | Some doubt, but has provided valid reporting in the past |
+| D | Not usually reliable | Significant doubt, although some prior reporting may have been valid |
+| E | Unreliable | Lacks authenticity, trustworthiness, or competence |
+| F | Reliability cannot be judged | Insufficient basis to evaluate the source |
+
+#### Information Credibility
+
+| Code | Meaning | Practical interpretation |
+|---|---|---|
+| 1 | Confirmed | Confirmed by independent sources and consistent with other information |
+| 2 | Probably true | Logical and consistent, but not independently confirmed |
+| 3 | Possibly true | Reasonably logical and agrees with some other information |
+| 4 | Doubtful | Possible, but not logical or not supported by other information |
+| 5 | Improbable | Contradicted by other information or not logical |
+| 6 | Truth cannot be judged | Insufficient basis to evaluate the information |
+
+### How to Use WEP and Admiralty/NATO Ratings
+
+| Analytic need | Use WEP | Use Admiralty Code / NATO System |
+|---|---|---|
+| Source evaluation | No | Yes, to grade source reliability and information credibility |
+| Evidence register | Optional | Yes, especially for external reporting and human sourced claims |
+| ACH matrix | Yes, for final hypothesis likelihood | Yes, for evidence quality and diagnostic weight |
+| Key Assumptions Check | Yes, for assumption likelihood | Yes, for assumptions based on specific reports |
+| Finished assessment | Yes, to communicate likelihood and confidence | Yes, when documenting source and information quality |
+
+### Example Evidence Register
+
+| Evidence item | Source | Admiralty/NATO rating | Relevance | WEP impact |
+|---|---|---:|---|---|
+| Joint advisory links activity to an actor cluster | Government advisory | B2 | Supports actor cluster association | Increases likelihood of state linked activity |
+| Reused TLS certificate connects two domains | Passive DNS and certificate telemetry | A2 | Supports infrastructure clustering | Increases likelihood of shared operational infrastructure |
+| PDB string contains a language marker | Malware sample | A3 | Supports developer environment inference | Weakly increases likelihood, but does not prove nationality |
+| Vendor blog attributes campaign directly to a state service | External CTI report | C3 | Supports a hypothesis, but requires corroboration | Should not independently drive high confidence |
+
 ## Summary
 
-| No. | Technique | Main question | Attribution value | Typical output |
+| No. | Technique or standard | Main question | Attribution value | Typical output |
 |---:|---|---|---|---|
 | 1 | Clustering | Which data points appear related, and why? | Groups related activity while separating signal from noise | Cluster map, feature list, and candidate activity groupings |
 | 2 | Key Assumptions Check | What must be true for the current assessment to hold? | Surfaces hidden assumptions and fragile reasoning | Assumption register and collection gaps |
 | 3 | Analysis of Competing Hypotheses (ACH) | Which hypothesis is least inconsistent with the evidence? | Tests multiple plausible explanations side by side | ACH matrix and surviving hypotheses |
 | 4 | Devil's Advocacy | What is the strongest case against the current judgment? | Challenges confirmation bias and weak evidence | Challenge memo and evidence gap list |
 | 5 | Pre-Mortem Analysis | How could this attribution judgment later prove wrong? | Identifies failure modes before publication or escalation | Failure scenarios and mitigation actions |
+| 6 | WEP and Admiralty/NATO ratings | How should likelihood, confidence, source reliability, and information credibility be expressed? | Prevents unclear confidence language and source laundering | Probability wording, confidence level, and evidence grading |
 
 ## Where the Techniques Fit in an Attribution Workflow
 
 1. Define the incident, scope, victimology, and operational timeline.
 2. Separate observations from inferences and externally sourced reporting.
-3. Organize collection sources through a CMF and identify which sources satisfy which intelligence requirements.
-4. Use clustering to group related data points and identify candidate activity groupings.
-5. Build candidate attribution hypotheses.
-6. Run Key Assumptions Check, ACH, Devil's Advocacy, and Pre-Mortem as analysis or peer review gates.
-7. Revise confidence language and identify collection requirements.
-8. Document what is known, what is inferred, what remains uncertain, and why.
+3. Grade source reliability and information credibility using the Admiralty Code / NATO System where appropriate.
+4. Organize collection sources through a CMF and identify which sources satisfy which intelligence requirements.
+5. Use clustering to group related data points and identify candidate activity groupings.
+6. Build candidate attribution hypotheses.
+7. Run Key Assumptions Check, ACH, Devil's Advocacy, and Pre-Mortem as analysis or peer review gates.
+8. Use WEP and analytic confidence language to revise the final judgment.
+9. Document what is known, what is inferred, what remains uncertain, and why.
 
 ## 1. Clustering
 
@@ -243,6 +310,7 @@ LLMs can help structure analysis, generate alternative hypotheses, and stress te
 | ACH | Build an ACH matrix for the following hypotheses and evidence items. Identify which evidence is diagnostic and which hypotheses remain plausible. |
 | Devil's Advocacy | Challenge this attribution assessment. Identify weak evidence, alternative explanations, and overconfident wording. |
 | Pre-Mortem | Assume this attribution judgment is proven wrong in six months. List the most likely reasons and propose mitigations. |
+| WEP and Admiralty/NATO ratings | For each evidence item, separate source reliability, information credibility, analytic confidence, and WEP likelihood. |
 
 ### LLM Guardrails
 
@@ -254,6 +322,7 @@ LLMs can help structure analysis, generate alternative hypotheses, and stress te
 | Hidden assumptions | Ask the model to list assumptions before conclusions |
 | Confirmation bias | Require at least two plausible alternative hypotheses |
 | Over clustering | Require alternative explanations for each link before accepting a cluster |
+| Conflating reliability with confidence | Require separate fields for source reliability, information credibility, likelihood, and analytic confidence |
 
 ## Example Confidence Adjustment
 
@@ -271,6 +340,8 @@ When writing cyber attribution assessments, include a short reasoning discipline
 | Field | Example |
 |---|---|
 | Techniques used | Clustering, Key Assumptions Check, ACH, Devil's Advocacy, Pre-Mortem |
+| Source grading | Admiralty Code / NATO System ratings for key evidence items |
+| Estimative language | WEP term, probability range, and analytic confidence level |
 | Main assumptions | Infrastructure control, tool exclusivity, actor continuity |
 | Alternatives considered | State service, contractor or proxy, criminal reuse, false flag |
 | Evidence gaps | Control evidence, independent corroboration, infrastructure reuse history |
@@ -284,10 +355,16 @@ Heuer, R. J., Jr. (1999). *Psychology of intelligence analysis*. Center for the 
 
 Janis, I. L. (1972). *Victims of groupthink: A psychological study of foreign-policy decisions and fiascoes*. Houghton Mifflin.
 
+Kent, S. (1964). Words of estimative probability. *Studies in Intelligence, 8*(4), 49-65.
+
 Klein, G. (2007). Performing a project premortem. *Harvard Business Review, 85*(9), 18-19.
+
+North Atlantic Treaty Organization. (2016). *AJP-2.1 allied joint doctrine for intelligence procedures*. NATO Standardization Office.
 
 Office of the Director of National Intelligence. (2018). *A guide to cyber attribution*. Cyber Threat Intelligence Integration Center.
 
 Pherson, R. H., & Heuer, R. J., Jr. (2021). *Structured analytic techniques for intelligence analysis* (3rd ed.). CQ Press.
 
 Rid, T., & Buchanan, B. (2015). Attributing cyber attacks. *Journal of Strategic Studies, 38*(1-2), 4-37. https://doi.org/10.1080/01402390.2014.977382
+
+U.S. Department of the Army. (2006). *Human intelligence collector operations* (FM 2-22.3). Department of the Army.
