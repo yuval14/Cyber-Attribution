@@ -15,6 +15,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 | Cyber attribution frameworks | Analytical frameworks, workflows, confidence language, and reasoning discipline |
 | Influence operations attribution | Frameworks and workflows for Information Influence Operations (IIO) and FIMI analysis |
 | Investigation techniques | Structured analytic techniques, alternative hypotheses, challenge analysis, and pre-mortem review |
+| Incident response frameworks | Incident response lifecycles, playbooks, CSIRT maturity, evidence preservation, and post incident learning |
 | Evidence evaluation | Technical evidence, source reliability, alternative hypotheses, and uncertainty |
 | Technical attribution | Malware, infrastructure, TTPs, tooling, timing, victimology, and campaign patterns |
 | Strategic attribution | Intent, geopolitical context, operational continuity, sponsorship, and state responsibility |
@@ -28,6 +29,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── LICENSE.md
 └── Frameworks/
     ├── Cyber-Attribution-Frameworks.md
+    ├── Incident-Response-Frameworks.md
     ├── Influence Operations-(IIO)-Attribution.md
     └── Investigation-Techniques.md
 ```
@@ -37,6 +39,10 @@ The core principle is to separate evidence from assessment. Analysts should docu
 Start here:
 
 [Cyber Attribution Frameworks](Frameworks/Cyber-Attribution-Frameworks.md)
+
+For incident response frameworks:
+
+[Incident Response Frameworks](Frameworks/Incident-Response-Frameworks.md)
 
 For information influence operations:
 
@@ -58,7 +64,7 @@ For structured investigation techniques:
 
 ## External reference anchors
 
-The repository links to external resources rather than copying their content. Key anchors include ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, and legal scholarship on state responsibility and public attribution.
+The repository links to external resources rather than copying their content. Key anchors include ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
 
 ## License
 
