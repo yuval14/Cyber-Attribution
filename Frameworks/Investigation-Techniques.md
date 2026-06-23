@@ -1,8 +1,16 @@
-# Investigation Techniques for Cyber Attribution
+# Structured Analytic Techniques (SATs) for Cyber Attribution Investigation
 
-This page provides a practical set of structured analytic techniques that can be used during cyber attribution investigations, including LLM assisted investigations. The goal is to improve reasoning discipline, expose uncertainty, test alternative explanations, and prevent premature attribution.
+This page provides a practical set of Structured Analytic Techniques (SATs) that can be used during cyber attribution investigations, including LLM assisted investigations. The goal is to improve reasoning discipline, expose uncertainty, test alternative explanations, and prevent premature attribution.
 
 These techniques support analysis. They do not replace forensic validation, source reliability assessment, legal review, or intelligence oversight.
+
+## What Are Structured Analytic Techniques (SATs)?
+
+Structured Analytic Techniques (SATs) are explicit, repeatable methods used to improve the quality, transparency, and auditability of analytic reasoning. In cyber attribution, SATs help analysts separate evidence from inference, identify hidden assumptions, compare competing explanations, challenge premature judgments, and calibrate confidence levels.
+
+SATs are especially useful in cyber attribution because technical indicators can be reused, infrastructure can be shared or compromised, contractor and proxy relationships may obscure control, and adversaries may deliberately plant deceptive artifacts. SATs therefore help analysts distinguish between actor cluster, operator, sponsor, control, intent, and confidence.
+
+The four techniques below form a practical SAT toolkit for cyber attribution assessments.
 
 ## Summary
 
@@ -18,7 +26,7 @@ These techniques support analysis. They do not replace forensic validation, sour
 1. Define the incident, scope, victimology, and operational timeline.
 2. Separate observations from inferences and externally sourced reporting.
 3. Build candidate attribution hypotheses.
-4. Run the four techniques in sequence or as peer review gates.
+4. Run the four SATs in sequence or as peer review gates.
 5. Revise confidence language and identify collection requirements.
 6. Document what is known, what is inferred, what remains uncertain, and why.
 
