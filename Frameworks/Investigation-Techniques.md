@@ -37,23 +37,45 @@ Analysts should continuously look for human fingerprints that indicate adversary
 
 ## Confidence Language and Source Evaluation
 
-Structured analysis should be paired with explicit confidence language and source evaluation. In cyber attribution, this prevents analysts from mixing three different questions: what the evidence says, how reliable the source is, and how likely the analytic judgment is.
+Structured analysis should be paired with explicit confidence language and source evaluation. In cyber attribution, this prevents analysts from mixing four different questions: what the evidence says, how reliable the source is, how likely the analytic judgment is, and how much confidence analysts have in the assessment.
 
 ### FIRST/NATO Words of Estimative Probability (WEP)
 
-Words of Estimative Probability (WEP) standardize likelihood language. They help reduce ambiguity in terms such as likely, possible, and almost certain. Use the scale below as a repository convention for FIRST/NATO style cyber threat intelligence reporting unless a specific organizational, national, or NATO mandated scale is required.
+Words of Estimative Probability (WEP) standardize likelihood language. They help reduce ambiguity in terms such as likely, possible, and almost certain. Use WEP for the likelihood of an event, outcome, or analytic judgment.
 
-| WEP term | Suggested probability range | Use in cyber attribution |
+The FIRST CTI SIG recommends the NATO WEP terms below for CTI reporting.
+
+| FIRST/NATO WEP term | Probability relationship | Use in cyber attribution |
 |---|---:|---|
-| Almost certain | 90 to 100% | Evidence is strong, independently corroborated, and alternatives are weak |
-| Highly likely | 75 to 89% | Evidence strongly supports the judgment, but meaningful gaps remain |
-| Likely / probable | 55 to 74% | Evidence supports the judgment more than alternatives |
-| Even chance | 45 to 54% | Evidence does not clearly favor one hypothesis |
-| Unlikely | 25 to 44% | Evidence tends to contradict the judgment |
-| Highly unlikely | 10 to 24% | Evidence strongly contradicts the judgment, but residual uncertainty remains |
-| Remote / almost certainly not | 0 to 9% | Judgment is unsupported or contradicted by strong evidence |
+| Highly unlikely | Less than 10% | Strong evidence points away from the judgment |
+| Unlikely | 10% to 40% | Evidence tends to contradict the judgment, but uncertainty remains |
+| Even chance | 40% to 60% | Evidence does not clearly favor one hypothesis over another |
+| Likely | 60% to 90% | Evidence supports the judgment more than alternatives |
+| Highly likely | Greater than 90% | Evidence strongly supports the judgment and alternatives are weak |
 
-Use WEP for the likelihood of the analytic judgment, not for the reliability of a single source. Use analytic confidence separately from likelihood. A judgment can be likely but low confidence if evidence is thin, poorly sourced, or not independently corroborated.
+The percentages express the relationship among terms rather than precise mathematical probability. For machine interpretation, FIRST notes that the upper boundary of unlikely can include 40%, and the lower boundary of likely can include 60%.
+
+### FIRST Levels of Confidence in Assessment (LCA)
+
+Levels of Confidence in Assessment (LCA) communicate how much confidence analysts have in a judgment, based on the quality, correlation, and reliability of the underlying evidence. LCA should be kept separate from WEP. WEP communicates likelihood. LCA communicates confidence in the assessment.
+
+The FIRST CTI SIG recommends the NATO LCA terms below.
+
+| FIRST/NATO LCA term | Meaning | Use in cyber attribution |
+|---|---|---|
+| High confidence | Good quality information, evidence from multiple collection capabilities, and a clear judgment can be made | Use when evidence is strong, corroborated, and alternatives have been tested |
+| Moderate confidence | Evidence is open to several interpretations, or is credible and plausible but lacks correlation | Use when the judgment is supported but important gaps, ambiguity, or limited corroboration remain |
+| Low confidence | Fragmentary information, or information from collection capabilities of dubious reliability | Use when the judgment is tentative and should not drive high consequence action without further collection |
+
+#### FIRST Reporting Pattern
+
+| Reporting option | When to use | Example wording |
+|---|---|---|
+| WEP and LCA | Use when both likelihood and confidence are important | It is likely that Actor X conducted the activity. We have moderate confidence in this conclusion. |
+| WEP only | Use when probability is the main uncertainty to communicate | It is likely that Actor X conducted the activity. |
+| LCA only | Use when the main issue is the quality of information and how sure the analyst is | We assess with moderate confidence that Actor X conducted the activity. |
+
+Avoid placing WEP and LCA in the same sentence because it can confuse likelihood with confidence. A judgment can be likely but low confidence if the evidence is thin, poorly sourced, or not independently corroborated.
 
 ### Admiralty Code / NATO System
 
@@ -81,24 +103,24 @@ The Admiralty Code, also known as the NATO System, uses a two character rating t
 | 5 | Improbable | Contradicted by other information or not logical |
 | 6 | Truth cannot be judged | Insufficient basis to evaluate the information |
 
-### How to Use WEP and Admiralty/NATO Ratings
+### How to Use WEP, LCA, and Admiralty/NATO Ratings
 
-| Analytic need | Use WEP | Use Admiralty Code / NATO System |
-|---|---|---|
-| Source evaluation | No | Yes, to grade source reliability and information credibility |
-| Evidence register | Optional | Yes, especially for external reporting and human sourced claims |
-| ACH matrix | Yes, for final hypothesis likelihood | Yes, for evidence quality and diagnostic weight |
-| Key Assumptions Check | Yes, for assumption likelihood | Yes, for assumptions based on specific reports |
-| Finished assessment | Yes, to communicate likelihood and confidence | Yes, when documenting source and information quality |
+| Analytic need | Use WEP | Use FIRST/NATO LCA | Use Admiralty Code / NATO System |
+|---|---|---|---|
+| Source evaluation | No | No | Yes, to grade source reliability and information credibility |
+| Evidence register | Optional | Optional, if the item affects overall confidence | Yes, especially for external reporting and human sourced claims |
+| ACH matrix | Yes, for final hypothesis likelihood | Yes, for confidence in the surviving hypothesis | Yes, for evidence quality and diagnostic weight |
+| Key Assumptions Check | Yes, for assumption likelihood | Yes, for confidence in each key assumption | Yes, for assumptions based on specific reports |
+| Finished assessment | Yes, to communicate likelihood | Yes, to communicate confidence in the assessment | Yes, when documenting source and information quality |
 
 ### Example Evidence Register
 
-| Evidence item | Source | Admiralty/NATO rating | Relevance | WEP impact |
-|---|---|---:|---|---|
-| Joint advisory links activity to an actor cluster | Government advisory | B2 | Supports actor cluster association | Increases likelihood of state linked activity |
-| Reused TLS certificate connects two domains | Passive DNS and certificate telemetry | A2 | Supports infrastructure clustering | Increases likelihood of shared operational infrastructure |
-| PDB string contains a language marker | Malware sample | A3 | Supports developer environment inference | Weakly increases likelihood, but does not prove nationality |
-| Vendor blog attributes campaign directly to a state service | External CTI report | C3 | Supports a hypothesis, but requires corroboration | Should not independently drive high confidence |
+| Evidence item | Source | Admiralty/NATO rating | Relevance | WEP impact | LCA impact |
+|---|---|---:|---|---|---|
+| Joint advisory links activity to an actor cluster | Government advisory | B2 | Supports actor cluster association | Increases likelihood of state linked activity | Supports moderate to high confidence if corroborated |
+| Reused TLS certificate connects two domains | Passive DNS and certificate telemetry | A2 | Supports infrastructure clustering | Increases likelihood of shared operational infrastructure | Supports confidence in the cluster, not necessarily in sponsor identity |
+| PDB string contains a language marker | Malware sample | A3 | Supports developer environment inference | Weakly increases likelihood, but does not prove nationality | Low confidence for nationality or sponsor inference |
+| Vendor blog attributes campaign directly to a state service | External CTI report | C3 | Supports a hypothesis, but requires corroboration | Should not independently drive high likelihood | Should not independently drive high confidence |
 
 ## Summary
 
@@ -109,7 +131,7 @@ The Admiralty Code, also known as the NATO System, uses a two character rating t
 | 3 | Analysis of Competing Hypotheses (ACH) | Which hypothesis is least inconsistent with the evidence? | Tests multiple plausible explanations side by side | ACH matrix and surviving hypotheses |
 | 4 | Devil's Advocacy | What is the strongest case against the current judgment? | Challenges confirmation bias and weak evidence | Challenge memo and evidence gap list |
 | 5 | Pre-Mortem Analysis | How could this attribution judgment later prove wrong? | Identifies failure modes before publication or escalation | Failure scenarios and mitigation actions |
-| 6 | WEP and Admiralty/NATO ratings | How should likelihood, confidence, source reliability, and information credibility be expressed? | Prevents unclear confidence language and source laundering | Probability wording, confidence level, and evidence grading |
+| 6 | WEP, LCA, and Admiralty/NATO ratings | How should likelihood, confidence, source reliability, and information credibility be expressed? | Prevents unclear confidence language and source laundering | Probability wording, confidence level, and evidence grading |
 
 ## Where the Techniques Fit in an Attribution Workflow
 
@@ -120,7 +142,7 @@ The Admiralty Code, also known as the NATO System, uses a two character rating t
 5. Use clustering to group related data points and identify candidate activity groupings.
 6. Build candidate attribution hypotheses.
 7. Run Key Assumptions Check, ACH, Devil's Advocacy, and Pre-Mortem as analysis or peer review gates.
-8. Use WEP and analytic confidence language to revise the final judgment.
+8. Use WEP for likelihood and FIRST/NATO LCA for analytic confidence.
 9. Document what is known, what is inferred, what remains uncertain, and why.
 
 ## 1. Clustering
@@ -310,7 +332,7 @@ LLMs can help structure analysis, generate alternative hypotheses, and stress te
 | ACH | Build an ACH matrix for the following hypotheses and evidence items. Identify which evidence is diagnostic and which hypotheses remain plausible. |
 | Devil's Advocacy | Challenge this attribution assessment. Identify weak evidence, alternative explanations, and overconfident wording. |
 | Pre-Mortem | Assume this attribution judgment is proven wrong in six months. List the most likely reasons and propose mitigations. |
-| WEP and Admiralty/NATO ratings | For each evidence item, separate source reliability, information credibility, analytic confidence, and WEP likelihood. |
+| WEP, LCA, and Admiralty/NATO ratings | For each evidence item, separate source reliability, information credibility, WEP likelihood, and FIRST/NATO LCA confidence. |
 
 ### LLM Guardrails
 
@@ -322,6 +344,7 @@ LLMs can help structure analysis, generate alternative hypotheses, and stress te
 | Hidden assumptions | Ask the model to list assumptions before conclusions |
 | Confirmation bias | Require at least two plausible alternative hypotheses |
 | Over clustering | Require alternative explanations for each link before accepting a cluster |
+| Conflating likelihood with confidence | Require separate fields for WEP likelihood and FIRST/NATO LCA confidence |
 | Conflating reliability with confidence | Require separate fields for source reliability, information credibility, likelihood, and analytic confidence |
 
 ## Example Confidence Adjustment
@@ -341,7 +364,8 @@ When writing cyber attribution assessments, include a short reasoning discipline
 |---|---|
 | Techniques used | Clustering, Key Assumptions Check, ACH, Devil's Advocacy, Pre-Mortem |
 | Source grading | Admiralty Code / NATO System ratings for key evidence items |
-| Estimative language | WEP term, probability range, and analytic confidence level |
+| Estimative language | FIRST/NATO WEP term and probability range |
+| Analytic confidence | FIRST/NATO LCA term: high, moderate, or low confidence |
 | Main assumptions | Infrastructure control, tool exclusivity, actor continuity |
 | Alternatives considered | State service, contractor or proxy, criminal reuse, false flag |
 | Evidence gaps | Control evidence, independent corroboration, infrastructure reuse history |
@@ -350,6 +374,8 @@ When writing cyber attribution assessments, include a short reasoning discipline
 ## References
 
 Caltagirone, S., Pendergast, A., & Betz, C. (2013). *The diamond model of intrusion analysis*. ThreatConnect.
+
+Forum of Incident Response and Security Teams. (n.d.). *Communicating uncertainties in CTI reporting*. Retrieved June 24, 2026, from https://www.first.org/global/sigs/cti/curriculum/cti-reporting
 
 Heuer, R. J., Jr. (1999). *Psychology of intelligence analysis*. Center for the Study of Intelligence, Central Intelligence Agency.
 
