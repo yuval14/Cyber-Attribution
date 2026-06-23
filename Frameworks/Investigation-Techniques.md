@@ -4,37 +4,98 @@ This page provides a practical set of Structured Analytic Techniques (SATs) that
 
 These techniques support analysis. They do not replace forensic validation, source reliability assessment, legal review, or intelligence oversight.
 
-## What Are Structured Analytic Techniques (SATs)?
+## Analytic Purpose
 
-Structured Analytic Techniques (SATs) are explicit, repeatable methods used to improve the quality, transparency, and auditability of analytic reasoning. In cyber attribution, SATs help analysts separate evidence from inference, identify hidden assumptions, compare competing explanations, challenge premature judgments, and calibrate confidence levels.
+SATs are explicit, repeatable methods used to improve the quality, transparency, and auditability of analytic reasoning. In cyber attribution, they help analysts separate evidence from inference, identify hidden assumptions, compare competing explanations, challenge premature judgments, and calibrate confidence levels.
 
-SATs are especially useful in cyber attribution because technical indicators can be reused, infrastructure can be shared or compromised, contractor and proxy relationships may obscure control, and adversaries may deliberately plant deceptive artifacts. SATs therefore help analysts distinguish between actor cluster, operator, sponsor, control, intent, and confidence.
+They are especially useful because technical indicators can be reused, infrastructure can be shared or compromised, contractor and proxy relationships may obscure control, and adversaries may deliberately plant deceptive artifacts. SATs therefore help analysts distinguish between actor cluster, operator, sponsor, control, intent, and confidence.
 
-The four techniques below form a practical SAT toolkit for cyber attribution assessments.
+## Collection and Analysis Context
+
+SATs are most effective when analysts understand their collection sources on a technical level and can determine which intelligence requirements each source can satisfy. A collection management framework (CMF) can help organize internal and external data sources, identify what each source contains, and document how the data is processed, enriched, and exploited.
+
+Analysts should continuously look for human fingerprints that indicate adversary choices, such as naming habits, operational routines, language artifacts, build patterns, passwords, actor handles, certificate reuse, registration behavior, and infrastructure management practices.
+
+### Collection Sources to Consider
+
+| Source | Examples | Attribution value |
+|---|---|---|
+| Malware | Hashes, header metadata, PDB strings, mutexes, import hashes, compiler artifacts, embedded paths | May reveal developer habits, tool lineage, build environment, reused code, actor handles, passwords, or internal IDs |
+| Network infrastructure | Actor registered domains, compromised sites, dynamic DNS use, IP address relationships, ASNs, passive DNS, domain age patterns, hosting changes | Helps map infrastructure continuity, reuse, staging behavior, operational security practices, and possible shared infrastructure |
+| TLS certificates | Certificate hashes, issuer details, validity dates, certificate reuse across infrastructure, TLS fingerprints | Can link infrastructure clusters and reveal repeated operational patterns |
+| Endpoint and host artifacts | Process creation, script execution, registry or filesystem changes, credential misuse, persistence mechanisms, EDR logged behaviors | Helps align observed activity with adversary TTPs and distinguishes hands on keyboard behavior from automated or commodity activity |
+
+### Intelligence Life Cycle Placement
+
+| Stage | Role in cyber attribution |
+|---|---|
+| Planning and direction | Define attribution questions, intelligence requirements, scope, confidence thresholds, and legal or policy constraints |
+| Collection | Acquire relevant technical, contextual, operational, and external reporting sources |
+| Processing and exploitation | Normalize, enrich, deconflict, and prepare data for analysis |
+| Analysis and production | Apply SATs, evaluate competing explanations, assess confidence, and produce findings |
+| Dissemination | Deliver the assessment with confidence language, caveats, evidence gaps, and decision relevance |
 
 ## Summary
 
 | No. | Technique | Main question | Attribution value | Typical output |
 |---:|---|---|---|---|
-| 1 | Key Assumptions Check | What must be true for the current assessment to hold? | Surfaces hidden assumptions and fragile reasoning | Assumption register and collection gaps |
-| 2 | Analysis of Competing Hypotheses (ACH) | Which hypothesis is least inconsistent with the evidence? | Tests multiple plausible explanations side by side | ACH matrix and surviving hypotheses |
-| 3 | Devil's Advocacy | What is the strongest case against the current judgment? | Challenges confirmation bias and weak evidence | Challenge memo and evidence gap list |
-| 4 | Pre-Mortem Analysis | How could this attribution judgment later prove wrong? | Identifies failure modes before publication or escalation | Failure scenarios and mitigation actions |
+| 1 | Clustering | Which data points appear related, and why? | Groups related activity while separating signal from noise | Cluster map, feature list, and candidate activity groupings |
+| 2 | Key Assumptions Check | What must be true for the current assessment to hold? | Surfaces hidden assumptions and fragile reasoning | Assumption register and collection gaps |
+| 3 | Analysis of Competing Hypotheses (ACH) | Which hypothesis is least inconsistent with the evidence? | Tests multiple plausible explanations side by side | ACH matrix and surviving hypotheses |
+| 4 | Devil's Advocacy | What is the strongest case against the current judgment? | Challenges confirmation bias and weak evidence | Challenge memo and evidence gap list |
+| 5 | Pre-Mortem Analysis | How could this attribution judgment later prove wrong? | Identifies failure modes before publication or escalation | Failure scenarios and mitigation actions |
 
 ## Where the Techniques Fit in an Attribution Workflow
 
 1. Define the incident, scope, victimology, and operational timeline.
 2. Separate observations from inferences and externally sourced reporting.
-3. Build candidate attribution hypotheses.
-4. Run the four SATs in sequence or as peer review gates.
-5. Revise confidence language and identify collection requirements.
-6. Document what is known, what is inferred, what remains uncertain, and why.
+3. Organize collection sources through a CMF and identify which sources satisfy which intelligence requirements.
+4. Use clustering to group related data points and identify candidate activity groupings.
+5. Build candidate attribution hypotheses.
+6. Run Key Assumptions Check, ACH, Devil's Advocacy, and Pre-Mortem as analysis or peer review gates.
+7. Revise confidence language and identify collection requirements.
+8. Document what is known, what is inferred, what remains uncertain, and why.
 
-## 1. Key Assumptions Check
+## 1. Clustering
 
 ### Purpose
 
-A Key Assumptions Check identifies the assumptions that must be true for an attribution judgment to remain valid. It is useful when an assessment appears strong but depends on context, past reporting, vendor clustering, or presumed actor behavior.
+Clustering groups related data points based on shared characteristics in order to reveal patterns that may not be visible when examining items individually. It is especially useful for large or fragmented datasets, where analysts need to identify activity groupings, distinguish noise from signal, and develop hypotheses.
+
+### Inputs
+
+| Input | Description |
+|---|---|
+| Technical indicators | Malware hashes, infrastructure, TLS certificates, domains, IPs, tools, scripts, and endpoint artifacts |
+| Behavioral indicators | TTPs, timing, targeting logic, operational tempo, and hands on keyboard behavior |
+| Contextual indicators | Victimology, geopolitical timing, known campaign history, and external reporting |
+| Source notes | Source origin, reliability, freshness, and collection limitations |
+
+### Method
+
+1. Define the dataset and the purpose of clustering.
+2. Select clustering features, such as infrastructure reuse, malware artifacts, timing, victimology, TLS reuse, or TTP overlap.
+3. Separate high confidence links from weak or contextual similarities.
+4. Identify clusters, outliers, and ambiguous data points.
+5. Test whether the cluster represents one actor, one campaign, shared tooling, shared infrastructure, or coincidental overlap.
+6. Convert unresolved links into collection requirements.
+
+### Template
+
+| Data point | Shared feature | Related to | Link strength | Alternative explanation | Follow up action |
+|---|---|---|---|---|---|
+| Domain A | Same TLS certificate as Domain B | Infrastructure cluster 1 | Medium | Certificate reuse by shared hosting provider | Validate hosting history and certificate issuance context |
+| Malware sample X | Similar PDB path to sample Y | Tooling cluster 1 | High | Shared builder or leaked code | Compare compile times, code lineage, and operational context |
+
+### Output
+
+The output is a cluster map or feature table that explains why data points were grouped, how strong each link is, and which alternative explanations remain plausible.
+
+## 2. Key Assumptions Check
+
+### Purpose
+
+A Key Assumptions Check identifies the assumptions that must be true for an attribution judgment to remain valid. It should be used when analysts are making critical judgments under uncertainty or complexity. It helps ensure the analysis is grounded, exposes potential bias, and tests whether assumptions remain valid as new information emerges.
 
 ### Inputs
 
@@ -65,11 +126,13 @@ A Key Assumptions Check identifies the assumptions that must be true for an attr
 
 The output is an assumption register that tells the analyst which parts of the assessment are solid, which are fragile, and which require additional collection.
 
-## 2. Analysis of Competing Hypotheses (ACH)
+## 3. Analysis of Competing Hypotheses (ACH)
 
 ### Purpose
 
-ACH compares multiple attribution hypotheses against the same evidence set. Instead of asking which hypothesis looks most attractive, ACH asks which hypotheses are most inconsistent with the evidence. Diagnostic evidence should receive more weight than evidence that fits many hypotheses.
+ACH should be used when analysts need to evaluate multiple plausible explanations or outcomes for a complex problem where evidence may support or refute different possibilities. It is particularly useful for reducing cognitive bias, enforcing a systematic approach, and identifying which hypothesis is least inconsistent with the available evidence.
+
+Diagnostic evidence should receive more weight than evidence that fits many hypotheses.
 
 ### Example Hypotheses
 
@@ -80,14 +143,17 @@ ACH compares multiple attribution hypotheses against the same evidence set. Inst
 | H3 | A criminal actor reused tools, infrastructure, or tradecraft associated with the state actor |
 | H4 | The operation was designed as a false flag or deception effort |
 
-### Method
+### Seven Steps of ACH
 
-1. Define mutually distinguishable hypotheses.
-2. List evidence and assumptions separately.
-3. Score each item against each hypothesis.
-4. Focus on inconsistency and diagnosticity, not only support.
-5. Remove or weaken hypotheses that are strongly inconsistent with reliable evidence.
-6. Preserve plausible alternatives when evidence remains ambiguous.
+| Step | Action | Purpose |
+|---:|---|---|
+| 1 | Hypotheses | Define mutually distinguishable hypotheses |
+| 2 | Evidence | List evidence and assumptions separately |
+| 3 | Diagnostics | Assess whether each item is consistent, inconsistent, neutral, or unknown for each hypothesis |
+| 4 | Refinement | Revise hypotheses and evidence items to remove ambiguity or overlap |
+| 5 | Prioritization | Focus on the most diagnostic evidence and the most consequential inconsistencies |
+| 6 | Sensitivity | Test whether the conclusion changes if key evidence is removed, downgraded, or reinterpreted |
+| 7 | Conclusion and Evaluation | Identify rejected and surviving hypotheses, confidence level, evidence gaps, and collection priorities |
 
 ### ACH Matrix Template
 
@@ -110,7 +176,7 @@ Use simple marks consistently:
 
 The output is a short finding that states which hypotheses were rejected, which remain plausible, and what evidence would distinguish between the surviving explanations.
 
-## 3. Devil's Advocacy
+## 4. Devil's Advocacy
 
 ### Purpose
 
@@ -138,7 +204,7 @@ Devil's Advocacy deliberately challenges the leading attribution judgment. It is
 
 The output is a challenge memo that improves the assessment, even if the original judgment remains unchanged. The memo should identify what would make the judgment stronger, weaker, or more precise.
 
-## 4. Pre-Mortem Analysis
+## 5. Pre-Mortem Analysis
 
 ### Purpose
 
@@ -172,6 +238,7 @@ LLMs can help structure analysis, generate alternative hypotheses, and stress te
 
 | Technique | Prompt |
 |---|---|
+| Clustering | Group the following indicators by shared features. Explain link strength, alternative explanations, and which items should remain unclustered. |
 | Key Assumptions Check | List the assumptions required for this attribution judgment to be true. Separate evidence supported assumptions from inferred assumptions. |
 | ACH | Build an ACH matrix for the following hypotheses and evidence items. Identify which evidence is diagnostic and which hypotheses remain plausible. |
 | Devil's Advocacy | Challenge this attribution assessment. Identify weak evidence, alternative explanations, and overconfident wording. |
@@ -186,6 +253,7 @@ LLMs can help structure analysis, generate alternative hypotheses, and stress te
 | Source laundering | Preserve source origin, date, and reliability notes |
 | Hidden assumptions | Ask the model to list assumptions before conclusions |
 | Confirmation bias | Require at least two plausible alternative hypotheses |
+| Over clustering | Require alternative explanations for each link before accepting a cluster |
 
 ## Example Confidence Adjustment
 
@@ -202,7 +270,7 @@ When writing cyber attribution assessments, include a short reasoning discipline
 
 | Field | Example |
 |---|---|
-| Techniques used | Key Assumptions Check, ACH, Devil's Advocacy, Pre-Mortem |
+| Techniques used | Clustering, Key Assumptions Check, ACH, Devil's Advocacy, Pre-Mortem |
 | Main assumptions | Infrastructure control, tool exclusivity, actor continuity |
 | Alternatives considered | State service, contractor or proxy, criminal reuse, false flag |
 | Evidence gaps | Control evidence, independent corroboration, infrastructure reuse history |
