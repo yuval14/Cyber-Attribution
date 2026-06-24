@@ -4,62 +4,66 @@
 
 This page provides a curated reading list for cyber attribution practitioners, cyber threat intelligence analysts, incident responders, researchers, policy advisers, legal professionals, and students.
 
-The list focuses on books that help analysts understand how to evaluate evidence, assess confidence, investigate cyber operations, attribute responsibility, identify false flags, and communicate attribution assessments.
+The list focuses on books, articles, and practitioner guides that help analysts understand how to evaluate evidence, assess confidence, investigate cyber operations, attribute responsibility, identify false flags, and communicate attribution assessments.
 
-## Essential Cyber Attribution Books
+Tables are sorted by release year from oldest to newest within each thematic section.
 
-| Title | Author(s) | Year | Why It Matters |
-| --- | --- | --- | --- |
-| Attributing Cyber Attacks | Thomas Rid & Ben Buchanan (Editors) | 2016 | The most important book dedicated specifically to cyber attribution. Covers technical, intelligence, legal, and policy dimensions. |
-| Attribution of Advanced Persistent Threats: How to Identify the Actors Behind Cyber-Espionage | Timo Steffens | 2020 | Dedicated practitioner-oriented book on APT attribution, including technical indicators, malware, infrastructure, control servers, geopolitical analysis, false flags, group setup, and communication. |
-| The Hacker and the State | Ben Buchanan | 2020 | Comprehensive history of state cyber operations and attribution case studies. |
-| Cyber War Will Not Take Place | Thomas Rid | 2013 | Foundational discussion of cyber conflict, espionage, and attribution limitations. |
-| Active Measures | Thomas Rid | 2020 | Essential for understanding influence operations, deception, and attribution of information campaigns. |
+## Essential Cyber Attribution Reading
+
+| Title | Author(s) | Type | Release year | Why It Matters |
+| --- | --- | --- | ---: | --- |
+| Cyber War Will Not Take Place | Thomas Rid | Book | 2013 | Foundational discussion of cyber conflict, espionage, sabotage, and attribution limitations. |
+| Attributing Cyber Attacks | Thomas Rid & Ben Buchanan | Article | 2015 | Seminal article on cyber attribution as a layered technical, intelligence, strategic, and political problem. |
+| Active Measures | Thomas Rid | Book | 2020 | Essential for understanding influence operations, deception, and attribution of information campaigns. |
+| Attribution of Advanced Persistent Threats: How to Identify the Actors Behind Cyber-Espionage | Timo Steffens | Book | 2020 | Dedicated practitioner-oriented book on APT attribution, including technical indicators, malware, infrastructure, control servers, geopolitical analysis, false flags, group setup, and communication. |
+| The Hacker and the State | Ben Buchanan | Book | 2020 | Comprehensive history of state cyber operations and attribution case studies. |
 
 ## Intelligence Analysis
 
-| Title | Author(s) | Why It Matters |
-| --- | --- | --- |
-| Psychology of Intelligence Analysis | Richards J. Heuer Jr. | Foundation for attribution reasoning, cognitive bias reduction, and confidence assessment. |
-| Structured Analytic Techniques for Intelligence Analysis | Richards J. Heuer Jr. & Randolph H. Pherson | Core reference for ACH, Key Assumptions Check, Devil's Advocacy, and alternative hypothesis analysis. |
-| Critical Thinking for Strategic Intelligence | Katherine H. Pherson & Randolph H. Pherson | Practical intelligence analysis methods applicable to attribution investigations. |
+| Title | Author(s) | Type | Release year | Why It Matters |
+| --- | --- | --- | ---: | --- |
+| Psychology of Intelligence Analysis | Richards J. Heuer Jr. | Book | 1999 | Foundation for attribution reasoning, cognitive bias reduction, and confidence assessment. |
+| Structured Analytic Techniques for Intelligence Analysis | Richards J. Heuer Jr. & Randolph H. Pherson | Book | 2010 | Core reference for ACH, Key Assumptions Check, Devil's Advocacy, and alternative hypothesis analysis. |
+| Critical Thinking for Strategic Intelligence | Katherine H. Pherson & Randolph H. Pherson | Book | 2013 | Practical intelligence analysis methods applicable to attribution investigations. |
 
 ## Cyber Threat Intelligence
 
-| Title | Author(s) | Why It Matters |
-| --- | --- | --- |
-| Intelligence-Driven Incident Response | Scott J. Roberts & Rebekah Brown | Connects incident response, CTI, and attribution evidence. |
-| Practical Cyber Intelligence | Wilson Bautista | Practical CTI workflows and intelligence production. |
-| Cyber Threat Intelligence | Christopher K. Sanders & Jason Smith | Strong operational CTI foundation for attribution work. |
-| The Threat Intelligence Handbook | Recorded Future | Practical guide to building and operating CTI programs. |
+| Title | Author(s) | Type | Release year | Why It Matters |
+| --- | --- | --- | ---: | --- |
+| Cyber Threat Intelligence | Christopher K. Sanders & Jason Smith | Book | 2014 | Strong operational CTI foundation for attribution work. |
+| Intelligence-Driven Incident Response | Scott J. Roberts & Rebekah Brown | Book | 2017 | Connects incident response, CTI, and attribution evidence. |
+| Practical Cyber Intelligence | Wilson Bautista | Book | 2018 | Practical CTI workflows and intelligence production. |
+| The Threat Intelligence Handbook | Recorded Future | Guide | 2019 | Practical guide to building and operating CTI programs. |
 
 ## International Law and State Responsibility
 
-| Title | Author(s) | Why It Matters |
-| --- | --- | --- |
-| Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations | Michael N. Schmitt (Editor) | Essential reference for state attribution and state responsibility. |
-| Cyber Operations and International Law | François Delerue | Detailed treatment of attribution under international law. |
+| Title | Author(s) | Type | Release year | Why It Matters |
+| --- | --- | --- | ---: | --- |
+| Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations | Michael N. Schmitt (Editor) | Book | 2017 | Essential reference for state attribution and state responsibility. |
+| Cyber Operations and International Law | François Delerue | Book | 2020 | Detailed treatment of attribution under international law. |
 
 ## Influence Operations and Hybrid Attribution
 
-| Title | Author(s) | Why It Matters |
-| --- | --- | --- |
-| LikeWar | P. W. Singer & Emerson T. Brooking | Important for attribution of online influence operations and information warfare. |
-| Active Measures | Thomas Rid | Critical reference for influence operations attribution and deception analysis. |
+| Title | Author(s) | Type | Release year | Why It Matters |
+| --- | --- | --- | ---: | --- |
+| LikeWar | P. W. Singer & Emerson T. Brooking | Book | 2018 | Important for attribution of online influence operations and information warfare. |
+| Active Measures | Thomas Rid | Book | 2020 | Critical reference for influence operations attribution and deception analysis. |
 
 ## False Flags and Deception
 
-Recommended complementary reading:
+Recommended complementary reading, ordered by release year:
 
-- Attributing Cyber Attacks
-- Attribution of Advanced Persistent Threats
-- Active Measures
-- Psychology of Intelligence Analysis
-- Structured Analytic Techniques for Intelligence Analysis
+1. Psychology of Intelligence Analysis (1999)
+2. Structured Analytic Techniques for Intelligence Analysis (2010)
+3. Attributing Cyber Attacks (2015)
+4. Active Measures (2020)
+5. Attribution of Advanced Persistent Threats (2020)
 
 These works help analysts identify deception indicators, evaluate competing hypotheses, and reduce the risk of misattribution.
 
 ## Suggested Reading Path
+
+The reading path is ordered by learning progression rather than release year.
 
 ### Beginner
 
@@ -90,7 +94,7 @@ These works help analysts identify deception indicators, evaluate competing hypo
 
 ## Recommended Core Attribution Library
 
-If limited to five books:
+If limited to five books or core readings:
 
 1. Attributing Cyber Attacks
 2. Attribution of Advanced Persistent Threats
@@ -98,9 +102,33 @@ If limited to five books:
 4. Structured Analytic Techniques for Intelligence Analysis
 5. Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations
 
-These five books collectively cover technical attribution, APT investigation, intelligence analysis, confidence assessment, strategic context, and international law.
+These five works collectively cover technical attribution, APT investigation, intelligence analysis, confidence assessment, strategic context, and international law.
 
 ## APA 7 References
+
+Buchanan, B. (2020). _The hacker and the state: Cyber attacks and the new normal of geopolitics_. Harvard University Press.
+
+Delerue, F. (2020). _Cyber operations and international law_. Cambridge University Press.
+
+Heuer, R. J., Jr. (1999). _Psychology of intelligence analysis_. Center for the Study of Intelligence, Central Intelligence Agency.
+
+Heuer, R. J., Jr., & Pherson, R. H. (2010). _Structured analytic techniques for intelligence analysis_. CQ Press.
+
+Pherson, K. H., & Pherson, R. H. (2013). _Critical thinking for strategic intelligence_. CQ Press.
+
+Recorded Future. (2019). _The threat intelligence handbook_. Recorded Future.
+
+Rid, T. (2013). _Cyber war will not take place_. Oxford University Press.
+
+Rid, T. (2020). _Active measures: The secret history of disinformation and political warfare_. Farrar, Straus and Giroux.
+
+Rid, T., & Buchanan, B. (2015). Attributing cyber attacks. _Journal of Strategic Studies, 38_(1-2), 4-37. https://doi.org/10.1080/01402390.2014.977382
+
+Roberts, S. J., & Brown, R. (2017). _Intelligence-driven incident response: Outwitting the adversary_. O'Reilly Media.
+
+Schmitt, M. N. (Ed.). (2017). _Tallinn manual 2.0 on the international law applicable to cyber operations_. Cambridge University Press.
+
+Singer, P. W., & Brooking, E. T. (2018). _LikeWar: The weaponization of social media_. Eamon Dolan/Houghton Mifflin Harcourt.
 
 Steffens, T. (2020). _Attribution of Advanced Persistent Threats: How to Identify the Actors Behind Cyber-Espionage_. Springer Vieweg. https://doi.org/10.1007/978-3-662-61313-9
 
