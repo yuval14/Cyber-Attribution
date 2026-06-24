@@ -1,6 +1,6 @@
-# Detection Rule Languages, Formats, and Indicators: Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, and IoPC
+# Detection Rule Languages, Formats, Indicators, and Retro-Hunting: Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, and Retro-Hunting
 
-This page introduces widely used detection rule languages, signature formats, capability rule formats, and practical detection indicator categories that support cyber threat intelligence, detection engineering, incident response, threat hunting, AI security monitoring, malware analysis, reverse engineering, and cyber attribution analysis.
+This page introduces widely used detection rule languages, signature formats, capability rule formats, practical detection indicator categories, and Retro-Hunting workflows that support cyber threat intelligence, detection engineering, incident response, threat hunting, AI security monitoring, malware analysis, reverse engineering, and cyber attribution analysis.
 
 The page covers:
 
@@ -14,8 +14,9 @@ The page covers:
 8. Indicators of Compromise (IOC)
 9. Indicators of Attack (IOA)
 10. Indicators of Prompt Compromise (IoPC)
+11. Retro-Hunting
 
-The purpose is not to treat a rule match or indicator match as attribution by itself. Detection rules and indicators help analysts capture repeatable evidence patterns, test hypotheses, preserve analytic logic, and improve visibility across telemetry sources. Attribution still requires source evaluation, alternative hypotheses, confidence language, and corroboration across technical, operational, strategic, and legal layers.
+The purpose is not to treat a rule match, indicator match, or Retro-Hunting result as attribution by itself. Detection rules, indicators, and historical searches help analysts capture repeatable evidence patterns, test hypotheses, preserve analytic logic, scope incidents, and improve visibility across telemetry sources. Attribution still requires source evaluation, alternative hypotheses, confidence language, and corroboration across technical, operational, strategic, and legal layers.
 
 ## Source Note
 
@@ -23,7 +24,7 @@ The YARA security project is documented through the VirusTotal YARA project site
 
 ## Quick Comparison
 
-| Language, format, or indicator type | Primary data domain | Main use | Typical user | Attribution value | Main limitation |
+| Language, format, indicator type, or workflow | Primary data domain | Main use | Typical user | Attribution value | Main limitation |
 | --- | --- | --- | --- | --- | --- |
 | Sigma | Logs and event telemetry | Portable SIEM and XDR detection logic | Detection engineers, SOC analysts, threat hunters | Captures behavioral patterns and maps activity to TTPs across platforms | Requires backend conversion and field mapping |
 | YARA | Files, malware samples, byte patterns, strings, memory scanning | Malware identification and classification | Malware analysts, reverse engineers, CTI analysts | Links samples by code, strings, configuration, packer artifacts, and family traits | Poorly written rules can overfit, under-detect, or create false positives |
@@ -35,23 +36,24 @@ The YARA security project is documented through the VirusTotal YARA project site
 | IOC | Observable artifacts across endpoint, network, identity, cloud, and malware evidence | Detect or confirm activity that may already have occurred | SOC analysts, incident responders, CTI analysts | Links incidents through repeated infrastructure, files, accounts, or malware artifacts | Can be short-lived, reused, spoofed, purchased, or planted |
 | IOA | Behavioral signals and attack sequences | Detect an attack attempt or activity in progress | Threat hunters, detection engineers, SOC analysts | Captures adversary behavior and tradecraft more durably than simple artifacts | Requires telemetry, baselining, and tuning to avoid false positives |
 | IoPC | AI prompt, context, retrieval, tool-call, memory, output, and agent workflow signals | Detect prompt injection, indirect prompt injection, context manipulation, or unauthorized tool use | AI security teams, SOC analysts, application security teams | Helps distinguish AI workflow compromise from traditional endpoint or network compromise | Emerging repository term; not yet a mature global standard |
+| Retro-Hunting | Historical logs, endpoint telemetry, network metadata, retained packets, cloud and identity events, malware repositories, and AI workflow logs | Search past data after new intelligence, rules, indicators, or hypotheses become available | Threat hunters, SOC analysts, incident responders, CTI analysts, detection engineers | Finds earlier activity, scopes campaigns, builds timelines, and tests whether evidence existed before initial detection | Depends on retention, telemetry quality, indexing, query precision, and analyst interpretation |
 
 ## Detection Coverage by Evidence Type
 
-| Evidence type | Sigma | YARA | YARA-L | Snort | Suricata | capa | ClamAV | IOC | IOA | IoPC |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Endpoint logs | High | Low | High, if ingested and normalized | Low | Low | Low | Low | High | High | Medium |
-| SIEM telemetry | High | Low | High in Google SecOps | Low to medium, if network alerts are ingested | Medium to high, if EVE JSON or alerts are ingested | Low | Medium, if AV logs are ingested | High | High | Medium |
-| Malware files | Low | High | Medium, if file hashes or metadata are in telemetry | Low | Medium, if file extraction or file metadata is enabled | High | High | High | Low | Low |
-| Executable capabilities | Low | Medium | Low to medium | Low | Low to medium | High | Medium | Medium | Medium | Low |
-| Memory artifacts | Low | High | Low to medium | Low | Low | Medium, if extracted or supported by tooling | Medium | Medium | Medium | Low |
-| Network packets | Low | Low | Medium, if packet-derived telemetry is ingested | High | High | Low | Low | High | Medium | Low |
-| Cloud and identity logs | High | Low | High, if normalized into UDM | Low | Low, except network-derived telemetry | Low | Low | High | High | Medium |
-| AI prompts, RAG context, tool calls, and agent logs | Medium, if logged | Low | Medium to high, if ingested | Low | Low | Low | Low | Medium | Medium | High |
-| Threat hunting | High | High | High | Medium | Medium to high for network hunting | High for malware triage | Medium to high for file hunting | High | High | High |
-| Preventive blocking | Usually indirect | Usually indirect | Usually indirect | High when deployed inline as IPS | High when deployed inline as IPS | No | Sometimes through AV enforcement | Sometimes | Sometimes | Sometimes through AI guardrails and tool controls |
+| Evidence type | Sigma | YARA | YARA-L | Snort | Suricata | capa | ClamAV | IOC | IOA | IoPC | Retro-Hunting |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Endpoint logs | High | Low | High, if ingested and normalized | Low | Low | Low | Low | High | High | Medium | High, if retained |
+| SIEM telemetry | High | Low | High in Google SecOps | Low to medium, if network alerts are ingested | Medium to high, if EVE JSON or alerts are ingested | Low | Medium, if AV logs are ingested | High | High | Medium | High |
+| Malware files | Low | High | Medium, if file hashes or metadata are in telemetry | Low | Medium, if file extraction or file metadata is enabled | High | High | High | Low | Low | High, if repositories are retained |
+| Executable capabilities | Low | Medium | Low to medium | Low | Low to medium | High | Medium | Medium | Medium | Low | Medium to high, if samples are retained |
+| Memory artifacts | Low | High | Low to medium | Low | Low | Medium, if extracted or supported by tooling | Medium | Medium | Medium | Low | Medium, if dumps are retained |
+| Network packets | Low | Low | Medium, if packet-derived telemetry is ingested | High | High | Low | Low | High | Medium | Low | High, if packets or metadata are retained |
+| Cloud and identity logs | High | Low | High, if normalized into UDM | Low | Low, except network-derived telemetry | Low | Low | High | High | Medium | High, if retained |
+| AI prompts, RAG context, tool calls, and agent logs | Medium, if logged | Low | Medium to high, if ingested | Low | Low | Low | Low | Medium | Medium | High | High, if prompt and tool logs are retained |
+| Threat hunting | High | High | High | Medium | Medium to high for network hunting | High for malware triage | Medium to high for file hunting | High | High | High | High |
+| Preventive blocking | Usually indirect | Usually indirect | Usually indirect | High when deployed inline as IPS | High when deployed inline as IPS | No | Sometimes through AV enforcement | Sometimes | Sometimes | Sometimes through AI guardrails and tool controls | No, mainly investigative and scoping |
 
-## Detection Indicator Types
+## Detection Indicator Types and Retro-Hunting
 
 ### Indicators of Compromise (IOC)
 
@@ -96,6 +98,21 @@ Indicators of Prompt Compromise are AI-specific signals suggesting that a prompt
 
 IoPC can help distinguish an AI-system compromise path from a traditional endpoint or network compromise path. It rarely attributes an actor by itself. For attribution, combine IoPC with access logs, identity evidence, infrastructure, malware, TTPs, victimology, and campaign context.
 
+### Retro-Hunting
+
+Retro-Hunting is the practice of searching historical telemetry and retained evidence after new intelligence, new rules, new indicators, new vulnerabilities, or new hypotheses become available. It helps analysts determine whether activity occurred before an alert was created, whether a campaign affected additional assets, and whether the same tradecraft appeared across multiple environments.
+
+| Retro-hunt object | Examples | Practical use |
+| --- | --- | --- |
+| IOC retro-hunt | File hashes, domains, IP addresses, URLs, certificate fingerprints, registry paths | Scope known artifacts across historical data |
+| IOA retro-hunt | Suspicious process chains, credential misuse, lateral movement, exfiltration staging | Identify earlier behavior that did not trigger an alert |
+| IoPC retro-hunt | Prompt injection strings, malicious retrieved context, unusual tool-call chains, memory poisoning | Search AI workflow logs for prior prompt or agent compromise |
+| Vulnerability retro-hunt | Exploit URI patterns, protocol misuse, anomalous requests, affected asset exposure | Determine whether a vulnerability was exploited before disclosure or patching |
+| Malware retro-hunt | YARA matches, ClamAV signatures, capa capabilities, file metadata, packer traits | Find previously stored samples or payloads connected to a campaign |
+| Network retro-hunt | Suricata or Snort alerts, DNS patterns, TLS fingerprints, NetFlow, packet captures | Reconstruct earlier C2, scanning, exploit delivery, or staging activity |
+
+Retro-Hunting strengthens attribution analysis by expanding the timeline, identifying earlier infrastructure or tooling, testing campaign continuity, and revealing whether a suspected actor cluster has historical overlap with current evidence. It still does not prove actor identity alone. Analysts should document the lookback window, data sources searched, query logic, false positives, missing telemetry, and confidence level.
+
 ## 1. Sigma
 
 ### Purpose
@@ -130,7 +147,7 @@ Sigma is best suited for:
 
 Sigma rules can support attribution by capturing behavioral patterns that are more durable than single indicators. Examples include service creation patterns, suspicious PowerShell behavior, credential access, persistence, lateral movement, cloud control plane activity, and repeated hands on keyboard tradecraft.
 
-Sigma should not be used to claim actor identity on its own. A Sigma match usually supports a TTP, tool, or behavior finding. It becomes stronger for attribution when combined with malware analysis, infrastructure clustering, victimology, timing, source reliability, and competing hypothesis analysis.
+Sigma should not be used to claim actor identity on its own. A Sigma match usually supports a TTP, tool, or behavior finding. It becomes stronger for attribution when combined with malware analysis, infrastructure clustering, victimology, timing, source reliability, competing hypothesis analysis, and Retro-Hunting across retained telemetry.
 
 ### Minimal Sigma Skeleton
 
@@ -235,7 +252,7 @@ YARA-L is best suited for:
 
 YARA-L supports attribution analysis by correlating normalized event streams. It can connect process launches, file hashes, authentication activity, cloud actions, endpoint events, identity context, and AI workflow telemetry if it is ingested. This makes it useful for building an operational timeline and testing whether a suspected TTP cluster appears across multiple victims or environments.
 
-YARA-L should be treated as platform specific detection logic. Its strength depends on telemetry ingestion, parser quality, UDM normalization, and the analyst's ability to separate telemetry gaps from true absence of activity.
+YARA-L should be treated as platform specific detection logic. Its strength depends on telemetry ingestion, parser quality, UDM normalization, retention, and the analyst's ability to separate telemetry gaps from true absence of activity.
 
 ### Minimal YARA-L Skeleton
 
@@ -292,7 +309,7 @@ Snort is best suited for:
 
 Snort rules can support attribution by detecting network behaviors associated with exploit delivery, staging infrastructure, C2 channels, scanning behavior, protocol misuse, and known malware communications. Snort is especially valuable when endpoint telemetry is incomplete or when the defender needs network level compensating controls.
 
-A Snort match usually supports a network behavior or exploit hypothesis. It does not independently establish actor identity, sponsorship, or intent. Encrypted traffic, NAT, shared infrastructure, proxy use, content delivery networks, and compromised servers can all weaken attribution confidence.
+A Snort match usually supports a network behavior or exploit hypothesis. It does not independently establish actor identity, sponsorship, or intent. Encrypted traffic, NAT, shared infrastructure, proxy use, content delivery networks, compromised servers, and historical packet retention limits can all weaken attribution confidence.
 
 ### Minimal Snort Skeleton
 
@@ -337,7 +354,7 @@ Suricata is best suited for:
 
 Suricata can support attribution by capturing network tradecraft such as exploit delivery, staging infrastructure, C2 patterns, protocol misuse, JA3/JA4-like TLS fingerprints where available, DNS behavior, and file transfer behavior. It is useful when endpoint access is limited or when network telemetry provides the strongest cross-victim evidence.
 
-A Suricata alert does not establish actor identity by itself. Analysts should consider encryption, NAT, proxies, compromised infrastructure, hosting churn, shared tooling, CDN use, telemetry gaps, and rule false positives before using Suricata evidence in attribution judgments.
+A Suricata alert does not establish actor identity by itself. Analysts should consider encryption, NAT, proxies, compromised infrastructure, hosting churn, shared tooling, CDN use, telemetry gaps, retention limits, and rule false positives before using Suricata evidence in attribution judgments.
 
 ### Minimal Suricata Skeleton
 
@@ -430,7 +447,7 @@ ClamAV signatures are best suited for:
 
 ### Attribution Use
 
-ClamAV signatures can support attribution by preserving file-based detection logic for malware families, campaign payloads, and known malicious artifacts. They are useful for repository scanning, email gateway detection, and confirming whether a known payload appears across environments.
+ClamAV signatures can support attribution by preserving file-based detection logic for malware families, campaign payloads, and known malicious artifacts. They are useful for repository scanning, email gateway detection, Retro-Hunting, and confirming whether a known payload appears across environments.
 
 A ClamAV signature match should normally be treated as file identification or malware classification evidence. It does not independently prove actor identity, sponsor, control, or intent. Analysts should corroborate with malware analysis, infrastructure evidence, victimology, timing, and confidence assessment.
 
@@ -444,17 +461,18 @@ Example.Malware.Logical;Target:0;(0&1);6578616d706c65;6d61726b6572
 
 | Step | Activity | Output |
 | ---: | --- | --- |
-| 1 | Define the intelligence or detection requirement | Clear question, scope, priority, telemetry need |
+| 1 | Define the intelligence, detection, or Retro-Hunting requirement | Clear question, scope, priority, telemetry need, and lookback window |
 | 2 | Identify the evidence domain | Logs, malware files, executable capabilities, memory, network packets, cloud events, identity events, AI workflow telemetry |
-| 3 | Classify the detection object | IOC, IOA, IoPC, malware pattern, executable capability, AV signature, log behavior, network signature, or multi-event correlation |
-| 4 | Choose the rule language or representation | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, indicator list, hunt query, or more than one |
-| 5 | Write the rule or indicator record with metadata | Rule, owner, date, source, severity, references, ATT&CK tags, confidence, caveats |
+| 3 | Classify the detection object | IOC, IOA, IoPC, malware pattern, executable capability, AV signature, log behavior, network signature, multi-event correlation, or historical hunt query |
+| 4 | Choose the rule language or representation | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, indicator list, Retro-Hunting query, or more than one |
+| 5 | Write the rule, indicator record, or hunt query with metadata | Rule, owner, date, source, severity, references, ATT&CK tags, confidence, caveats, time range |
 | 6 | Test against known bad and known good data | True positives, false positives, false negatives |
-| 7 | Tune the logic | Better selectors, exclusions, thresholds, scope limits |
-| 8 | Deploy and monitor | Alert quality, performance, case outcomes, suppression logic |
-| 9 | Review and retire stale logic | Updated references, modified date, rule status, expiry decision |
+| 7 | Tune the logic | Better selectors, exclusions, thresholds, scope limits, query optimization |
+| 8 | Run Retro-Hunting where relevant | Historical hits, first-seen time, affected assets, related cases, possible missed alerts |
+| 9 | Deploy and monitor | Alert quality, performance, case outcomes, suppression logic |
+| 10 | Review and retire stale logic | Updated references, modified date, rule status, expiry decision |
 
-## Choosing the Right Language, Format, or Indicator Type
+## Choosing the Right Language, Format, Indicator Type, or Workflow
 
 | Need | Best choice | Reason |
 | --- | --- | --- |
@@ -465,17 +483,19 @@ Example.Malware.Logical;Target:0;(0&1);6578616d706c65;6d61726b6572
 | Perform protocol-aware network security monitoring | Suricata | Rich network security monitoring and protocol parsing capabilities |
 | Identify malware capabilities in executable files | capa | Capability-focused rules support reverse engineering and triage |
 | Create text-based AV signatures for file detection | ClamAV | Practical file and malware detection, including supported YARA use |
-| Share simple observed artifacts | IOC | Practical for blocking, enrichment, scoping, and retro-hunting |
+| Share simple observed artifacts | IOC | Practical for blocking, enrichment, scoping, and Retro-Hunting |
 | Detect active adversary behavior | IOA | Captures behavior and attack sequence instead of only artifacts |
 | Detect AI workflow manipulation | IoPC | Focuses on prompt, context, tool-use, memory, output, and agent state evidence |
-| Build multi-layer detection for one campaign | Combine all relevant types | Covers logs, files, capabilities, platform telemetry, network packets, artifacts, behaviors, and AI workflow evidence |
+| Search retained data after new intelligence appears | Retro-Hunting | Finds earlier activity, expands scoping, and tests campaign continuity |
+| Build multi-layer detection for one campaign | Combine all relevant types | Covers logs, files, capabilities, platform telemetry, network packets, artifacts, behaviors, AI workflow evidence, and historical searches |
 
 ## Quality Checklist
 
 | Control | Why it matters |
 | --- | --- |
 | State the detection objective | Prevents broad rules with unclear analytic value |
-| Separate IOC, IOA, IoPC, TTP, malware capability, and attribution claims | Avoids treating a detection as actor proof |
+| Separate IOC, IOA, IoPC, TTP, malware capability, Retro-Hunting result, and attribution claims | Avoids treating a detection or historical hit as actor proof |
+| Define the Retro-Hunting lookback period and telemetry scope | Prevents misleading conclusions from partial retention or incomplete data |
 | Add source and reference metadata | Preserves traceability |
 | Record confidence and caveats | Supports responsible CTI reporting |
 | Include false positive notes | Improves SOC usability |
@@ -498,6 +518,7 @@ Example.Malware.Logical;Target:0;(0&1);6578616d706c65;6d61726b6572
 | Capability overlap | Malware capability similarity may reflect common libraries or commodity design | Compare implementation details, code lineage, configuration, and operational use |
 | AV signature ambiguity | File matches may identify a family or pattern but not the operator | Corroborate with reverse engineering, infrastructure, and incident context |
 | IoPC ambiguity | Prompt compromise may be confused with benign model error, user error, or unsafe design | Preserve logs and test whether manipulation affected tool use, data access, or output behavior |
+| Retro-Hunting bias | Historical searches may overstate certainty because retained data is incomplete, normalized differently, or queried after the analyst already has a hypothesis | Document lookback period, data sources, query logic, gaps, false positives, and alternative explanations |
 | False flags | Adversaries may plant strings, paths, language artifacts, copied code, or prompt artifacts | Use ACH, Devil's Advocacy, and independent corroboration |
 | Over-clustering | Similar rules may group unrelated activity | Require explicit cluster criteria and confidence levels |
 | Telemetry gaps | Absence of detection may be misread as absence of activity | Document data coverage and collection limits |
@@ -505,7 +526,7 @@ Example.Malware.Logical;Target:0;(0&1);6578616d706c65;6d61726b6572
 
 ## Example Multi-Layer Detection Package
 
-| Layer | Rule or indicator type | Example output |
+| Layer | Rule, indicator type, or workflow | Example output |
 | --- | --- | --- |
 | Network IDS/IPS | Snort or Suricata | Detect exploit attempt, suspicious protocol behavior, or C2 URI pattern |
 | Endpoint and SIEM | Sigma | Detect process behavior, registry modification, or suspicious authentication |
@@ -516,34 +537,37 @@ Example.Malware.Logical;Target:0;(0&1);6578616d706c65;6d61726b6572
 | Indicator intelligence | IOC | Block or hunt for known malicious artifacts |
 | Behavior analytics | IOA | Hunt for active attack sequences and TTPs |
 | AI workflow security | IoPC | Detect prompt injection, malicious retrieved context, or unsafe tool invocation |
-| CTI assessment | Narrative and evidence register | Explain what the rules and indicators detect, confidence, false positives, and attribution limits |
+| Historical search | Retro-Hunting | Search retained telemetry for earlier related activity, first-seen events, affected assets, and missed detections |
+| CTI assessment | Narrative and evidence register | Explain what the rules, indicators, and historical searches detect, confidence, false positives, and attribution limits |
 
 ## LLM Supported Use
 
-LLMs can assist with rule documentation, hypothesis generation, rule translation drafts, false positive brainstorming, test case design, and indicator classification. They should not be allowed to invent indicators, sources, CVEs, malware names, or actor associations.
+LLMs can assist with rule documentation, hypothesis generation, Retro-Hunting query planning, rule translation drafts, false positive brainstorming, test case design, and indicator classification. They should not be allowed to invent indicators, sources, CVEs, malware names, actor associations, or historical search results.
 
 | Task | Safe LLM use |
 | --- | --- |
 | Rule documentation | Convert technical logic into SOC facing explanation |
-| Indicator classification | Separate IOC, IOA, IoPC, TTP, malware capability, and attribution claims |
+| Indicator classification | Separate IOC, IOA, IoPC, TTP, malware capability, Retro-Hunting result, and attribution claims |
+| Retro-Hunting planning | Draft candidate lookback windows, telemetry sources, and query variants for analyst validation |
 | False positive analysis | Suggest benign explanations that analysts should test |
-| Cross language planning | Map the same detection idea into Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, and IoPC coverage concepts |
-| Peer review | Check whether rule or indicator logic matches the stated detection objective |
-| Attribution discipline | Separate detection finding from actor, sponsor, and intent claims |
+| Cross language planning | Map the same detection idea into Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, and Retro-Hunting coverage concepts |
+| Peer review | Check whether rule, indicator, or hunt logic matches the stated detection objective |
+| Attribution discipline | Separate detection finding and historical hit from actor, sponsor, and intent claims |
 
 ## Repository Output Template
 
 | Field | Example |
 | --- | --- |
 | Detection name | Suspicious Example Activity |
-| Rule language, format, or indicator type | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, or IoPC |
-| Data source | Windows process creation, PE file, Google SecOps UDM event, HTTP packet, executable capability, AV signature, prompt log, tool-call log |
-| Detection objective | Identify behavior, artifact, malware family, executable capability, AI workflow manipulation, or network activity associated with a specific technique |
-| Source intelligence | Advisory, malware report, incident case, reverse engineering note, AI security review, prompt log analysis |
+| Rule language, format, indicator type, or workflow | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, or Retro-Hunting |
+| Data source | Windows process creation, PE file, Google SecOps UDM event, HTTP packet, executable capability, AV signature, prompt log, tool-call log, retained SIEM telemetry, packet metadata |
+| Detection objective | Identify behavior, artifact, malware family, executable capability, AI workflow manipulation, network activity, or historical evidence associated with a specific technique |
+| Source intelligence | Advisory, malware report, incident case, reverse engineering note, AI security review, prompt log analysis, new IOC set, new vulnerability intelligence |
 | ATT&CK or AI security mapping | Technique, tactic, prompt injection class, or control mapping where appropriate |
+| Lookback period | Relevant for Retro-Hunting, for example 30, 90, 180, or 365 days, based on retention and risk |
 | Confidence | Low, moderate, or high based on validation and source quality |
-| False positives | Known administrative, benign, test, or expected AI workflow patterns |
-| Attribution note | What this rule or indicator supports and what it does not prove |
+| False positives | Known administrative, benign, test, expected AI workflow patterns, or query artifacts |
+| Attribution note | What this rule, indicator, or Retro-Hunting result supports and what it does not prove |
 | Review date | Date for tuning, retirement, or update |
 
 ## References
