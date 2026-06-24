@@ -1,14 +1,19 @@
-# Detection Rule Languages, Formats, and Indicators: Sigma, YARA, YARA-L, Snort, IOC, IOA, and IoPC
+# Detection Rule Languages, Formats, and Indicators: Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, and IoPC
 
-This page introduces widely used detection rule languages and practical detection indicator categories that support cyber threat intelligence, detection engineering, incident response, threat hunting, AI security monitoring, and cyber attribution analysis:
+This page introduces widely used detection rule languages, signature formats, capability rule formats, and practical detection indicator categories that support cyber threat intelligence, detection engineering, incident response, threat hunting, AI security monitoring, malware analysis, reverse engineering, and cyber attribution analysis.
+
+The page covers:
 
 1. Sigma
 2. YARA
 3. YARA-L
 4. Snort
-5. Indicators of Compromise (IOC)
-6. Indicators of Attack (IOA)
-7. Indicators of Prompt Compromise (IoPC)
+5. Suricata
+6. capa rules
+7. ClamAV signatures
+8. Indicators of Compromise (IOC)
+9. Indicators of Attack (IOA)
+10. Indicators of Prompt Compromise (IoPC)
 
 The purpose is not to treat a rule match or indicator match as attribution by itself. Detection rules and indicators help analysts capture repeatable evidence patterns, test hypotheses, preserve analytic logic, and improve visibility across telemetry sources. Attribution still requires source evaluation, alternative hypotheses, confidence language, and corroboration across technical, operational, strategic, and legal layers.
 
@@ -24,23 +29,27 @@ The YARA security project is documented through the VirusTotal YARA project site
 | YARA | Files, malware samples, byte patterns, strings, memory scanning | Malware identification and classification | Malware analysts, reverse engineers, CTI analysts | Links samples by code, strings, configuration, packer artifacts, and family traits | Poorly written rules can overfit, under-detect, or create false positives |
 | YARA-L | Google Security Operations telemetry using UDM fields | Search, dashboards, rule-based threat detection, and event correlation | Google SecOps analysts and detection engineers | Correlates activity across normalized security events and supports multi-event logic | Platform specific to Google SecOps and dependent on data ingestion quality |
 | Snort | Network packets and protocol traffic | IDS and IPS alerting or blocking | Network defenders, SOC, IDS/IPS engineers | Detects exploit attempts, C2 traffic, scans, payload patterns, and network tradecraft | Packet visibility, encryption, tuning, and protocol coverage shape effectiveness |
+| Suricata | Network packets, protocol transactions, file extraction, and network security monitoring telemetry | IDS, IPS, network security monitoring, protocol analysis, and rule-based network detection | Network defenders, SOC analysts, threat hunters, IDS/IPS engineers | Detects exploit attempts, C2 traffic, protocol misuse, file transfer patterns, and network tradecraft with rich protocol context | Requires tuning, packet visibility, rule management, performance planning, and careful interpretation of shared or encrypted infrastructure |
+| capa rules | Executable files, malware samples, static analysis features, and reverse engineering artifacts | Identify malware capabilities in executable files | Malware analysts, reverse engineers, CTI analysts | Describes what a program can do, such as persistence, discovery, encryption, C2, injection, or credential access | Capability detection does not prove intent, actor identity, or that a capability was actually executed |
+| ClamAV signatures | Files, byte patterns, logical signatures, hashes, container metadata, and AV databases | Malware and file-based threat detection | Malware analysts, defenders, mail gateway operators, SOC teams | Supports repeatable file detection and can preserve malware identification logic for triage and blocking | Signature matching can be brittle, noisy, or limited by file coverage, packing, obfuscation, and update quality |
 | IOC | Observable artifacts across endpoint, network, identity, cloud, and malware evidence | Detect or confirm activity that may already have occurred | SOC analysts, incident responders, CTI analysts | Links incidents through repeated infrastructure, files, accounts, or malware artifacts | Can be short-lived, reused, spoofed, purchased, or planted |
 | IOA | Behavioral signals and attack sequences | Detect an attack attempt or activity in progress | Threat hunters, detection engineers, SOC analysts | Captures adversary behavior and tradecraft more durably than simple artifacts | Requires telemetry, baselining, and tuning to avoid false positives |
 | IoPC | AI prompt, context, retrieval, tool-call, memory, output, and agent workflow signals | Detect prompt injection, indirect prompt injection, context manipulation, or unauthorized tool use | AI security teams, SOC analysts, application security teams | Helps distinguish AI workflow compromise from traditional endpoint or network compromise | Emerging repository term; not yet a mature global standard |
 
 ## Detection Coverage by Evidence Type
 
-| Evidence type | Sigma | YARA | YARA-L | Snort | IOC | IOA | IoPC |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Endpoint logs | High | Low | High, if ingested and normalized | Low | High | High | Medium |
-| SIEM telemetry | High | Low | High in Google SecOps | Low to medium, if network alerts are ingested | High | High | Medium |
-| Malware files | Low | High | Medium, if file hashes or metadata are in telemetry | Low | High | Low | Low |
-| Memory artifacts | Low | High | Low to medium | Low | Medium | Medium | Low |
-| Network packets | Low | Low | Medium, if packet-derived telemetry is ingested | High | High | Medium | Low |
-| Cloud and identity logs | High | Low | High, if normalized into UDM | Low | High | High | Medium |
-| AI prompts, RAG context, tool calls, and agent logs | Medium, if logged | Low | Medium to high, if ingested | Low | Medium | Medium | High |
-| Threat hunting | High | High | High | Medium | High | High | High |
-| Preventive blocking | Usually indirect | Usually indirect | Usually indirect | High when deployed inline as IPS | Sometimes | Sometimes | Sometimes through AI guardrails and tool controls |
+| Evidence type | Sigma | YARA | YARA-L | Snort | Suricata | capa | ClamAV | IOC | IOA | IoPC |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Endpoint logs | High | Low | High, if ingested and normalized | Low | Low | Low | Low | High | High | Medium |
+| SIEM telemetry | High | Low | High in Google SecOps | Low to medium, if network alerts are ingested | Medium to high, if EVE JSON or alerts are ingested | Low | Medium, if AV logs are ingested | High | High | Medium |
+| Malware files | Low | High | Medium, if file hashes or metadata are in telemetry | Low | Medium, if file extraction or file metadata is enabled | High | High | High | Low | Low |
+| Executable capabilities | Low | Medium | Low to medium | Low | Low to medium | High | Medium | Medium | Medium | Low |
+| Memory artifacts | Low | High | Low to medium | Low | Low | Medium, if extracted or supported by tooling | Medium | Medium | Medium | Low |
+| Network packets | Low | Low | Medium, if packet-derived telemetry is ingested | High | High | Low | Low | High | Medium | Low |
+| Cloud and identity logs | High | Low | High, if normalized into UDM | Low | Low, except network-derived telemetry | Low | Low | High | High | Medium |
+| AI prompts, RAG context, tool calls, and agent logs | Medium, if logged | Low | Medium to high, if ingested | Low | Low | Low | Low | Medium | Medium | High |
+| Threat hunting | High | High | High | Medium | Medium to high for network hunting | High for malware triage | Medium to high for file hunting | High | High | High |
+| Preventive blocking | Usually indirect | Usually indirect | Usually indirect | High when deployed inline as IPS | High when deployed inline as IPS | No | Sometimes through AV enforcement | Sometimes | Sometimes | Sometimes through AI guardrails and tool controls |
 
 ## Detection Indicator Types
 
@@ -299,39 +308,174 @@ alert tcp any any -> $HOME_NET 80 (
 )
 ```
 
+## 5. Suricata
+
+### Purpose
+
+Suricata is an open source network threat detection engine used for IDS, IPS, and network security monitoring. Suricata signatures can inspect packets and application layer protocol transactions, and Suricata can produce rich event output such as EVE JSON for downstream SIEM, data lake, and threat hunting workflows.
+
+Suricata is best suited for:
+
+1. Network IDS and IPS detection.
+2. Protocol-aware network detection and monitoring.
+3. Exploit attempt, C2, scanning, and lateral movement detection.
+4. File extraction and file metadata observation from network traffic.
+5. Network telemetry enrichment for incident response and attribution analysis.
+
+### Typical Rule Elements
+
+| Element | Purpose |
+| --- | --- |
+| Action | Determines what happens when the rule matches, such as alert, pass, drop, reject, or rejectboth |
+| Header | Defines protocol, source, destination, ports, and direction |
+| Rule options | Defines message, flow, content, protocol buffers, references, sid, revision, classtype, and metadata |
+| Protocol keywords | Allow protocol-aware matching, such as HTTP, TLS, DNS, SMB, SSH, SMTP, and other application layer protocols |
+| File keywords | Support matching on file transfer behavior, file data, hashes, or file metadata when available |
+| Thresholding and flow control | Help tune alert volume and reduce repeated noise |
+
+### Attribution Use
+
+Suricata can support attribution by capturing network tradecraft such as exploit delivery, staging infrastructure, C2 patterns, protocol misuse, JA3/JA4-like TLS fingerprints where available, DNS behavior, and file transfer behavior. It is useful when endpoint access is limited or when network telemetry provides the strongest cross-victim evidence.
+
+A Suricata alert does not establish actor identity by itself. Analysts should consider encryption, NAT, proxies, compromised infrastructure, hosting churn, shared tooling, CDN use, telemetry gaps, and rule false positives before using Suricata evidence in attribution judgments.
+
+### Minimal Suricata Skeleton
+
+```text
+alert http $HOME_NET any -> $EXTERNAL_NET any (
+    msg:"EXAMPLE suspicious HTTP request";
+    flow:established,to_server;
+    http.method;
+    content:"GET";
+    http.uri;
+    content:"example";
+    fast_pattern;
+    classtype:bad-unknown;
+    sid:2000001;
+    rev:1;
+)
+```
+
+## 6. capa Rules
+
+### Purpose
+
+capa rules are capability detection rules used with Mandiant capa to identify capabilities in executable files. Rather than only naming a malware family, capa helps analysts describe what a program appears capable of doing, such as persistence, command execution, discovery, encryption, network communication, process injection, credential access, or anti-analysis behavior.
+
+capa rules are best suited for:
+
+1. Malware triage.
+2. Reverse engineering support.
+3. Capability-based clustering.
+4. Comparing samples by behavior-relevant code features.
+5. Translating reverse engineering findings into repeatable analytic logic.
+
+### Typical Rule Elements
+
+| Element | Purpose |
+| --- | --- |
+| Rule name | Human readable capability statement |
+| Metadata | Author, scope, references, ATT&CK mapping, examples, and library or malware context |
+| Scope | Defines whether the rule applies to file, function, basic block, or instruction level features |
+| Features | Strings, APIs, mnemonics, numbers, bytes, imports, namespaces, and other static analysis features |
+| Logic | Boolean combinations such as and, or, optional, count, and nested feature groups |
+
+### Attribution Use
+
+capa rules can support attribution by helping analysts compare executable capabilities across malware samples and campaigns. Capability overlap may reveal shared tooling, reused libraries, development patterns, or operational requirements.
+
+capa findings should not be treated as proof that a capability was executed or that the same actor operated every sample. Capability overlap can reflect common malware design, reused open source code, shared builders, commodity tooling, or copied techniques.
+
+### Minimal capa Rule Skeleton
+
+```yaml
+rule:
+  meta:
+    name: example capability
+    namespace: example/capability
+    author: Your Name
+    scope: function
+    description: Detects an example executable capability.
+    examples:
+      - 00000000000000000000000000000000
+  features:
+    - and:
+      - api: kernel32.CreateFileA
+      - string: "example"
+```
+
+## 7. ClamAV Signatures
+
+### Purpose
+
+ClamAV signatures are text-based antivirus signatures used by ClamAV for malware and file-based threat detection. ClamAV supports multiple signature formats, including hash-based signatures, body-based signatures, logical signatures, container or file metadata signatures, and YARA rules.
+
+ClamAV signatures are best suited for:
+
+1. File-based malware detection.
+2. Mail gateway and server-side scanning.
+3. Hash or pattern-based blocking.
+4. Malware triage and repository scanning.
+5. Lightweight signature sharing for file-focused detection.
+
+### Typical Signature Types
+
+| Signature type | Purpose |
+| --- | --- |
+| Hash signatures | Match known malicious files by cryptographic hash |
+| Body-based signatures | Match byte sequences or patterns in file content |
+| Logical signatures | Combine multiple conditions into more expressive detection logic |
+| Container and metadata signatures | Match file type, container, archive, or structural metadata conditions |
+| YARA signatures | Use supported YARA rules for malware and file pattern detection in ClamAV workflows |
+
+### Attribution Use
+
+ClamAV signatures can support attribution by preserving file-based detection logic for malware families, campaign payloads, and known malicious artifacts. They are useful for repository scanning, email gateway detection, and confirming whether a known payload appears across environments.
+
+A ClamAV signature match should normally be treated as file identification or malware classification evidence. It does not independently prove actor identity, sponsor, control, or intent. Analysts should corroborate with malware analysis, infrastructure evidence, victimology, timing, and confidence assessment.
+
+### Minimal ClamAV Logical Signature Skeleton
+
+```text
+Example.Malware.Logical;Target:0;(0&1);6578616d706c65;6d61726b6572
+```
+
 ## Unified Detection Engineering Workflow
 
 | Step | Activity | Output |
 | ---: | --- | --- |
 | 1 | Define the intelligence or detection requirement | Clear question, scope, priority, telemetry need |
-| 2 | Identify the evidence domain | Logs, malware files, memory, network packets, cloud events, identity events, AI workflow telemetry |
-| 3 | Classify the detection object | IOC, IOA, IoPC, malware pattern, log behavior, network signature, or multi-event correlation |
-| 4 | Choose the rule language or representation | Sigma, YARA, YARA-L, Snort, indicator list, hunt query, or more than one |
+| 2 | Identify the evidence domain | Logs, malware files, executable capabilities, memory, network packets, cloud events, identity events, AI workflow telemetry |
+| 3 | Classify the detection object | IOC, IOA, IoPC, malware pattern, executable capability, AV signature, log behavior, network signature, or multi-event correlation |
+| 4 | Choose the rule language or representation | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, indicator list, hunt query, or more than one |
 | 5 | Write the rule or indicator record with metadata | Rule, owner, date, source, severity, references, ATT&CK tags, confidence, caveats |
 | 6 | Test against known bad and known good data | True positives, false positives, false negatives |
 | 7 | Tune the logic | Better selectors, exclusions, thresholds, scope limits |
 | 8 | Deploy and monitor | Alert quality, performance, case outcomes, suppression logic |
 | 9 | Review and retire stale logic | Updated references, modified date, rule status, expiry decision |
 
-## Choosing the Right Language or Indicator Type
+## Choosing the Right Language, Format, or Indicator Type
 
 | Need | Best choice | Reason |
 | --- | --- | --- |
 | Share behavior based detection across SIEMs | Sigma | Vendor neutral log detection format |
 | Detect malware family from binary patterns | YARA | Strong file, byte, string, and memory matching |
 | Correlate normalized events in Google SecOps | YARA-L | Native structured query and rule language for Google SecOps |
-| Detect exploit traffic or C2 on the network | Snort | Packet level IDS and IPS rule logic |
+| Detect exploit traffic or C2 on the network | Snort or Suricata | Packet and protocol level IDS/IPS rule logic |
+| Perform protocol-aware network security monitoring | Suricata | Rich network security monitoring and protocol parsing capabilities |
+| Identify malware capabilities in executable files | capa | Capability-focused rules support reverse engineering and triage |
+| Create text-based AV signatures for file detection | ClamAV | Practical file and malware detection, including supported YARA use |
 | Share simple observed artifacts | IOC | Practical for blocking, enrichment, scoping, and retro-hunting |
 | Detect active adversary behavior | IOA | Captures behavior and attack sequence instead of only artifacts |
 | Detect AI workflow manipulation | IoPC | Focuses on prompt, context, tool-use, memory, output, and agent state evidence |
-| Build multi-layer detection for one campaign | Combine all relevant types | Covers logs, files, platform telemetry, network packets, artifacts, behaviors, and AI workflow evidence |
+| Build multi-layer detection for one campaign | Combine all relevant types | Covers logs, files, capabilities, platform telemetry, network packets, artifacts, behaviors, and AI workflow evidence |
 
 ## Quality Checklist
 
 | Control | Why it matters |
 | --- | --- |
 | State the detection objective | Prevents broad rules with unclear analytic value |
-| Separate IOC, IOA, IoPC, TTP, and attribution claims | Avoids treating a detection as actor proof |
+| Separate IOC, IOA, IoPC, TTP, malware capability, and attribution claims | Avoids treating a detection as actor proof |
 | Add source and reference metadata | Preserves traceability |
 | Record confidence and caveats | Supports responsible CTI reporting |
 | Include false positive notes | Improves SOC usability |
@@ -341,6 +485,7 @@ alert tcp any any -> $HOME_NET 80 (
 | Track rule status and modified date | Prevents stale detection logic |
 | Define owner and review cycle | Enables governance and lifecycle management |
 | Review performance impact | Reduces cost, latency, and alert fatigue |
+| Keep analytic logic separate from tool-specific syntax | Helps analysts translate detections across platforms |
 
 ## Detection and Attribution Caveats
 
@@ -350,6 +495,8 @@ alert tcp any any -> $HOME_NET 80 (
 | Infrastructure reuse | Shared, leased, or compromised systems can mislead analysts | Validate historical ownership, hosting, passive DNS, and certificate reuse |
 | IOC reuse or planting | Simple artifacts may be copied, purchased, spoofed, or deliberately planted | Treat IOCs as leads, not actor proof |
 | IOA overlap | Similar behavior may reflect common playbooks, public tools, or emulation | Validate sequence, timing, operational context, and telemetry quality |
+| Capability overlap | Malware capability similarity may reflect common libraries or commodity design | Compare implementation details, code lineage, configuration, and operational use |
+| AV signature ambiguity | File matches may identify a family or pattern but not the operator | Corroborate with reverse engineering, infrastructure, and incident context |
 | IoPC ambiguity | Prompt compromise may be confused with benign model error, user error, or unsafe design | Preserve logs and test whether manipulation affected tool use, data access, or output behavior |
 | False flags | Adversaries may plant strings, paths, language artifacts, copied code, or prompt artifacts | Use ACH, Devil's Advocacy, and independent corroboration |
 | Over-clustering | Similar rules may group unrelated activity | Require explicit cluster criteria and confidence levels |
@@ -360,9 +507,11 @@ alert tcp any any -> $HOME_NET 80 (
 
 | Layer | Rule or indicator type | Example output |
 | --- | --- | --- |
-| Network | Snort | Detect exploit attempt or C2 URI pattern |
+| Network IDS/IPS | Snort or Suricata | Detect exploit attempt, suspicious protocol behavior, or C2 URI pattern |
 | Endpoint and SIEM | Sigma | Detect process behavior, registry modification, or suspicious authentication |
-| Malware | YARA | Detect payload family or configuration pattern |
+| Malware pattern matching | YARA | Detect payload family or configuration pattern |
+| Executable capability analysis | capa | Identify persistence, injection, discovery, encryption, or C2 capabilities |
+| Antivirus signature detection | ClamAV | Detect known malicious file patterns or supported YARA signature matches |
 | Google SecOps correlation | YARA-L | Correlate endpoint, identity, and file hash events over time |
 | Indicator intelligence | IOC | Block or hunt for known malicious artifacts |
 | Behavior analytics | IOA | Hunt for active attack sequences and TTPs |
@@ -376,9 +525,9 @@ LLMs can assist with rule documentation, hypothesis generation, rule translation
 | Task | Safe LLM use |
 | --- | --- |
 | Rule documentation | Convert technical logic into SOC facing explanation |
-| Indicator classification | Separate IOC, IOA, IoPC, TTP, and attribution claims |
+| Indicator classification | Separate IOC, IOA, IoPC, TTP, malware capability, and attribution claims |
 | False positive analysis | Suggest benign explanations that analysts should test |
-| Cross language planning | Map the same detection idea into Sigma, YARA, YARA-L, Snort, IOC, IOA, and IoPC coverage concepts |
+| Cross language planning | Map the same detection idea into Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, and IoPC coverage concepts |
 | Peer review | Check whether rule or indicator logic matches the stated detection objective |
 | Attribution discipline | Separate detection finding from actor, sponsor, and intent claims |
 
@@ -387,9 +536,9 @@ LLMs can assist with rule documentation, hypothesis generation, rule translation
 | Field | Example |
 | --- | --- |
 | Detection name | Suspicious Example Activity |
-| Rule language or indicator type | Sigma, YARA, YARA-L, Snort, IOC, IOA, or IoPC |
-| Data source | Windows process creation, PE file, Google SecOps UDM event, HTTP packet, prompt log, tool-call log |
-| Detection objective | Identify behavior, artifact, malware family, AI workflow manipulation, or network activity associated with a specific technique |
+| Rule language, format, or indicator type | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, or IoPC |
+| Data source | Windows process creation, PE file, Google SecOps UDM event, HTTP packet, executable capability, AV signature, prompt log, tool-call log |
+| Detection objective | Identify behavior, artifact, malware family, executable capability, AI workflow manipulation, or network activity associated with a specific technique |
 | Source intelligence | Advisory, malware report, incident case, reverse engineering note, AI security review, prompt log analysis |
 | ATT&CK or AI security mapping | Technique, tactic, prompt injection class, or control mapping where appropriate |
 | Confidence | Low, moderate, or high based on validation and source quality |
@@ -399,19 +548,29 @@ LLMs can assist with rule documentation, hypothesis generation, rule translation
 
 ## References
 
+Cisco. (2026). *Snort: Network intrusion detection and prevention system*. https://www.snort.org/
+
+Cisco. (2026). *Snort 3 rule writing guide*. https://docs.snort.org/start/
+
+ClamAV. (n.d.). *Signatures*. ClamAV Documentation. Retrieved June 24, 2026, from https://docs.clamav.net/manual/Signatures.html
+
+ClamAV. (n.d.). *YARA rules*. ClamAV Documentation. Retrieved June 24, 2026, from https://docs.clamav.net/manual/Signatures/YaraRules.html
+
 Google Cloud. (2026). *Get started: YARA-L 2.0 in SecOps*. Google Cloud Documentation. https://docs.cloud.google.com/chronicle/docs/yara-l/getting-started
+
+Mandiant. (n.d.). *capa: The FLARE team's open-source tool to identify capabilities in executable files*. GitHub. Retrieved June 24, 2026, from https://github.com/mandiant/capa
+
+Mandiant. (n.d.). *capa-rules: Standard collection of rules for capa*. GitHub. Retrieved June 24, 2026, from https://github.com/mandiant/capa-rules
 
 MITRE. (n.d.). *MITRE ATT&CK*. Retrieved June 24, 2026, from https://attack.mitre.org/
 
 OASIS Cyber Threat Intelligence Technical Committee. (2021). *STIX version 2.1*. OASIS Standard. https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.html
 
+Open Information Security Foundation. (n.d.). *Rules format*. Suricata documentation. Retrieved June 24, 2026, from https://docs.suricata.io/en/latest/rules/intro.html
+
 OWASP Foundation. (2025). *OWASP top 10 for LLM applications 2025*. OWASP Gen AI Security Project. https://genai.owasp.org/llm-top-10/
 
 SigmaHQ. (2026). *Sigma: Generic signature format for SIEM systems*. GitHub. https://github.com/SigmaHQ/sigma
-
-Snort. (2026). *Snort: Network intrusion detection and prevention system*. Cisco. https://www.snort.org/
-
-Snort. (2026). *Snort 3 rule writing guide*. Cisco. https://docs.snort.org/start/
 
 VirusTotal. (n.d.). *YARA: The pattern matching swiss knife for malware researchers*. https://virustotal.github.io/yara/
 
