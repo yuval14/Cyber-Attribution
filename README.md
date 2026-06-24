@@ -13,6 +13,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 | Area | Focus |
 | --- | --- |
 | Cyber threat intelligence | CTI lifecycle, use cases, products, operating model, collection, processing, analysis, dissemination, and feedback |
+| Detection engineering | Sigma, YARA, YARA-L, Snort, detection rules, rule quality, telemetry coverage, and detection to attribution limits |
 | Cyber attribution frameworks | Analytical frameworks, workflows, confidence language, and reasoning discipline |
 | Influence operations attribution | Frameworks and workflows for Information Influence Operations (IIO) and FIMI analysis |
 | Investigation techniques | Structured analytic techniques, alternative hypotheses, challenge analysis, and pre-mortem review |
@@ -31,6 +32,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 └── Frameworks/
     ├── Cyber-Attribution-Books.md
     ├── Cyber-Attribution-Frameworks.md
+    ├── Detection-Rule-Languages.md
     ├── False-Flag-Cyber-Attribution.md
     ├── Incident-Response-Frameworks.md
     ├── Influence Operations-(IIO)-Attribution.md
@@ -47,6 +49,10 @@ Start here:
 For books and recommended reading:
 
 [Cyber Attribution Books](Frameworks/Cyber-Attribution-Books.md)
+
+For detection engineering rule languages and formats:
+
+[Detection Rule Languages](Frameworks/Detection-Rule-Languages.md)
 
 For false flag cyber attribution frameworks and mitigation techniques:
 
@@ -80,7 +86,7 @@ For structured investigation techniques:
 
 ## External reference anchors
 
-The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
+The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, detection engineering rule languages and formats, Sigma, YARA, YARA-L, Snort, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
 
 ## License
 
