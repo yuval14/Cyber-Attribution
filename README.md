@@ -48,17 +48,13 @@ The core principle is to separate evidence from assessment. Analysts should docu
 
 ## Main documents
 
-Start here:
-
-[Cyber Attribution Frameworks](Frameworks/Cyber-Attribution-Frameworks.md)
-
 For books and recommended reading:
 
 [Cyber Attribution Books](Frameworks/Cyber-Attribution-Books.md)
 
-For offensive planning, targeting frameworks, target prioritisation, and the integration of cyber effects into broader operations:
+For cyber attribution frameworks and core analytical methods:
 
-[Offensive Planning and Targeting Frameworks](Frameworks/Offensive-Planning-and-Targeting-Frameworks.md)
+[Cyber Attribution Frameworks](Frameworks/Cyber-Attribution-Frameworks.md)
 
 For defensive frameworks, countermeasure mapping, denial, deception, and adversary engagement:
 
@@ -68,17 +64,9 @@ For detection engineering rule languages, capability rule formats, antivirus sig
 
 [Detection Rule Languages](Frameworks/Detection-Rule-Languages.md)
 
-For vulnerability intelligence, prioritisation, weakness classes, product matching, open source vulnerability mapping, and attack patterns:
-
-[Vulnerability Intelligence Frameworks](Frameworks/Vulnerability-Intelligence-Frameworks.md)
-
 For false flag cyber attribution frameworks and mitigation techniques:
 
 [False Flag Cyber Attribution](Frameworks/False-Flag-Cyber-Attribution.md)
-
-For an introduction to cyber threat intelligence:
-
-[Intro to Cyber Threat Intelligence](Frameworks/Intro-to-Cyber-Threat-Intelligence.md)
 
 For incident response frameworks:
 
@@ -88,9 +76,21 @@ For information influence operations:
 
 [Influence Operations (IIO) Attribution](Frameworks/Influence%20Operations-%28IIO%29-Attribution.md)
 
+For an introduction to cyber threat intelligence:
+
+[Intro to Cyber Threat Intelligence](Frameworks/Intro-to-Cyber-Threat-Intelligence.md)
+
 For structured investigation techniques:
 
 [Investigation Techniques](Frameworks/Investigation-Techniques.md)
+
+For offensive planning, targeting frameworks, target prioritisation, and the integration of cyber effects into broader operations:
+
+[Offensive Planning and Targeting Frameworks](Frameworks/Offensive-Planning-and-Targeting-Frameworks.md)
+
+For vulnerability intelligence, prioritisation, weakness classes, product matching, open source vulnerability mapping, and attack patterns:
+
+[Vulnerability Intelligence Frameworks](Frameworks/Vulnerability-Intelligence-Frameworks.md)
 
 ## Analytical layers
 
