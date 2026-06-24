@@ -17,6 +17,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 | Defensive frameworks | MITRE D3FEND, MITRE Engage, ATT&CK-to-defense mapping, defensive countermeasures, denial, deception, adversary engagement, and control validation |
 | Vulnerability intelligence | KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, vulnerability prioritisation, weakness classes, attack patterns, exploit likelihood, product matching, open source vulnerability mapping, and exposure-driven remediation |
 | Cyber attribution frameworks | Analytical frameworks, workflows, confidence language, and reasoning discipline |
+| Offensive planning and targeting | High-level military, intelligence, and national-security planning frameworks used to understand targeting logic, prioritisation, and integration of cyber effects into broader operations |
 | Influence operations attribution | Frameworks and workflows for Information Influence Operations (IIO) and FIMI analysis |
 | Investigation techniques | Structured analytic techniques, alternative hypotheses, challenge analysis, and pre-mortem review |
 | Incident response frameworks | Incident response lifecycles, playbooks, CSIRT maturity, evidence preservation, and post incident learning |
@@ -41,6 +42,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
     ├── Influence Operations-(IIO)-Attribution.md
     ├── Intro-to-Cyber-Threat-Intelligence.md
     ├── Investigation-Techniques.md
+    ├── Offensive-Planning-and-Targeting-Frameworks.md
     └── Vulnerability-Intelligence-Frameworks.md
 ```
 
@@ -53,6 +55,10 @@ Start here:
 For books and recommended reading:
 
 [Cyber Attribution Books](Frameworks/Cyber-Attribution-Books.md)
+
+For offensive planning, targeting frameworks, target prioritisation, and the integration of cyber effects into broader operations:
+
+[Offensive Planning and Targeting Frameworks](Frameworks/Offensive-Planning-and-Targeting-Frameworks.md)
 
 For defensive frameworks, countermeasure mapping, denial, deception, and adversary engagement:
 
@@ -80,7 +86,7 @@ For incident response frameworks:
 
 For information influence operations:
 
-[Influence Operations (IIO) Attribution](Frameworks/Influence%20Operations-(IIO)-Attribution.md)
+[Influence Operations (IIO) Attribution](Frameworks/Influence%20Operations-%28IIO%29-Attribution.md)
 
 For structured investigation techniques:
 
@@ -98,7 +104,7 @@ For structured investigation techniques:
 
 ## External reference anchors
 
-The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, defensive frameworks, MITRE D3FEND, MITRE Engage, detection engineering rule languages and formats, Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
+The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, defensive frameworks, MITRE D3FEND, MITRE Engage, detection engineering rule languages and formats, Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, offensive planning and targeting frameworks, Joint Targeting Cycle, F2T2EA, F3EAD, CARVER, DIMEFIL, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
 
 ## License
 
