@@ -29,6 +29,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── README.md
 ├── LICENSE.md
 └── Frameworks/
+    ├── Cyber-Attribution-Books.md
     ├── Cyber-Attribution-Frameworks.md
     ├── False-Flag-Cyber-Attribution.md
     ├── Incident-Response-Frameworks.md
@@ -42,6 +43,10 @@ The core principle is to separate evidence from assessment. Analysts should docu
 Start here:
 
 [Cyber Attribution Frameworks](Frameworks/Cyber-Attribution-Frameworks.md)
+
+For books and recommended reading:
+
+[Cyber Attribution Books](Frameworks/Cyber-Attribution-Books.md)
 
 For false flag cyber attribution frameworks and mitigation techniques:
 
@@ -75,7 +80,7 @@ For structured investigation techniques:
 
 ## External reference anchors
 
-The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
+The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
 
 ## License
 
