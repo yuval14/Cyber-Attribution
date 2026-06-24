@@ -113,25 +113,34 @@ Retro-Hunting expands timelines, improves scoping, and can support attribution a
 
 The Pyramid of Pain is a practical model for prioritizing detection and hunting effort. It was originally introduced by **David J. Bianco (2013)**. The model explains that some indicators are easy for adversaries to change, while others impose much greater operational cost. For detection engineering, the implication is clear: lower-level indicators still matter, but mature programs should increasingly emphasize artifacts, tools, and TTPs that impose greater pain on the adversary.
 
-**Diagram adapted from the original concept by David J. Bianco (2013).**
+**Diagram adapted from the original Pyramid of Pain concept by David J. Bianco (2013), visually aligned to the common layered pyramid style.**
 
-```mermaid
-flowchart TB
-    A["TTPs<br/>Highest pain to the adversary<br/>Hardest to change"] --> B["Tools"]
-    B --> C["Network or Host Artifacts"]
-    C --> D["Domain Names"]
-    D --> E["IP Addresses"]
-    E --> F["Hash Values<br/>Lowest pain to the adversary<br/>Easiest to change"]
+```text
+                         ╱╲                                      Tough
+                        ╱  ╲
+                       ╱ TTPs ╲
+                      ╱────────╲
+                     ╱  Tools   ╲                                Challenging
+                    ╱────────────╲
+                   ╱ Network or   ╲                               Annoying
+                  ╱ Host Artifacts ╲
+                 ╱──────────────────╲
+                ╱   Domain Names     ╲                            Simple
+               ╱──────────────────────╲
+              ╱     IP Addresses       ╲                          Easy
+             ╱──────────────────────────╲
+            ╱       Hash Values          ╲                        Trivial
+           ╱──────────────────────────────╲
 ```
 
-| Pyramid level | Typical focus | Adversary adaptation cost | Detection implication |
+| Pyramid level | Typical focus | Pain to the adversary | Detection implication |
 | --- | --- | --- | --- |
-| Hash Values | Exact file hashes and binary matches | Very low | Fast for blocking and triage, but easy for adversaries to change |
-| IP Addresses | Source, destination, and C2 IPs | Low | Operationally useful, but infrastructure rotates easily |
-| Domain Names | Malicious domains and phishing hosts | Low to medium | More useful than IPs in some cases, but still replaceable |
-| Network or Host Artifacts | Mutexes, paths, URI patterns, protocol traits, registry keys | Medium | Useful for clustering, hunting, and campaign scoping |
-| Tools | Malware families, loaders, scripts, offensive utilities | High | Detecting tools forces meaningful adversary rework |
-| TTPs | Behaviors, procedures, and operational tradecraft | Very high | Usually the most valuable long-term detection focus |
+| Hash Values | Exact file hashes and binary matches | Trivial | Fast for blocking and triage, but easy for adversaries to change |
+| IP Addresses | Source, destination, and C2 IPs | Easy | Operationally useful, but infrastructure rotates easily |
+| Domain Names | Malicious domains and phishing hosts | Simple | More useful than IPs in some cases, but still replaceable |
+| Network or Host Artifacts | Mutexes, paths, URI patterns, protocol traits, registry keys | Annoying | Useful for clustering, hunting, and campaign scoping |
+| Tools | Malware families, loaders, scripts, offensive utilities | Challenging | Detecting tools forces meaningful adversary rework |
+| TTPs | Behaviors, procedures, and operational tradecraft | Tough | Usually the most valuable long-term detection focus |
 
 The Pyramid of Pain is a prioritization lens, not a replacement for operational blocking. Defenders should still use low-level indicators for rapid response, while building higher-level detections over time.
 
