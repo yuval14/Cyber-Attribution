@@ -11,6 +11,7 @@ The list focuses on books that help analysts understand how to evaluate evidence
 | Title | Author(s) | Year | Why It Matters |
 | --- | --- | --- | --- |
 | Attributing Cyber Attacks | Thomas Rid & Ben Buchanan (Editors) | 2016 | The most important book dedicated specifically to cyber attribution. Covers technical, intelligence, legal, and policy dimensions. |
+| Attribution of Advanced Persistent Threats: How to Identify the Actors Behind Cyber-Espionage | Timo Steffens | 2020 | Dedicated practitioner-oriented book on APT attribution, including technical indicators, malware, infrastructure, control servers, geopolitical analysis, false flags, group setup, and communication. |
 | The Hacker and the State | Ben Buchanan | 2020 | Comprehensive history of state cyber operations and attribution case studies. |
 | Cyber War Will Not Take Place | Thomas Rid | 2013 | Foundational discussion of cyber conflict, espionage, and attribution limitations. |
 | Active Measures | Thomas Rid | 2020 | Essential for understanding influence operations, deception, and attribution of information campaigns. |
@@ -51,6 +52,7 @@ The list focuses on books that help analysts understand how to evaluate evidence
 Recommended complementary reading:
 
 - Attributing Cyber Attacks
+- Attribution of Advanced Persistent Threats
 - Active Measures
 - Psychology of Intelligence Analysis
 - Structured Analytic Techniques for Intelligence Analysis
@@ -74,28 +76,33 @@ These works help analysts identify deception indicators, evaluate competing hypo
 ### Advanced
 
 7. Attributing Cyber Attacks
-8. The Hacker and the State
-9. Tallinn Manual 2.0
-10. Cyber Operations and International Law
+8. Attribution of Advanced Persistent Threats
+9. The Hacker and the State
+10. Tallinn Manual 2.0
+11. Cyber Operations and International Law
 
 ### Research and PhD Level
 
-11. Active Measures
-12. LikeWar
-13. Critical Thinking for Strategic Intelligence
-14. Cyber War Will Not Take Place
+12. Active Measures
+13. LikeWar
+14. Critical Thinking for Strategic Intelligence
+15. Cyber War Will Not Take Place
 
 ## Recommended Core Attribution Library
 
 If limited to five books:
 
 1. Attributing Cyber Attacks
-2. Psychology of Intelligence Analysis
-3. Structured Analytic Techniques for Intelligence Analysis
-4. The Hacker and the State
+2. Attribution of Advanced Persistent Threats
+3. Psychology of Intelligence Analysis
+4. Structured Analytic Techniques for Intelligence Analysis
 5. Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations
 
-These five books collectively cover technical attribution, intelligence analysis, confidence assessment, strategic context, and international law.
+These five books collectively cover technical attribution, APT investigation, intelligence analysis, confidence assessment, strategic context, and international law.
+
+## APA 7 References
+
+Steffens, T. (2020). _Attribution of Advanced Persistent Threats: How to Identify the Actors Behind Cyber-Espionage_. Springer Vieweg. https://doi.org/10.1007/978-3-662-61313-9
 
 ## Notes
 
