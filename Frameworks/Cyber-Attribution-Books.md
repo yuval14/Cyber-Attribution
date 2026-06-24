@@ -14,6 +14,7 @@ Tables are sorted by release year from oldest to newest within each thematic sec
 | --- | --- | --- | ---: | --- |
 | Cyber War Will Not Take Place | Thomas Rid | Book | 2013 | Foundational discussion of cyber conflict, espionage, sabotage, and attribution limitations. |
 | Attributing Cyber Attacks | Thomas Rid & Ben Buchanan | Article | 2015 | Seminal article on cyber attribution as a layered technical, intelligence, strategic, and political problem. |
+| Strategies for Resolving the Cyber Attribution Challenge | Panayotis A. Yannakogeorgos | Book | 2017 | Focuses directly on the cyber attribution challenge and the strategic, policy, and operational difficulties of assigning responsibility. |
 | Active Measures | Thomas Rid | Book | 2020 | Essential for understanding influence operations, deception, and attribution of information campaigns. |
 | Attribution of Advanced Persistent Threats: How to Identify the Actors Behind Cyber-Espionage | Timo Steffens | Book | 2020 | Dedicated practitioner-oriented book on APT attribution, including technical indicators, malware, infrastructure, control servers, geopolitical analysis, false flags, group setup, and communication. |
 | The Hacker and the State | Ben Buchanan | Book | 2020 | Comprehensive history of state cyber operations and attribution case studies. |
@@ -35,11 +36,19 @@ Tables are sorted by release year from oldest to newest within each thematic sec
 | Practical Cyber Intelligence | Wilson Bautista | Book | 2018 | Practical CTI workflows and intelligence production. |
 | The Threat Intelligence Handbook | Recorded Future | Guide | 2019 | Practical guide to building and operating CTI programs. |
 
+## Technical, AI, and Authorship Attribution
+
+| Title | Author(s) | Type | Release year | Why It Matters |
+| --- | --- | --- | ---: | --- |
+| Authorship Attribution | Patrick Juola | Book | 2008 | Useful for understanding stylometry, linguistic fingerprints, and authorship methods that may support analysis of malware comments, documents, online personas, source code, or influence-operation content. |
+| Artificial Intelligence Tools for Cyber Attribution | Eric Nunes, Paulo Shakarian, & Gerardo I. Simari | Book | 2018 | Applies AI, argumentation, and formal reasoning concepts to cyber attribution, including how analysts can reason with incomplete, conflicting, or deceptive evidence. |
+
 ## International Law and State Responsibility
 
 | Title | Author(s) | Type | Release year | Why It Matters |
 | --- | --- | --- | ---: | --- |
 | Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations | Michael N. Schmitt (Editor) | Book | 2017 | Essential reference for state attribution and state responsibility. |
+| Attribution of Responsibility for Malicious Cyber Attacks in International Law | Author not verified from supplied Amazon link | Book | 2019 | Relevant to legal attribution, state responsibility, malicious cyber operations, and the evidentiary challenge of connecting cyber activity to responsible actors. |
 | Cyber Operations and International Law | François Delerue | Book | 2020 | Detailed treatment of attribution under international law. |
 
 ## Influence Operations and Hybrid Attribution
@@ -54,10 +63,13 @@ Tables are sorted by release year from oldest to newest within each thematic sec
 Recommended complementary reading, ordered by release year:
 
 1. Psychology of Intelligence Analysis (1999)
-2. Structured Analytic Techniques for Intelligence Analysis (2010)
-3. Attributing Cyber Attacks (2015)
-4. Active Measures (2020)
-5. Attribution of Advanced Persistent Threats (2020)
+2. Authorship Attribution (2008)
+3. Structured Analytic Techniques for Intelligence Analysis (2010)
+4. Attributing Cyber Attacks (2015)
+5. Strategies for Resolving the Cyber Attribution Challenge (2017)
+6. Artificial Intelligence Tools for Cyber Attribution (2018)
+7. Active Measures (2020)
+8. Attribution of Advanced Persistent Threats (2020)
 
 These works help analysts identify deception indicators, evaluate competing hypotheses, and reduce the risk of misattribution.
 
@@ -76,21 +88,25 @@ The reading path is ordered by learning progression rather than release year.
 4. Intelligence-Driven Incident Response
 5. Psychology of Intelligence Analysis
 6. Structured Analytic Techniques for Intelligence Analysis
+7. Strategies for Resolving the Cyber Attribution Challenge
 
 ### Advanced
 
-7. Attributing Cyber Attacks
-8. Attribution of Advanced Persistent Threats
-9. The Hacker and the State
-10. Tallinn Manual 2.0
-11. Cyber Operations and International Law
+8. Attributing Cyber Attacks
+9. Artificial Intelligence Tools for Cyber Attribution
+10. Attribution of Advanced Persistent Threats
+11. The Hacker and the State
+12. Tallinn Manual 2.0
+13. Cyber Operations and International Law
+14. Attribution of Responsibility for Malicious Cyber Attacks in International Law
 
 ### Research and PhD Level
 
-12. Active Measures
-13. LikeWar
-14. Critical Thinking for Strategic Intelligence
-15. Cyber War Will Not Take Place
+15. Authorship Attribution
+16. Active Measures
+17. LikeWar
+18. Critical Thinking for Strategic Intelligence
+19. Cyber War Will Not Take Place
 
 ## Recommended Core Attribution Library
 
@@ -106,6 +122,8 @@ These five works collectively cover technical attribution, APT investigation, in
 
 ## APA 7 References
 
+Attribution of responsibility for malicious cyber attacks in international law. (2019). *Amazon Digital Services*.
+
 Buchanan, B. (2020). _The hacker and the state: Cyber attacks and the new normal of geopolitics_. Harvard University Press.
 
 Delerue, F. (2020). _Cyber operations and international law_. Cambridge University Press.
@@ -113,6 +131,10 @@ Delerue, F. (2020). _Cyber operations and international law_. Cambridge Universi
 Heuer, R. J., Jr. (1999). _Psychology of intelligence analysis_. Center for the Study of Intelligence, Central Intelligence Agency.
 
 Heuer, R. J., Jr., & Pherson, R. H. (2010). _Structured analytic techniques for intelligence analysis_. CQ Press.
+
+Juola, P. (2008). _Authorship attribution_. Now Publishers.
+
+Nunes, E., Shakarian, P., & Simari, G. I. (2018). _Artificial intelligence tools for cyber attribution_. Springer.
 
 Pherson, K. H., & Pherson, R. H. (2013). _Critical thinking for strategic intelligence_. CQ Press.
 
@@ -132,6 +154,10 @@ Singer, P. W., & Brooking, E. T. (2018). _LikeWar: The weaponization of social m
 
 Steffens, T. (2020). _Attribution of Advanced Persistent Threats: How to Identify the Actors Behind Cyber-Espionage_. Springer Vieweg. https://doi.org/10.1007/978-3-662-61313-9
 
+Yannakogeorgos, P. A. (2017). _Strategies for resolving the cyber attribution challenge_. Air University Press.
+
 ## Notes
 
 No single book provides a complete cyber attribution methodology. Effective attribution requires combining cyber threat intelligence, intelligence analysis, incident response, legal analysis, geopolitical context, and confidence assessment frameworks.
+
+The entry *Attribution of Responsibility for Malicious Cyber Attacks in International Law* was added from the supplied Amazon URL. The author could not be independently verified from accessible search results at the time of update and should be checked before using the APA reference in academic work.
