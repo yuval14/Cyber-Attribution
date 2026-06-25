@@ -35,6 +35,7 @@ Tables are sorted by release year from oldest to newest within each thematic sec
 | Intelligence-Driven Incident Response | Scott J. Roberts & Rebekah Brown | Book | 2017 | Connects incident response, CTI, and attribution evidence. |
 | Practical Cyber Intelligence | Wilson Bautista | Book | 2018 | Practical CTI workflows and intelligence production. |
 | The Threat Intelligence Handbook | Recorded Future | Guide | 2019 | Practical guide to building and operating CTI programs. |
+| Practical Threat Intelligence and Data-Driven Threat Hunting: A Hands-on Guide to Threat Hunting with the ATT&CK Framework and Open Source Tools | Valentina Costa-Gazcón | Book | 2021 | Practical CTI and threat hunting reference that connects intelligence requirements, ATT&CK-based analysis, open source tooling, and data-driven hunting workflows. |
 | Visual Threat Intelligence: An Illustrated Guide for Threat Researchers | Thomas Roccia | Book | 2023 | Visual, practitioner-oriented CTI reference that helps analysts communicate threat intelligence concepts, adversary behavior, and research findings through structured illustrations. |
 
 ## Technical, AI, and Authorship Attribution
@@ -87,28 +88,29 @@ The reading path is ordered by learning progression rather than release year.
 
 ### Intermediate
 
-5. Intelligence-Driven Incident Response
-6. Psychology of Intelligence Analysis
-7. Structured Analytic Techniques for Intelligence Analysis
-8. Strategies for Resolving the Cyber Attribution Challenge
+5. Practical Threat Intelligence and Data-Driven Threat Hunting
+6. Intelligence-Driven Incident Response
+7. Psychology of Intelligence Analysis
+8. Structured Analytic Techniques for Intelligence Analysis
+9. Strategies for Resolving the Cyber Attribution Challenge
 
 ### Advanced
 
-9. Attributing Cyber Attacks
-10. Artificial Intelligence Tools for Cyber Attribution
-11. Attribution of Advanced Persistent Threats
-12. The Hacker and the State
-13. Tallinn Manual 2.0
-14. Cyber Operations and International Law
-15. Attribution of Responsibility for Malicious Cyber Attacks in International Law
+10. Attributing Cyber Attacks
+11. Artificial Intelligence Tools for Cyber Attribution
+12. Attribution of Advanced Persistent Threats
+13. The Hacker and the State
+14. Tallinn Manual 2.0
+15. Cyber Operations and International Law
+16. Attribution of Responsibility for Malicious Cyber Attacks in International Law
 
 ### Research and PhD Level
 
-16. Authorship Attribution
-17. Active Measures
-18. LikeWar
-19. Critical Thinking for Strategic Intelligence
-20. Cyber War Will Not Take Place
+17. Authorship Attribution
+18. Active Measures
+19. LikeWar
+20. Critical Thinking for Strategic Intelligence
+21. Cyber War Will Not Take Place
 
 ## Recommended Core Attribution Library
 
@@ -127,6 +129,8 @@ These five works collectively cover technical attribution, APT investigation, in
 Attribution of responsibility for malicious cyber attacks in international law. (2019). *Amazon Digital Services*.
 
 Buchanan, B. (2020). _The hacker and the state: Cyber attacks and the new normal of geopolitics_. Harvard University Press.
+
+Costa-Gazcón, V. (2021). _Practical threat intelligence and data-driven threat hunting: A hands-on guide to threat hunting with the ATT&CK Framework and open source tools_. Packt Publishing.
 
 Delerue, F. (2020). _Cyber operations and international law_. Cambridge University Press.
 
