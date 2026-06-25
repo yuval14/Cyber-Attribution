@@ -32,8 +32,9 @@ The core principle is to separate evidence from assessment. Analysts should docu
 .
 ├── README.md
 ├── LICENSE.md
+├── Books/
+│   └── Cyber-Attribution-Books.md
 └── Frameworks/
-    ├── Cyber-Attribution-Books.md
     ├── Cyber-Attribution-Frameworks.md
     ├── Defensive-Frameworks-and-Countermeasures.md
     ├── Detection-Rule-Languages.md
@@ -51,7 +52,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 
 For books and recommended reading:
 
-[Cyber Attribution Books](Frameworks/Cyber-Attribution-Books.md)
+[Cyber Attribution Books](Books/Cyber-Attribution-Books.md)
 
 For cyber attribution frameworks and core analytical methods:
 
