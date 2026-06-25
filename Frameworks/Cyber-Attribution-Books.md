@@ -35,6 +35,7 @@ Tables are sorted by release year from oldest to newest within each thematic sec
 | Intelligence-Driven Incident Response | Scott J. Roberts & Rebekah Brown | Book | 2017 | Connects incident response, CTI, and attribution evidence. |
 | Practical Cyber Intelligence | Wilson Bautista | Book | 2018 | Practical CTI workflows and intelligence production. |
 | The Threat Intelligence Handbook | Recorded Future | Guide | 2019 | Practical guide to building and operating CTI programs. |
+| Visual Threat Intelligence: An Illustrated Guide for Threat Researchers | Thomas Roccia | Book | 2023 | Visual, practitioner-oriented CTI reference that helps analysts communicate threat intelligence concepts, adversary behavior, and research findings through structured illustrations. |
 
 ## Technical, AI, and Authorship Attribution
 
@@ -82,31 +83,32 @@ The reading path is ordered by learning progression rather than release year.
 1. The Threat Intelligence Handbook
 2. Cyber Threat Intelligence
 3. Practical Cyber Intelligence
+4. Visual Threat Intelligence
 
 ### Intermediate
 
-4. Intelligence-Driven Incident Response
-5. Psychology of Intelligence Analysis
-6. Structured Analytic Techniques for Intelligence Analysis
-7. Strategies for Resolving the Cyber Attribution Challenge
+5. Intelligence-Driven Incident Response
+6. Psychology of Intelligence Analysis
+7. Structured Analytic Techniques for Intelligence Analysis
+8. Strategies for Resolving the Cyber Attribution Challenge
 
 ### Advanced
 
-8. Attributing Cyber Attacks
-9. Artificial Intelligence Tools for Cyber Attribution
-10. Attribution of Advanced Persistent Threats
-11. The Hacker and the State
-12. Tallinn Manual 2.0
-13. Cyber Operations and International Law
-14. Attribution of Responsibility for Malicious Cyber Attacks in International Law
+9. Attributing Cyber Attacks
+10. Artificial Intelligence Tools for Cyber Attribution
+11. Attribution of Advanced Persistent Threats
+12. The Hacker and the State
+13. Tallinn Manual 2.0
+14. Cyber Operations and International Law
+15. Attribution of Responsibility for Malicious Cyber Attacks in International Law
 
 ### Research and PhD Level
 
-15. Authorship Attribution
-16. Active Measures
-17. LikeWar
-18. Critical Thinking for Strategic Intelligence
-19. Cyber War Will Not Take Place
+16. Authorship Attribution
+17. Active Measures
+18. LikeWar
+19. Critical Thinking for Strategic Intelligence
+20. Cyber War Will Not Take Place
 
 ## Recommended Core Attribution Library
 
@@ -147,6 +149,8 @@ Rid, T. (2020). _Active measures: The secret history of disinformation and polit
 Rid, T., & Buchanan, B. (2015). Attributing cyber attacks. _Journal of Strategic Studies, 38_(1-2), 4-37. https://doi.org/10.1080/01402390.2014.977382
 
 Roberts, S. J., & Brown, R. (2017). _Intelligence-driven incident response: Outwitting the adversary_. O'Reilly Media.
+
+Roccia, T. (2023). _Visual threat intelligence: An illustrated guide for threat researchers_. SecurityBreak.
 
 Schmitt, M. N. (Ed.). (2017). _Tallinn manual 2.0 on the international law applicable to cyber operations_. Cambridge University Press.
 
