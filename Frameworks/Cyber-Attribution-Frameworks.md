@@ -32,7 +32,7 @@ This document lists common frameworks for cyber attribution, divided into academ
 | 24 | A Framework for Cyberwarfare Attribution Techniques | 2024 | Noor, M., Sithungu, S., & Lebea, K. (2024, February). A framework for cyberwarfare attribution techniques. In *International Congress on Information and Communication Technology* (pp. 407–417). Springer Nature Singapore. |
 | 25 | Framework for Comparative Attribution | 2025 | PricewaterhouseCoopers. (2025, June 20). *How we analyse, compare, and integrate multiple threat actor attribution assessments*. https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/threat-intelligence-comparative-attribution.html |
 | 26 | The FACT Attribution Framework | 2025 | Shavers, B. (2025). *The FACT Attribution Framework v1.0*. https://doi.org/10.5281/ZENODO.17745959 |
-| 27 | HexAttribution Model | 2026 | Citation verification pending. Candidate academic framework reportedly focused on multidimensional cyber attribution, including technical evidence, behavioral patterns, intent, geopolitical context, evidence reliability, and explicit uncertainty. Do not rely on this entry for academic citation until the primary publication is verified. |
+| 27 | HexAttribution Model | 2026 | Szulcsányi, V., & Magyar, S. (2026). A comparative analysis of threat models in the context of cyber threat attribution. *International Journal of Information Security, 25*, Article 105. https://doi.org/10.1007/s10207-026-01272-8 |
 
 **Table 1. Frameworks for Cyber Attribution: Academic Research**
 
