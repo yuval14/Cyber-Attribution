@@ -13,7 +13,8 @@ The core principle is to separate evidence from assessment. Analysts should docu
 | Area | Focus |
 | --- | --- |
 | Cyber threat intelligence | CTI lifecycle, use cases, products, operating model, collection, processing, analysis, dissemination, and feedback |
-| Detection engineering | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, detection rules, machine learning assisted threat hunting, capability rules, antivirus signatures, indicator types, rule quality, telemetry coverage, and detection to attribution limits |
+| Detection engineering | Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, detection rules, capability rules, antivirus signatures, indicator types, rule quality, telemetry coverage, and detection to attribution limits |
+| Threat hunting and machine learning | Machine learning assisted threat hunting, algorithm selection, anomaly detection, clustering, feature engineering, analyst validation, and retro-hunting workflows |
 | Defensive frameworks | MITRE D3FEND, MITRE Engage, ATT&CK-to-defense mapping, defensive countermeasures, denial, deception, adversary engagement, and control validation |
 | Vulnerability intelligence | KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, vulnerability prioritisation, weakness classes, attack patterns, exploit likelihood, product matching, open source vulnerability mapping, and exposure-driven remediation |
 | Cyber attribution frameworks | Analytical frameworks, workflows, confidence language, and reasoning discipline |
@@ -34,18 +35,19 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── LICENSE.md
 ├── Books/
 │   └── Cyber-Attribution-Books.md
-└── Frameworks/
-    ├── Cyber-Attribution-Frameworks.md
-    ├── Defensive-Frameworks-and-Countermeasures.md
-    ├── Detection-Rule-Languages.md
-    ├── False-Flag-Cyber-Attribution.md
-    ├── Incident-Response-Frameworks.md
-    ├── Influence Operations-(IIO)-Attribution.md
-    ├── Intro-to-Cyber-Threat-Intelligence.md
-    ├── Investigation-Techniques.md
-    ├── Offensive-Planning-and-Targeting-Frameworks.md
-    ├── Threat-Hunting-Machine-Learning-Algorithms.md
-    └── Vulnerability-Intelligence-Frameworks.md
+├── Frameworks/
+│   ├── Cyber-Attribution-Frameworks.md
+│   ├── Defensive-Frameworks-and-Countermeasures.md
+│   ├── Detection-Rule-Languages.md
+│   ├── False-Flag-Cyber-Attribution.md
+│   ├── Incident-Response-Frameworks.md
+│   ├── Influence Operations-(IIO)-Attribution.md
+│   ├── Intro-to-Cyber-Threat-Intelligence.md
+│   ├── Investigation-Techniques.md
+│   ├── Offensive-Planning-and-Targeting-Frameworks.md
+│   └── Vulnerability-Intelligence-Frameworks.md
+└── Threat-Hunting/
+    └── Threat-Hunting-Machine-Learning-Algorithms.md
 ```
 
 ## Main documents
@@ -92,7 +94,7 @@ For offensive planning, targeting frameworks, target prioritisation, and the int
 
 For machine learning assisted threat hunting algorithms, feature engineering, validation, and analyst review safeguards:
 
-[Threat Hunting Machine Learning Algorithms](Frameworks/Threat-Hunting-Machine-Learning-Algorithms.md)
+[Threat Hunting Machine Learning Algorithms](Threat-Hunting/Threat-Hunting-Machine-Learning-Algorithms.md)
 
 For vulnerability intelligence, prioritisation, weakness classes, product matching, open source vulnerability mapping, and attack patterns:
 
