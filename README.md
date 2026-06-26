@@ -47,14 +47,14 @@ The core principle is to separate evidence from assessment. Analysts should docu
 │   ├── Offensive-Planning-and-Targeting-Frameworks.md
 │   └── Vulnerability-Intelligence-Frameworks.md
 ├── Images/
-│   └── Future-of-Cyber-Attribution.svg
+│   └── Future-of-Cyber-Attribution.png
 └── Threat-Hunting/
     └── Threat-Hunting-Machine-Learning-Algorithms.md
 ```
 
 ## Visual assets
 
-![The Future of Cyber Attribution](Images/Future-of-Cyber-Attribution.svg)
+![The Future of Cyber Attribution](Images/Future-of-Cyber-Attribution.png)
 
 ## Main documents
 
