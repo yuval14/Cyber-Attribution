@@ -43,8 +43,9 @@ This document lists common frameworks for cyber attribution, divided into academ
 | 2 | MITRE ATT&CK | 2013 | MITRE. (n.d.). *MITRE ATT&CK*. https://attack.mitre.org/ |
 | 3 | ATOMIC Framework | 2019 | Mandiant. (2019, March 12). *Going ATOMIC: Clustering and associating attacker activity at scale*. Google Cloud Blog. https://cloud.google.com/blog/topics/threat-intelligence/clustering-and-associating-attack-activity-at-scale |
 | 4 | Continuum of Cyber Threat Attribution | 2021 | Slowik, J. (2021). *Conceptualizing a continuum of cyber threat attribution*. DomainTools. https://www.domaintools.com/wp-content/uploads/conceptualizing-a-continuum-of-cyber-threat-attribution.pdf |
-| 5 | The Ultimate Guide to Cyber Threat Profiling | 2024 | Tidal Cyber. (2024). *The ultimate guide to cyber threat profiling*. https://www.tidalcyber.com/ultimate-guide-to-cyber-threat-profiling |
-| 6 | Unit 42’s Attribution Framework | 2025 | Unit 42. (2025, July 31). *Introducing Unit 42’s Attribution Framework*. Palo Alto Networks. https://unit42.paloaltonetworks.com/unit-42-attribution-framework/ |
-| 7 | TrendAI | 2026 | Hilt, S. (2026, February 12). *Threat Attribution Framework: How TrendAI applies structure over speculation*. Trend Micro. https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/threat-attribution-framework-how-trendai-applies-structure-over-speculation |
+| 5 | Unified Kill Chain (UKC) | 2023 | Pols, P. (2023). *The Unified Kill Chain*. Unified Kill Chain. https://www.unifiedkillchain.com/ |
+| 6 | The Ultimate Guide to Cyber Threat Profiling | 2024 | Tidal Cyber. (2024). *The ultimate guide to cyber threat profiling*. https://www.tidalcyber.com/ultimate-guide-to-cyber-threat-profiling |
+| 7 | Unit 42’s Attribution Framework | 2025 | Unit 42. (2025, July 31). *Introducing Unit 42’s Attribution Framework*. Palo Alto Networks. https://unit42.paloaltonetworks.com/unit-42-attribution-framework/ |
+| 8 | TrendAI | 2026 | Hilt, S. (2026, February 12). *Threat Attribution Framework: How TrendAI applies structure over speculation*. Trend Micro. https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/threat-attribution-framework-how-trendai-applies-structure-over-speculation |
 
 **Table 2. Frameworks for Cyber Attribution: Industry Research**
