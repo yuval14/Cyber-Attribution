@@ -37,7 +37,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── Books/
 │   └── Cyber-Attribution-Books.md
 ├── Cyber-Attack-Creativity/
-│   ├── Cyber-Attack-Creativity-Scoring-Model.svg
+│   ├── Criteria for Assessing the Creativity Level of Cyber Attacks v1.0.png
 │   └── README.md
 ├── Frameworks/
 │   ├── Cyber-Attribution-Frameworks.md
@@ -60,7 +60,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 
 ![The Future of Cyber Attribution](Images/Future-of-Cyber-Attribution.png)
 
-![Cyber Attack Creativity Scoring Model](Cyber-Attack-Creativity/Cyber-Attack-Creativity-Scoring-Model.svg)
+![Cyber Attack Creativity Scoring Model](Cyber-Attack-Creativity/Criteria%20for%20Assessing%20the%20Creativity%20Level%20of%20Cyber%20Attacks%20v1.0.png)
 
 ## Main documents
 
