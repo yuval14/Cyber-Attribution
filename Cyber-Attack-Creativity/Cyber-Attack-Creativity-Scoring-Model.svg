@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Criteria for Assessing the Creativity Level of Cyber Attacks</title>
+  <desc id="desc">A defender-oriented scoring model created by Yuval Sinay for assessing cyber attack creativity across six criteria and converting the result to a 1 to 100 scale.</desc>
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <rect x="40" y="40" width="1520" height="820" rx="24" fill="#f7f9fc" stroke="#0b2a66" stroke-width="3"/>
+  <text x="800" y="105" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" text-anchor="middle" fill="#0b2a66">Criteria for Assessing the Creativity Level of Cyber Attacks</text>
+  <text x="800" y="150" font-family="Arial, Helvetica, sans-serif" font-size="28" font-style="italic" text-anchor="middle" fill="#0b2a66">Author: Yuval Sinay</text>
+
+  <rect x="80" y="195" width="680" height="520" rx="16" fill="#ffffff" stroke="#9aa9c7" stroke-width="2"/>
+  <rect x="80" y="195" width="680" height="56" rx="16" fill="#0b2a66"/>
+  <text x="420" y="232" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#ffffff">Six Assessment Criteria</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#111827">
+    <circle cx="125" cy="300" r="22" fill="#1d5fd3"/><text x="125" y="309" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">1</text><text x="165" y="309" font-weight="700" fill="#1d5fd3">Attacking Novelty</text>
+    <circle cx="125" cy="365" r="22" fill="#128b45"/><text x="125" y="374" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">2</text><text x="165" y="374" font-weight="700" fill="#128b45">Trust Exploitation</text>
+    <circle cx="125" cy="430" r="22" fill="#6b2dbd"/><text x="125" y="439" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">3</text><text x="165" y="439" font-weight="700" fill="#6b2dbd">Cross-Domain Integration</text>
+    <circle cx="125" cy="495" r="22" fill="#d93016"/><text x="125" y="504" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">4</text><text x="165" y="504" font-weight="700" fill="#d93016">Concealment and Deception</text>
+    <circle cx="125" cy="560" r="22" fill="#009c9c"/><text x="125" y="569" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">5</text><text x="165" y="569" font-weight="700" fill="#009c9c">Operational Planning</text>
+    <circle cx="125" cy="625" r="22" fill="#d89a00"/><text x="125" y="634" font-size="24" font-weight="700" text-anchor="middle" fill="#fff">6</text><text x="165" y="634" font-weight="700" fill="#d89a00">Paradigm Shift</text>
+  </g>
+  <text x="420" y="690" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#0b2a66">Each criterion is scored from 1 to 5. Total raw score: 6 to 30.</text>
+
+  <rect x="820" y="195" width="700" height="520" rx="16" fill="#ffffff" stroke="#9aa9c7" stroke-width="2"/>
+  <rect x="820" y="195" width="700" height="56" rx="16" fill="#0b2a66"/>
+  <text x="1170" y="232" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#ffffff">Creativity Score Scale</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24">
+    <rect x="865" y="285" width="610" height="62" rx="8" fill="#eef5ff"/><text x="935" y="324" font-weight="700" fill="#1d5fd3">1 to 20</text><text x="1100" y="324" font-weight="700" fill="#1d5fd3">Very Low Creativity</text>
+    <rect x="865" y="360" width="610" height="62" rx="8" fill="#eefaf1"/><text x="935" y="399" font-weight="700" fill="#128b45">21 to 40</text><text x="1100" y="399" font-weight="700" fill="#128b45">Low Creativity</text>
+    <rect x="865" y="435" width="610" height="62" rx="8" fill="#fff5ec"/><text x="935" y="474" font-weight="700" fill="#f06b16">41 to 60</text><text x="1100" y="474" font-weight="700" fill="#f06b16">Moderate Creativity</text>
+    <rect x="865" y="510" width="610" height="62" rx="8" fill="#fff0f0"/><text x="935" y="549" font-weight="700" fill="#d93016">61 to 80</text><text x="1100" y="549" font-weight="700" fill="#d93016">High Creativity</text>
+    <rect x="865" y="585" width="610" height="62" rx="8" fill="#f3eeff"/><text x="935" y="624" font-weight="700" fill="#3f1eb1">81 to 100</text><text x="1100" y="624" font-weight="700" fill="#3f1eb1">Exceptional / Strategic Creativity</text>
+  </g>
+  <text x="1170" y="690" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#0b2a66">Score100 = 1 + ((S − 6) / 24) × 99</text>
+
+  <rect x="130" y="750" width="1340" height="70" rx="14" fill="#0b2a66"/>
+  <text x="800" y="794" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#ffffff">Defender Use: prioritize hunting, detection engineering, trust-path validation, incident escalation, and lessons learned.</text>
+</svg>
