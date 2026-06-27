@@ -4,7 +4,7 @@
 **Repository area:** Cyber attack creativity assessment  
 **Purpose:** Provide a structured defender-oriented model for assessing how creative, novel, and strategically meaningful a cyber attack is.
 
-![Cyber Attack Creativity Scoring Model](Cyber-Attack-Creativity-Scoring-Model.svg)
+![Cyber Attack Creativity Scoring Model](Criteria for Assessing the Creativity Level of Cyber Attacks v1.0.png)
 
 ## Why this model matters for defenders
 
