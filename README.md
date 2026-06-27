@@ -18,6 +18,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 | Defensive frameworks | MITRE D3FEND, MITRE Engage, ATT&CK-to-defense mapping, defensive countermeasures, denial, deception, adversary engagement, and control validation |
 | Vulnerability intelligence | KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, vulnerability prioritisation, weakness classes, attack patterns, exploit likelihood, product matching, open source vulnerability mapping, and exposure-driven remediation |
 | Cyber attribution frameworks | Analytical frameworks, workflows, confidence language, and reasoning discipline |
+| Cyber attack creativity assessment | Defender-oriented scoring of attack novelty, trust exploitation, cross-domain integration, deception, operational planning, and paradigm-shifting effects |
 | Offensive planning and targeting | High-level military, intelligence, and national-security planning frameworks used to understand targeting logic, prioritisation, and integration of cyber effects into broader operations |
 | Influence operations attribution | Frameworks and workflows for Information Influence Operations (IIO) and FIMI analysis |
 | Investigation techniques | Structured analytic techniques, alternative hypotheses, challenge analysis, and pre-mortem review |
@@ -35,6 +36,9 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── LICENSE.md
 ├── Books/
 │   └── Cyber-Attribution-Books.md
+├── Cyber-Attack-Creativity/
+│   ├── Cyber-Attack-Creativity-Scoring-Model.svg
+│   └── README.md
 ├── Frameworks/
 │   ├── Cyber-Attribution-Frameworks.md
 │   ├── Defensive-Frameworks-and-Countermeasures.md
@@ -56,6 +60,8 @@ The core principle is to separate evidence from assessment. Analysts should docu
 
 ![The Future of Cyber Attribution](Images/Future-of-Cyber-Attribution.png)
 
+![Cyber Attack Creativity Scoring Model](Cyber-Attack-Creativity/Cyber-Attack-Creativity-Scoring-Model.svg)
+
 ## Main documents
 
 For books and recommended reading:
@@ -65,6 +71,10 @@ For books and recommended reading:
 For cyber attribution frameworks and core analytical methods:
 
 [Cyber Attribution Frameworks](Frameworks/Cyber-Attribution-Frameworks.md)
+
+For cyber attack creativity assessment and defender interpretation:
+
+[Criteria for Assessing the Creativity Level of Cyber Attacks](Cyber-Attack-Creativity/README.md)
 
 For defensive frameworks, countermeasure mapping, denial, deception, and adversary engagement:
 
@@ -118,7 +128,7 @@ For vulnerability intelligence, prioritisation, weakness classes, product matchi
 
 ## External reference anchors
 
-The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, defensive frameworks, MITRE D3FEND, MITRE Engage, detection engineering rule languages and formats, Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, machine learning assisted threat hunting, anomaly detection, clustering, classification, graph analytics, KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, offensive planning and targeting frameworks, Joint Targeting Cycle, F2T2EA, F3EAD, CARVER, DIMEFIL, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, and legal scholarship on state responsibility and public attribution.
+The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, defensive frameworks, MITRE D3FEND, MITRE Engage, detection engineering rule languages and formats, Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, machine learning assisted threat hunting, anomaly detection, clustering, classification, graph analytics, KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, offensive planning and targeting frameworks, Joint Targeting Cycle, F2T2EA, F3EAD, CARVER, DIMEFIL, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, cyber attack creativity assessment, defender-oriented creativity scoring, and legal scholarship on state responsibility and public attribution.
 
 ## License
 
