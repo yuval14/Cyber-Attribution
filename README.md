@@ -35,6 +35,11 @@ The core principle is to separate evidence from assessment. Analysts should docu
 .
 ├── README.md
 ├── LICENSE.md
+├── CITATION.cff
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── ROADMAP.md
+├── SECURITY.md
 ├── Books/
 │   └── Cyber-Attribution-Books.md
 ├── Cyber-Attack-Creativity/
@@ -132,9 +137,23 @@ For vulnerability intelligence, prioritisation, weakness classes, product matchi
 | Legal attribution | Can conduct be attributed to a state or legally responsible entity? | State responsibility assessment |
 | Policy attribution | How should the assessment support response? | Public attribution, diplomacy, sanctions, legal action, or defensive response |
 
+## Governance and contribution files
+
+| File | Purpose |
+| --- | --- |
+| [CITATION.cff](CITATION.cff) | Citation metadata for academic and professional reuse |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidance and quality expectations |
+| [SECURITY.md](SECURITY.md) | Security reporting and safe-content principles |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Professional conduct expectations |
+| [ROADMAP.md](ROADMAP.md) | Planned development priorities |
+
 ## External reference anchors
 
 The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, defensive frameworks, MITRE D3FEND, MITRE Engage, detection engineering rule languages and formats, Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, machine learning assisted threat hunting, anomaly detection, clustering, classification, graph analytics, AI-based cyber attribution, explainable AI, human-in-the-loop attribution, trustworthy AI, KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, offensive planning and targeting frameworks, Joint Targeting Cycle, F2T2EA, F3EAD, CARVER, DIMEFIL, structured analytic techniques, MITRE ATT&CK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, cyber attack creativity assessment, defender-oriented creativity scoring, and legal scholarship on state responsibility and public attribution.
+
+## Citation
+
+Sinay, Y. (2026). *Cyber Attribution*. GitHub. https://github.com/yuval14/Cyber-Attribution
 
 ## License
 
