@@ -31,9 +31,10 @@ This document lists common frameworks for cyber attribution, divided into academ
 | 23 | IPAttributor | 2024 | Xiang, X., Liu, H., Zeng, L., Zhang, H., & Gu, Z. (2024). IPAttributor: Cyber attacker attribution with threat intelligence-enriched intrusion data. *Mathematics, 12*(9), 1364. https://doi.org/10.3390/math12091364 |
 | 24 | Degrees of Cyber Attribution | 2024 | International Institute for Strategic Studies. (2024, September). *Cyber Power Matrix: Context and methodology*. https://www.iiss.org/globalassets/media-library---content--migration/files/research-papers/2024/10/cyber-methodology/the-iiss-cyber-power-matrix---context-and-methodology.pdf |
 | 25 | A Framework for Cyberwarfare Attribution Techniques | 2024 | Noor, M., Sithungu, S., & Lebea, K. (2024, February). A framework for cyberwarfare attribution techniques. In *International Congress on Information and Communication Technology* (pp. 407–417). Springer Nature Singapore. |
-| 26 | Framework for Comparative Attribution | 2025 | PricewaterhouseCoopers. (2025, June 20). *How we analyse, compare, and integrate multiple threat actor attribution assessments*. https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/threat-intelligence-comparative-attribution.html |
-| 27 | The FACT Attribution Framework | 2025 | Shavers, B. (2025). *The FACT Attribution Framework v1.0*. https://doi.org/10.5281/ZENODO.17745959 |
-| 28 | HexAttribution Model | 2026 | Szulcsányi, V., & Magyar, S. (2026). A comparative analysis of threat models in the context of cyber threat attribution. *International Journal of Information Security, 25*, Article 105. https://doi.org/10.1007/s10207-026-01272-8 |
+| 26 | International Cyber Attribution Mechanism (ICAM) | 2024 | Efrony, D. (2024). Enhancing accountability in cyberspace through a three-tiered international governance regime. *International Law Studies, 103*. https://digital-commons.usnwc.edu/cgi/viewcontent.cgi?article=2922&context=ils |
+| 27 | Framework for Comparative Attribution | 2025 | PricewaterhouseCoopers. (2025, June 20). *How we analyse, compare, and integrate multiple threat actor attribution assessments*. https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/threat-intelligence-comparative-attribution.html |
+| 28 | The FACT Attribution Framework | 2025 | Shavers, B. (2025). *The FACT Attribution Framework v1.0*. https://doi.org/10.5281/ZENODO.17745959 |
+| 29 | HexAttribution Model | 2026 | Szulcsányi, V., & Magyar, S. (2026). A comparative analysis of threat models in the context of cyber threat attribution. *International Journal of Information Security, 25*, Article 105. https://doi.org/10.1007/s10207-026-01272-8 |
 
 **Table 1. Frameworks for Cyber Attribution: Academic Research**
 
