@@ -77,21 +77,13 @@ Attribution should not be treated as a single conclusion. It should be structure
 
 The following tables provide a reference map of common academic, practitioner, public sector, and industry frameworks that can support IIO attribution analysis.
 
-### Repository-Authored Framework
-
-| No. | Framework name | Publication year | Reference |
-| --- | --- | --- | --- |
-| 1 | [MOSAIC: Synthetic-Media Operation Attribution](MOSAIC-Synthetic-Media-Operation-Attribution.md) | 2026 | Sinay, Y. (2026). *MOSAIC: Synthetic-media operation attribution* [Analytical framework]. Cyber Attribution. |
-
-*Table 1. Repository-authored framework for synthetic-media operation attribution.*
-
 ### Academic Research
 
 | No. | Framework name | Publication year | Reference |
 | --- | --- | --- | --- |
 | 1 | Phase-based tactical analysis of online operations | 2023 | Nimmo, B., & Hutchins, E. (2023). *Phase-based tactical analysis of online operations*. Carnegie Endowment for International Peace. https://carnegieendowment.org/research/2023/03/phase-based-tactical-analysis-of-online-operations |
 
-*Table 2. Frameworks for Influence Operations (IIO) Attribution, Academic Research.*
+*Table 1. Frameworks for Influence Operations (IIO) Attribution, Academic Research.*
 
 ### Industry Research
 
@@ -109,7 +101,7 @@ The following tables provide a reference map of common academic, practitioner, p
 | 10 | FIMI Exposure Matrix: A Systematic Approach to Classifying and Attributing FIMI Infrastructure | 2025 | European External Action Service. (2025). *3rd EEAS report on foreign information manipulation and interference threats*. https://www.eeas.europa.eu/eeas/3rd-eeas-report-foreign-information-manipulation-and-interference-threats_en |
 | 11 | Information Influence Attribution Framework | 2026 | Dikhtiarenko, S., Heap, B., Pamment, J., & Smith, V. (2026). *Attributing Russian information influence operations: Testing the Information Influence Attribution Framework with real-world case studies* (53 pp.; ISBN 978-9934-619-68-7). NATO Strategic Communications Centre of Excellence. |
 
-*Table 3. Frameworks for Influence Operations (IIO) Attribution, Industry Research.*
+*Table 2. Frameworks for Influence Operations (IIO) Attribution, Industry Research.*
 
 ## Competing Hypotheses Template
 
