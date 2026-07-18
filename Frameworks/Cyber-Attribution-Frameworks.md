@@ -50,5 +50,6 @@ This document lists common frameworks for cyber attribution, divided into academ
 | 6 | The Ultimate Guide to Cyber Threat Profiling | 2024 | Tidal Cyber. (2024). *The ultimate guide to cyber threat profiling*. https://www.tidalcyber.com/ultimate-guide-cyber-threat-profiling |
 | 7 | Unit 42’s Attribution Framework | 2025 | Unit 42. (2025, July 31). *Introducing Unit 42’s Attribution Framework*. Palo Alto Networks. https://unit42.paloaltonetworks.com/unit-42-attribution-framework/ |
 | 8 | TrendAI | 2026 | Hilt, S. (2026, February 12). *Threat Attribution Framework: How TrendAI applies structure over speculation*. Trend Micro. https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/threat-attribution-framework-how-trendai-applies-structure-over-speculation |
+| 9 | MOSAIC: Synthetic-Media Operation Attribution | 2026 | Sinay, Y. (2026). *MOSAIC: Synthetic-media operation attribution* [Analytical framework]. |
 
 **Table 2. Frameworks for Cyber Attribution: Industry Research**
