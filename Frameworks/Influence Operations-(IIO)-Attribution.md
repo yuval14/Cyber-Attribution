@@ -100,6 +100,7 @@ The following tables provide a reference map of common academic, practitioner, p
 | 9 | A Framework for Attribution of Information Influence Operations | 2025 | Palmertz, B., Isaksson, E., & Pamment, J. (2025). *A framework for attribution of information influence operations*. Project Adac.io. https://adacio.eu/a-framework-for-attribution-of-information-influence-operations |
 | 10 | FIMI Exposure Matrix: A Systematic Approach to Classifying and Attributing FIMI Infrastructure | 2025 | European External Action Service. (2025). *3rd EEAS report on foreign information manipulation and interference threats*. https://www.eeas.europa.eu/eeas/3rd-eeas-report-foreign-information-manipulation-and-interference-threats_en |
 | 11 | Information Influence Attribution Framework | 2026 | Dikhtiarenko, S., Heap, B., Pamment, J., & Smith, V. (2026). *Attributing Russian information influence operations: Testing the Information Influence Attribution Framework with real-world case studies* (53 pp.; ISBN 978-9934-619-68-7). NATO Strategic Communications Centre of Excellence. |
+| 12 | MOSAIC: Synthetic-Media Operation Attribution | 2026 | Sinay, Y. (2026). *MOSAIC: Synthetic-media operation attribution* [Analytical framework]. |
 
 *Table 2. Frameworks for Influence Operations (IIO) Attribution, Industry Research.*
 
