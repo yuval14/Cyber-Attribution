@@ -52,7 +52,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 │   ├── Detection-Rule-Languages.md
 │   ├── False-Flag-Cyber-Attribution.md
 │   ├── Incident-Response-Frameworks.md
-│   ├── Influence Operations-(IIO)-Attribution.md
+│   ├── Influence-Operations-(IIO)-Attribution.md
 │   ├── Intro-to-Cyber-Threat-Intelligence.md
 │   ├── Investigation-Techniques.md
 │   ├── Offensive-Planning-and-Targeting-Frameworks.md
@@ -105,7 +105,7 @@ For incident response frameworks:
 
 For information influence operations:
 
-[Influence Operations (IIO) Attribution](Frameworks/Influence%20Operations-%28IIO%29-Attribution.md)
+[Influence Operations (IIO) Attribution](Frameworks/Influence-Operations-%28IIO%29-Attribution.md)
 
 For an introduction to cyber threat intelligence:
 
