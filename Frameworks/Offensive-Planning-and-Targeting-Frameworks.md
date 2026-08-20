@@ -12,7 +12,7 @@ The purpose of this page is educational and analytical. It supports cyber-attrib
 | NATO Joint Targeting Process | Alliance targeting governance and synchronization |
 | F2T2EA | Intelligence-driven targeting |
 | F3EAD | High-value target operations |
-| CARVER | Target prioritization |
+| CARVER | U.S. Army target-value and vulnerability assessment technique |
 | Target Systems Analysis | System-level target and dependency analysis |
 | JIPOE | Joint intelligence preparation of the operational environment |
 | PMESII-PT | Operational environment analysis |
@@ -42,7 +42,31 @@ F3EAD stands for Find, Fix, Finish, Exploit, Analyze, and Disseminate. It is com
 
 ### CARVER
 
-CARVER stands for Criticality, Accessibility, Recuperability, Vulnerability, Effect, and Recognizability. It is a target prioritization method used to compare potential targets according to operational relevance and expected impact. In a defensive or attribution context, CARVER can help explain why certain assets, sectors, or dependencies may be more attractive to an adversary.
+CARVER stands for **Criticality, Accessibility, Recuperability, Vulnerability, Effect, and Recognizability**. In U.S. Army doctrine it is identified as a target-assessment and target-value analysis technique. Historical U.S. Army Special Operations Forces doctrine also describes CARVER as a method used during target analysis, mission planning, and technical appreciation. More recent Army publications continue to reference it for target prioritization, critical-vulnerability analysis, threat-systems analysis, and protection assessment.
+
+The six criteria are:
+
+| Criterion | Defensive and Attribution Interpretation |
+|---|---|
+| Criticality | How important the asset, service, dependency, or function is to mission or strategic objectives. |
+| Accessibility | How reachable or exposed the asset is from the adversary's perspective, including technical, organizational, physical, or supply-chain access paths. |
+| Recuperability | How rapidly the defender can restore, replace, reconstitute, or work around the affected function. |
+| Vulnerability | Whether an adversary plausibly possesses the capability and opportunity to affect the target. |
+| Effect | The operational, strategic, economic, political, societal, or cascading consequences that could follow successful compromise or disruption. |
+| Recognizability | How easily an adversary can identify, classify, locate, or distinguish the target and confirm that an effect has occurred. |
+
+For cyber attribution, CARVER is most useful as a **hypothesis-generation and victimology framework**. It can help analysts ask why a particular organization, dependency, platform, cloud service, identity provider, telecommunications node, industrial control environment, or supply-chain component may have been selected. A target set that repeatedly concentrates on highly critical, difficult-to-recover, exposed, and readily identifiable assets may indicate deliberate prioritization rather than opportunistic scanning alone.
+
+CARVER can also support comparative analysis across incidents. Analysts may examine whether multiple victims share similar characteristics, whether the adversary appears to understand recovery dependencies, and whether target choice aligns with broader political or military timing. These patterns can strengthen an operational assessment when combined with malware, infrastructure, TTP, intelligence, geopolitical, and temporal evidence.
+
+CARVER should **not** be treated as proof of attribution. Many actors can independently prioritize attractive targets using similar logic. A CARVER-like pattern therefore provides contextual evidence about possible adversary planning and intent, but it does not identify an actor by itself. It should be used alongside alternative-hypothesis testing and confidence assessment.
+
+**U.S. Army references:**
+
+- Headquarters, Department of the Army. (2024). *FM 1-02.1, Operational Terms*. CARVER is defined as "criticality, accessibility, recuperability, vulnerability, effect, and recognizability" and identified as a target assessment technique.
+- Headquarters, Department of the Army. (2018). *ATP 3-13.1, The Conduct of Information Operations*. CARVER is described as a methodology for weighing and ranking six target criteria to support targeting and planning decisions.
+- Headquarters, Department of the Army. *ATP 2-01.3, Intelligence Preparation of the Battlefield/Battlespace*. CARVER is described as a target-value analysis tool used to identify and prioritize specific targets.
+- Headquarters, Department of the Army. *FM 34-36, Special Operations Forces Intelligence and Electronic Warfare Operations*, Appendix D. Historical Army SOF doctrine describes the CARVER target-analysis process and its use in mission planning and technical appreciation.
 
 ### Target Systems Analysis
 
