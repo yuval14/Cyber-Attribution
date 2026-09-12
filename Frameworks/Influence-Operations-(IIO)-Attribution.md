@@ -73,24 +73,113 @@ Attribution should not be treated as a single conclusion. It should be structure
 9. Document uncertainty and evidence gaps.
 10. State the attribution assessment clearly and proportionately.
 
-## Measuring Influence Operation Effectiveness
+## Influence Operation Impact and Effectiveness Assessment Models
 
-Attribution answers who is likely responsible for an operation. Effectiveness assessment addresses a different question: how far the operation's content escaped its originating ecosystem and what observable impact it achieved.
+Attribution answers who is likely responsible for an operation. Impact and effectiveness assessment address different questions: how far the operation spread, what observable effects it produced, whether it caused harm, whether it achieved strategic objectives, and whether defensive responses reduced its effectiveness.
+
+Analysts should avoid treating reach, engagement, virality, media pickup, or platform migration as automatic evidence of persuasion or strategic success. Observable dissemination should be separated from inferred cognitive, behavioral, policy, or strategic effects.
+
+### Comparative Model Overview
+
+| Model / Framework | Primary focus | Reach | Harm / Effect | Countermeasure effectiveness | Main analytical value |
+| --- | --- | --- | --- | --- | --- |
+| Breakout Scale | Observable spread and breakout | High | Limited to higher categories | No | Real-time categorization of how far an influence operation travels across communities, platforms, mainstream media, high-profile amplifiers, and policy/action domains |
+| Impact-Risk Index | Impact and risk indicators | High | Moderate | No | Combines virality, engagement, language, format, media, spreaders, calls to action, and potential offline effects |
+| Response-Impact Framework | Impact of defensive responses | Moderate | High | High | Assesses whether countermeasures improve awareness, reduce amplification or harm, enable attribution and action, and strengthen resilience |
+| ABCDE Framework | Actor, behavior, content, degree, effect | Moderate | High | Limited | Separates the degree of dissemination from effects such as polarization, institutional discrediting, public-health or safety risks, and security consequences |
+| DISARM | Adversary behavior, responses, and assessment | Moderate | High | Moderate | Connects campaign tactics and techniques with message reach, engagement, changes in knowledge, attitudes, behavior, and defensive measures |
+| CIB Detection Tree | Coordinated inauthentic behavior and impact | High | Limited to Moderate | No | Supports evaluation of outreach, interaction, target effects, and polarization alongside evidence of coordination |
+| NATO StratCom COE Capability Assessment Framework | Defender capability | Indirect | Indirect | High | Evaluates organizational capability to counter disinformation, information influence, and foreign interference rather than measuring one campaign's impact |
 
 ### The Breakout Scale
 
-Nimmo's Breakout Scale provides a six-category framework for assessing the impact of influence operations according to the extent to which content spreads beyond the community in which it originated. The framework is useful as a complementary assessment layer after attribution because it distinguishes the existence of an operation from its actual reach and impact.
+Nimmo's Breakout Scale is a six-category comparative model designed around observable, replicable, and verifiable evidence. It emphasizes the extent to which an influence operation moves beyond its originating platform and community.
 
-| Category | Impact level | Analytical interpretation |
+| Category | Observable threshold | Analytical interpretation |
 | --- | --- | --- |
-| Category 1 | Remains on one platform or within a narrow community | The operation is detected, but there is little evidence that it reached audiences beyond its original environment. |
-| Category 2 | Spreads across multiple platforms or communities | Content breaks out of the initial channel and gains broader online distribution, but remains largely within social or digital media ecosystems. |
-| Category 3 | Reaches mainstream or prominent amplification | Content is amplified by influential accounts, public figures, media outlets, or other actors capable of significantly expanding its audience. |
-| Category 4 | Generates public or political response | The operation contributes to public debate, institutional attention, political reaction, or other observable real-world response. |
-| Category 5 | Produces measurable behavioral or policy effects | The operation is associated with observable changes in behavior, decisions, institutional action, or policy-related outcomes. |
-| Category 6 | Produces sustained or strategic effects | The operation contributes to enduring strategic, societal, political, security, or institutional consequences beyond short-term amplification. |
+| Category 1 | One community on one platform | Activity remains contained within its original community and platform. |
+| Category 2 | One community across multiple platforms, or multiple communities on one platform | The operation breaks out in either platform or community terms, but not both. |
+| Category 3 | Multiple communities across multiple social-media platforms | The operation achieves broader cross-platform and cross-community dissemination. |
+| Category 4 | Mainstream-media amplification | The operation breaks out of social media and is amplified by mainstream media. |
+| Category 5 | Amplification by high-profile individuals | Celebrities, political candidates, senior public figures, or other highly visible actors substantially increase exposure. |
+| Category 6 | Policy response, concrete action, or call for violence | The operation generates the highest observable category of real-world consequence under the scale. |
 
-The scale should be applied cautiously. Reach, engagement, virality, and media coverage are not equivalent to persuasion or strategic success. Analysts should distinguish observable dissemination from inferred cognitive or behavioral effects and document the evidence supporting any higher-level impact assessment.
+The Breakout Scale is especially useful when analysts lack reliable evidence of audience persuasion. Its strength is the use of observable dissemination and amplification indicators rather than assumptions about psychological effect.
+
+### Impact-Risk Index
+
+The Impact-Risk Index is an impact-focused approach identified in comparative disinformation research. It places substantial weight on measurable reach and engagement indicators while also considering risk and potential harm.
+
+Suggested analytical indicators include:
+
+| Dimension | Examples |
+| --- | --- |
+| Virality | Speed and scale of redistribution |
+| Engagement | Reactions, comments, reposts, interaction intensity |
+| Language | Linguistic reach and cross-language dissemination |
+| Format | Text, image, video, synthetic media, meme, or mixed format |
+| Media | Movement across social, alternative, and mainstream media |
+| Spreaders | Influence and audience size of amplifying actors |
+| Call to action | Requests for mobilization, participation, disruption, or other action |
+| Offline effect | Evidence of activity or harm beyond the information environment |
+
+This model is useful for prioritization because a campaign with limited attribution confidence may still warrant attention if its impact-risk profile is high.
+
+### Response-Impact Framework
+
+The EU DisinfoLab Response-Impact Framework evaluates what happens after defenders respond to a campaign. It shifts the analytical question from "How successful was the influence operation?" to "What effect did the response have?"
+
+The framework organizes responses into five broad categories:
+
+1. Exposure-related responses.
+2. Community-engagement responses.
+3. Distribution-related responses.
+4. Infrastructure-related responses.
+5. Deterrence.
+
+Representative impact areas include increased situational awareness, reduced amplification, harm mitigation, attribution and action, resilience, and increased costs or reduced benefits for threat actors.
+
+This makes the framework complementary to the Breakout Scale: one measures observable campaign breakout, while the other helps assess whether defensive action constrained, disrupted, or mitigated the campaign.
+
+### ABCDE Framework
+
+The ABCDE approach separates five analytical components: Actor, Behavior, Content, Degree, and Effect. For effectiveness assessment, Degree and Effect are especially relevant.
+
+| Component | Measurement focus |
+| --- | --- |
+| Degree | Cross-platform dissemination, media pickup, multilingual amplification, and scale |
+| Effect | Polarization, institutional discrediting, public-health and safety risks, threats to fundamental freedoms, and security consequences |
+
+The distinction between Degree and Effect is useful because wide dissemination does not necessarily imply meaningful harm.
+
+### DISARM
+
+DISARM provides a structured representation of adversary behaviors and defensive measures across influence operations. For impact assessment, it can support monitoring of message reach and social-media engagement while also examining changes in audience knowledge, attitudes, or behavior.
+
+Its main advantage is operational integration: campaign techniques, observable effects, and countermeasures can be represented within a common analytical structure.
+
+### CIB Detection Tree
+
+The Coordinated Inauthentic Behavior Detection Tree is primarily designed to identify coordinated and deceptive behavior, but comparative impact research also associates it with impact indicators such as outreach, interaction, effects on targets, and polarization.
+
+It should therefore be treated as a supporting framework rather than as a standalone strategic-effectiveness model.
+
+### NATO StratCom COE Capability Assessment Framework
+
+Pamment's capability assessment framework addresses a different but complementary problem: whether an organization or national system possesses appropriate capabilities to counter disinformation, information influence, and foreign interference.
+
+It is not a campaign impact scale. Its value is in evaluating defender readiness, capability gaps, organizational design, and whether resources and processes support the desired level of counter-influence capability.
+
+### Integrated Four-Layer Effectiveness Model
+
+For cyber-attribution and information-influence analysis, the following four-layer structure can combine the strengths of the models above while maintaining a clear distinction between observable reach and inferred strategic effect.
+
+| Layer | Core question | Example indicators | Evidence caution |
+| --- | --- | --- | --- |
+| Exposure | Who was exposed? | Reach, impressions, views, audience penetration, communities reached | Exposure does not demonstrate persuasion. |
+| Amplification | How far did the content break out? | Cross-platform spread, mainstream-media pickup, influencers, high-profile amplifiers, multilingual spread | Amplification may be hostile, critical, or corrective rather than supportive. |
+| Effect | Did attitudes, behavior, trust, or institutional activity change? | Mobilization, behavioral change, trust erosion, polarization, institutional response, offline action | Causal attribution requires stronger evidence than correlation. |
+| Strategic Outcome | Did the operation materially advance an objective? | Policy change, operational disruption, deterrence, social destabilization, enduring narrative adoption, strategic decision effects | Strategic outcomes are usually multi-causal and should include confidence and alternative explanations. |
 
 ### Suggested Effectiveness Assessment Fields
 
@@ -105,11 +194,27 @@ The scale should be applied cautiously. Reach, engagement, virality, and media c
 | Behavioral effect | Is there credible evidence of changed behavior, mobilization, voting, purchasing, protest, or operational action? |
 | Policy effect | Did the operation contribute to an identifiable policy, diplomatic, military, regulatory, or organizational decision? |
 | Persistence | Did the narrative or effect persist after the initial campaign period? |
+| Defensive response | What countermeasures were taken and what observable consequences followed? |
+| Adversary adaptation | Did the actor modify infrastructure, narratives, TTPs, or distribution in response to countermeasures? |
 | Confidence | How strong is the evidence that the observed effect was caused or materially influenced by the operation? |
 
-### Reference
+### Assessment Principle
+
+A recommended analytical sequence is:
+
+**Exposure → Amplification → Effect → Strategic Outcome**
+
+The analyst should assign evidence and confidence separately at each layer. A campaign may have high exposure and amplification while producing little demonstrated behavioral or strategic effect. Conversely, a relatively narrow campaign may generate significant strategic consequences if it reaches a highly influential target audience or decision-making process.
+
+### References
 
 Nimmo, B. (2020). *The Breakout Scale: Measuring the impact of influence operations*. Brookings Institution. https://www.brookings.edu/articles/the-breakout-scale-measuring-the-impact-of-influence-operations/
+
+Pamment, J. (2022). *A capability definition and assessment framework for countering disinformation, information influence, and foreign interference*. NATO Strategic Communications Centre of Excellence. https://stratcomcoe.org/publications/a-capability-definition-and-assessment-framework-for-countering-disinformation-information-influence-and-foreign-interference/255
+
+Serrano, R. M., & Sessa, M. G. (2024, November 29). *Beyond disinformation countermeasures: Building a response-impact framework*. EU DisinfoLab. https://www.disinfo.eu/publications/beyond-disinformation-countermeasures-building-a-response-impact-framework/
+
+EU DisinfoLab. (2025). *Decoding disinformation impact frameworks and indicators: A comparative study*. https://www.disinfo.eu/publications/decoding-disinformation-impact-frameworks-and-indicators-a-comparative-study/
 
 ## Common Frameworks for Influence Operations (IIO) Attribution
 
