@@ -73,6 +73,44 @@ Attribution should not be treated as a single conclusion. It should be structure
 9. Document uncertainty and evidence gaps.
 10. State the attribution assessment clearly and proportionately.
 
+## Measuring Influence Operation Effectiveness
+
+Attribution answers who is likely responsible for an operation. Effectiveness assessment addresses a different question: how far the operation's content escaped its originating ecosystem and what observable impact it achieved.
+
+### The Breakout Scale
+
+Nimmo's Breakout Scale provides a six-category framework for assessing the impact of influence operations according to the extent to which content spreads beyond the community in which it originated. The framework is useful as a complementary assessment layer after attribution because it distinguishes the existence of an operation from its actual reach and impact.
+
+| Category | Impact level | Analytical interpretation |
+| --- | --- | --- |
+| Category 1 | Remains on one platform or within a narrow community | The operation is detected, but there is little evidence that it reached audiences beyond its original environment. |
+| Category 2 | Spreads across multiple platforms or communities | Content breaks out of the initial channel and gains broader online distribution, but remains largely within social or digital media ecosystems. |
+| Category 3 | Reaches mainstream or prominent amplification | Content is amplified by influential accounts, public figures, media outlets, or other actors capable of significantly expanding its audience. |
+| Category 4 | Generates public or political response | The operation contributes to public debate, institutional attention, political reaction, or other observable real-world response. |
+| Category 5 | Produces measurable behavioral or policy effects | The operation is associated with observable changes in behavior, decisions, institutional action, or policy-related outcomes. |
+| Category 6 | Produces sustained or strategic effects | The operation contributes to enduring strategic, societal, political, security, or institutional consequences beyond short-term amplification. |
+
+The scale should be applied cautiously. Reach, engagement, virality, and media coverage are not equivalent to persuasion or strategic success. Analysts should distinguish observable dissemination from inferred cognitive or behavioral effects and document the evidence supporting any higher-level impact assessment.
+
+### Suggested Effectiveness Assessment Fields
+
+| Field | Example question |
+| --- | --- |
+| Origin | Where did the narrative or content first appear? |
+| Cross-platform spread | Did it move beyond the original platform, group, or language community? |
+| Amplifiers | Which high-reach accounts, media organizations, public figures, or institutions amplified it? |
+| Audience reach | What evidence exists regarding exposure, impressions, views, or audience penetration? |
+| Engagement | Did the content generate meaningful interaction rather than passive exposure? |
+| Institutional response | Did governments, media, companies, civil society, or platforms respond? |
+| Behavioral effect | Is there credible evidence of changed behavior, mobilization, voting, purchasing, protest, or operational action? |
+| Policy effect | Did the operation contribute to an identifiable policy, diplomatic, military, regulatory, or organizational decision? |
+| Persistence | Did the narrative or effect persist after the initial campaign period? |
+| Confidence | How strong is the evidence that the observed effect was caused or materially influenced by the operation? |
+
+### Reference
+
+Nimmo, B. (2020). *The Breakout Scale: Measuring the impact of influence operations*. Brookings Institution. https://www.brookings.edu/articles/the-breakout-scale-measuring-the-impact-of-influence-operations/
+
 ## Common Frameworks for Influence Operations (IIO) Attribution
 
 The following tables provide a reference map of common academic, practitioner, public sector, and industry frameworks that can support IIO attribution analysis.
