@@ -260,6 +260,8 @@ CTI products used for attribution should include evidence quality, source reliab
 
 ## References
 
+CERT-EU. (2026). *Cyber Threat Intelligence Framework*. https://www.cert.europa.eu/publications/threat-intelligence/cyber-threat-intelligence-framework
+
 Caltagirone, S., Pendergast, A., & Betz, C. (2013). *The diamond model of intrusion analysis*. ThreatConnect.
 
 Home Office Cyber Security Programme. (2019). *Cyber threat intelligence: A guide for decision makers and analysts* (Version 2.0). UK Home Office. https://hodigital.blog.gov.uk/wp-content/uploads/sites/161/2020/03/Cyber-Threat-Intelligence-A-Guide-For-Decision-Makers-and-Analysts-v2.0.pdf
