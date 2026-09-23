@@ -158,6 +158,10 @@ For vulnerability intelligence, prioritisation, weakness classes, product matchi
 
 The repository links to external resources rather than copying their content. Key anchors include CTI lifecycle and capability guidance, defensive frameworks, MITRE D3FEND, MITRE Engage, detection engineering rule languages and formats, Sigma, YARA, YARA-L, Snort, Suricata, capa, ClamAV, IOC, IOA, IoPC, machine learning assisted threat hunting, anomaly detection, clustering, classification, graph analytics, AI-based cyber attribution, explainable AI, human-in-the-loop attribution, trustworthy AI, KEV, CVSS, EPSS, CWE, CAPEC, CPE, OSV, GSD, cyber attribution books and reading lists, ODNI cyber attribution guidance, the Diamond Model, offensive planning and targeting frameworks, Joint Targeting Cycle, F2T2EA, F3EAD, CARVER, DIMEFIL, structured analytic techniques, MITRE ATT&CK, CLOAK, Attack Flow, STIX 2.1, TAXII 2.1, FIRST TLP 2.0, IIO/FIMI attribution frameworks, false flag cyber attribution, incident response frameworks, CSIRT maturity guidance, CISA/NIST/ISO/ENISA/NCSC incident management guidance, cyber attack creativity assessment, defender-oriented creativity scoring, and legal scholarship on state responsibility and public attribution.
 
+## Additional CTI reference
+
+[CERT-EU Cyber Threat Intelligence Framework](https://www.cert.europa.eu/publications/threat-intelligence/cyber-threat-intelligence-framework)
+
 ## Citation
 
 Sinay, Y. (2026). *Cyber Attribution*. GitHub. https://github.com/yuval14/Cyber-Attribution
