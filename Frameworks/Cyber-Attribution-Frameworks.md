@@ -35,6 +35,7 @@ This document lists common frameworks for cyber attribution, divided into academ
 | 27 | Framework for Comparative Attribution | 2025 | PricewaterhouseCoopers. (2025, June 20). *How we analyse, compare, and integrate multiple threat actor attribution assessments*. https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/threat-intelligence-comparative-attribution.html |
 | 28 | The FACT Attribution Framework | 2025 | Shavers, B. (2025). *The FACT Attribution Framework v1.0*. https://doi.org/10.5281/ZENODO.17745959 |
 | 29 | HexAttribution Model | 2026 | Szulcsányi, V., & Magyar, S. (2026). A comparative analysis of threat models in the context of cyber threat attribution. *International Journal of Information Security, 25*, Article 105. https://doi.org/10.1007/s10207-026-01272-8 |
+| 30 | Operational Analytic Confidence Rubric | 2026 | Szewczyk, Z. (2026). Making analytic confidence visible: An operational rubric for cyber analysis. *The Cyber Defense Review, 11*(3). https://doi.org/10.55682/cdr/rm2g-74cw |
 
 **Table 1. Frameworks for Cyber Attribution: Academic Research**
 
