@@ -63,6 +63,30 @@ Recommended analytic adjustments:
 - Distinguish actor identity from actor style.
 - Add an explicit Synthetic APT or AI-assisted false flag hypothesis to ACH when the operation appears to match a known actor too neatly.
 
+
+## Strategic Identity Management: Incentive, Liability, and Claiming Credit
+
+Das and Pappa (2026) frame attribution and false flagging as part of **strategic identity management**. Their key contribution is to shift analysis from the defender-only question of "Who conducted the operation?" toward a second question: "Who does the operator want observers to believe conducted the operation, and why?"
+
+This perspective highlights a tradeoff between **incentive** and **liability**:
+
+- When the value of recognition is high, an actor may deliberately expose or signal identity to gain deterrent value, political effect, reputation, prestige, coercive leverage, or criminal-market credibility.
+- When the expected cost of identification is high, an actor may conceal identity, deny involvement, borrow another actor's identity, or create misleading technical and narrative indicators.
+- The same actor may therefore use different identity strategies across operations depending on mission objectives, expected consequences, and audience.
+
+For cyber attribution, this means that analyst-visible evidence may not merely be residue left by an operation. Some evidence may be **deliberately engineered as part of the operation's influence effect**.
+
+Recommended analytic questions:
+
+- Does the apparent actor have an incentive to be recognized?
+- What liability would attribution impose on the apparent actor?
+- Does the operation contain signals that appear designed for attribution rather than operational necessity?
+- Is the claimed or implied identity consistent with the operator's likely strategic objective?
+- Could the observed evidence represent identity manipulation, reputation borrowing, or a false flag?
+- Does public messaging align with the intrusion timeline, technical evidence, victimology, and operational behavior?
+
+This concept is especially important in AI-enabled operations. Generative AI can reduce the cost of producing convincing linguistic artifacts, code style, personas, propaganda, and synthetic behavioral cues that imitate another actor. Analysts should therefore distinguish **actor identity** from **actor style** and include adversarial manipulation of attribution evidence as an explicit hypothesis.
+
 ## False Flag Analysis Workflow
 
 ### 1. Preserve and Normalize Evidence
@@ -266,6 +290,9 @@ Palo Alto Networks Unit 42. (2025). _Introducing Unit 42's attribution framework
 Skopik, F., & Pahi, T. (2020). Under false flag: Using technical artifacts for cyber attack attribution. _Cybersecurity, 3_, Article 8. https://doi.org/10.1186/s42400-020-00048-4
 
 Synthetic APTs: The collapse of TTP-based attribution. (2026). _arXiv_. https://arxiv.org/pdf/2606.07158
+
+
+Das, M., & Pappa, T. (2026, September 18). Claiming the kill: Attribution and false-flagging in cyber offense. _Small Wars Journal_. https://smallwarsjournal.com/2026/09/18/claiming-the-kill-in-cyber-offense/
 
 ## Responsible Use Note
 
