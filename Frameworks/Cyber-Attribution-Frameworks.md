@@ -53,3 +53,11 @@ This document lists common frameworks for cyber attribution, divided into academ
 | 8 | TrendAI | 2026 | Hilt, S. (2026, February 12). *Threat Attribution Framework: How TrendAI applies structure over speculation*. Trend Micro. https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/threat-attribution-framework-how-trendai-applies-structure-over-speculation |
 
 **Table 2. Frameworks for Cyber Attribution: Industry Research**
+
+## Policy and Strategic Research
+
+| Framework / resource | Publication year | Reference |
+|---|---:|---|
+| Multilevel Cyber Deterrence Framework | 2026 | Hurel, L. M., & Mott, G. (2026, September). *Beyond "cyber" in deterrence: A multilevel framework*. Royal United Services Institute (RUSI), Insights Paper. [Publication page](https://www.rusi.org/explore-our-research/publications/insights-papers/beyond-cyber-deterrence-multilevel-framework). |
+
+This policy framework complements attribution models by showing how attribution can enable and legitimize coordinated, cross-domain responses. See the [framework summary](Multilevel-Cyber-Deterrence-Framework.md).
