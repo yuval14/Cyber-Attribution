@@ -56,6 +56,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 │   ├── False-Flag-Cyber-Attribution.md
 │   ├── Incident-Response-Frameworks.md
 │   ├── Multilevel-Cyber-Deterrence-Framework.md
+│   ├── Cyber-Deterrence-and-Attribution-References.md
 │   ├── Influence-Operations-(IIO)-Attribution.md
 │   ├── Intro-to-Cyber-Threat-Intelligence.md
 │   ├── Investigation-Techniques.md
@@ -86,6 +87,10 @@ For cyber attribution frameworks and core analytical methods:
 For cross-domain, whole-of-government cyber deterrence and the role of attribution in enabling coordinated responses:
 
 [Multilevel Cyber Deterrence Framework](Frameworks/Multilevel-Cyber-Deterrence-Framework.md)
+
+For annotated Oxford Academic, Springer Nature, and The Cyber Defense Review references on deterrence, attribution, response decisions, and military policy:
+
+[Cyber Deterrence and Attribution References](Frameworks/Cyber-Deterrence-and-Attribution-References.md)
 
 For adversary concealment, OpSec behavior, anonymity methods, anti-forensics, threat hunting, and concealment-based attribution:
 
