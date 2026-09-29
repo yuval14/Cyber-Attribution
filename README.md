@@ -128,6 +128,10 @@ For an introduction to cyber threat intelligence:
 
 [Intro to Cyber Threat Intelligence](Frameworks/Intro-to-Cyber-Threat-Intelligence.md)
 
+For a detailed comparison of source reliability, evidence quality, independent corroboration, analytic confidence, and the Operational Analytic Confidence Rubric:
+
+[Source and Evidence Evaluation](Frameworks/Source-and-Evidence-Evaluation.md)
+
 For structured investigation techniques:
 
 [Investigation Techniques](Frameworks/Investigation-Techniques.md)
