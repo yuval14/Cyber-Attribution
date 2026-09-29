@@ -35,6 +35,10 @@ Analysts should continuously look for human fingerprints that indicate adversary
 | Analysis and production | Apply SATs, evaluate competing explanations, assess confidence, and produce findings |
 | Dissemination | Deliver the assessment with confidence language, caveats, evidence gaps, and decision relevance |
 
+## Detailed Comparison of Evaluation Methods
+
+See [Source and Evidence Evaluation](Source-and-Evidence-Evaluation.md) for a comparative table of 18 methods, principles, standards, and attribution frameworks, including ICD 203, FIRST guidance, PwC, Unit 42, TrendAI, and the Operational Analytic Confidence Rubric. The comparison distinguishes source grading, evidence independence, reasoning checks, probability language, and confidence communication.
+
 ## Confidence Language and Source Evaluation
 
 Structured analysis should be paired with explicit confidence language and source evaluation. In cyber attribution, this prevents analysts from mixing four different questions: what the evidence says, how reliable the source is, how likely the analytic judgment is, and how much confidence analysts have in the assessment.
