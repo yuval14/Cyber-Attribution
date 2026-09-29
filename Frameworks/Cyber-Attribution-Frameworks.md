@@ -59,5 +59,10 @@ This document lists common frameworks for cyber attribution, divided into academ
 | Framework / resource | Publication year | Reference |
 |---|---:|---|
 | Multilevel Cyber Deterrence Framework | 2026 | Hurel, L. M., & Mott, G. (2026, September). *Beyond "cyber" in deterrence: A multilevel framework*. Royal United Services Institute (RUSI), Insights Paper. [Publication page](https://www.rusi.org/explore-our-research/publications/insights-papers/beyond-cyber-deterrence-multilevel-framework). |
+| Annotated references on cyber deterrence and attribution | 2015-2026 | [Cyber Deterrence and Attribution References](Cyber-Deterrence-and-Attribution-References.md) |
+| Cross-domain deterrence | 2020 | Sweijs, T., & Zilincik, S. (2020). The essence of cross-domain deterrence. In *Deterrence in the 21st century: Insights from theory and practice* (pp. 129-158). https://doi.org/10.1007/978-94-6265-419-8_8 |
+| Public attribution of cyber intrusions | 2020 | Egloff, F. J. (2020). Public attribution of cyber intrusions. *Journal of Cybersecurity, 6*(1), tyaa012. https://doi.org/10.1093/cybsec/tyaa012 |
+| Cyber response decision framework | 2024 | Leventopoulos, S., Pipyros, K., & Gritzalis, D. (2024). Retaliating against cyber-attacks: A decision-taking framework for policy-makers and enforcers of international and cybersecurity law. *International Cybersecurity Law Review, 5*, 237-262. https://doi.org/10.1365/s43439-024-00113-5 |
+| Disinformation deterrence and attribution politics | 2025 | Hedling, E., & Ördén, H. (2025). Disinformation, deterrence and the politics of attribution. *International Affairs, 101*(3), 967-986. https://doi.org/10.1093/ia/iiaf012 |
 
-This policy framework complements attribution models by showing how attribution can enable and legitimize coordinated, cross-domain responses. See the [framework summary](Multilevel-Cyber-Deterrence-Framework.md).
+These policy and academic sources complement attribution models by connecting attribution to deterrence, response selection, legal constraints, and military policy. See the [RUSI framework summary](Multilevel-Cyber-Deterrence-Framework.md) and the [annotated comparative references](Cyber-Deterrence-and-Attribution-References.md).
