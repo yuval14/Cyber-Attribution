@@ -225,10 +225,11 @@ The following tables provide a reference map of common academic, practitioner, p
 | No. | Framework name | Publication year | Reference |
 | --- | --- | --- | --- |
 | 1 | Phase-based tactical analysis of online operations | 2023 | Nimmo, B., & Hutchins, E. (2023). *Phase-based tactical analysis of online operations*. Carnegie Endowment for International Peace. https://carnegieendowment.org/research/2023/03/phase-based-tactical-analysis-of-online-operations |
+| 2 | Principal-Agent Model for Coordinated Social Media Manipulation (CSMM) Attribution | 2026 | Thiele, D., Milzner, M., Heft, A., Gong, B., & Pfetsch, B. (2026). Attributing coordinated social media manipulation: A theoretical model and typology. *New Media & Society, 28*(8). https://doi.org/10.1177/14614448251350100 |
 
 *Table 1. Frameworks for Influence Operations (IIO) Attribution, Academic Research.*
 
-### Industry Research
+### Industry, Public-Sector, and Practitioner Frameworks
 
 | No. | Framework name | Publication year | Reference |
 | --- | --- | --- | --- |
@@ -244,8 +245,18 @@ The following tables provide a reference map of common academic, practitioner, p
 | 10 | FIMI Exposure Matrix: A Systematic Approach to Classifying and Attributing FIMI Infrastructure | 2025 | European External Action Service. (2025). *3rd EEAS report on foreign information manipulation and interference threats*. https://www.eeas.europa.eu/eeas/3rd-eeas-report-foreign-information-manipulation-and-interference-threats_en |
 | 11 | Information Influence Attribution Framework | 2026 | Dikhtiarenko, S., Heap, B., Pamment, J., & Smith, V. (2026). *Attributing Russian information influence operations: Testing the Information Influence Attribution Framework with real-world case studies* (53 pp.; ISBN 978-9934-619-68-7). NATO Strategic Communications Centre of Excellence. |
 | 12 | Beyond Deepfake Detection: MOSAIC, a Confidence-Aware and Counter-Deception Framework for Synthetic-Media Operation Attribution | 2026 | Sinay, Y. (2026). Beyond deepfake detection: MOSAIC, a confidence-aware and counter-deception framework for synthetic-media operation attribution. In *Proceedings of the 2nd ACM Deepfake, Deception, and Disinformation Security Workshop (3D-Sec '26)*. Association for Computing Machinery. https://doi.org/10.1145/3843205.3845625 |
+| 13 | Attribution and Information Influence Operations: A Field Guide for Open-Source Investigators and Researchers | 2025 | Innes, M., & Ahonen, A. (2025). *Attribution and information influence operations: A field guide for open-source investigators and researchers* (Project Deliverable 1.1). ADAC.io, Psychological Defence Research Institute, Lund University. https://adacio.eu/attribution-and-information-influence-operations-a-field-guide-for-open-source-investigators-and-researchers |
+| 14 | Information Manipulation Set (IMS) Framework | 2026 | VIGINUM. (2026). *Information Manipulation Set (IMS) framework*. Endorsed by the G7 Rapid Response Mechanism and agreed with the EEAS. See Global Affairs Canada, G7 Rapid Response Mechanism (2026, May), *Position statement on a common understanding of the Information Manipulation Set (IMS) framework*. https://international.canada.ca/en/global-affairs/corporate/reports/rapid-response-mechanism/news/2026-05-g7-ims; and DFRLab (2026, January 15), *Building a common operational picture of FIMI: Using IMS to strengthen technical attribution and disruption*. https://dfrlab.org/2026/01/15/building-a-common-operational-picture-of-fimi/ |
 
-*Table 2. Frameworks for Influence Operations (IIO) Attribution, Industry Research.*
+*Table 2. Frameworks for Influence Operations (IIO) Attribution, Industry, Public-Sector, and Practitioner Research.*
+
+## Research Datasets and Analytical Methods
+
+The following works support incident characterization and evidence organization. They are relevant to attribution research but are not standalone actor-attribution frameworks.
+
+| Resource | Year | Relevance and limitation | Reference |
+|---|---:|---|---|
+| Incident-Level DISARM TTP Dataset and LLM Tagging Benchmark | 2026 | Provides public incident reports annotated with DISARM tactics, techniques, and procedures, with expert consensus labels. The authors identify dataset scarcity, inconsistent ontologies, and limited LLM tagging performance. TTP tagging can support campaign comparison, but does not by itself establish operator or sponsor identity. | Niven, T. S., & Li, C. T. (2026). Automatic tagging of foreign information manipulation and interference incidents with DISARM tactics, techniques, and procedures. *IEEE Access, 14*, 6364-6377. https://doi.org/10.1109/ACCESS.2026.3652539 |
 
 ## Competing Hypotheses Template
 
