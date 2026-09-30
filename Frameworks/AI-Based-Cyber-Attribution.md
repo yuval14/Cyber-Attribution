@@ -135,3 +135,22 @@ This page complements:
 ## Reference
 
 Alam, S., Alnfrawy, E., Jameel, A., Qadir, S., Parveen, Z., Noor, B., Arol, A., & Chaudhry, I. (2026). A comprehensive survey of artificial intelligence applications in cyber security: Taxonomy, challenges, and future directions. *Algorithms, 19*(7), 527. https://doi.org/10.3390/a19070527
+
+
+## Recent AI-Assisted Attribution and Forensic Comparators
+
+The following recent works overlap with AI-assisted evidence processing, confidence estimation, and forensic attribution. They should be treated as adjacent comparators, not as interchangeable actor-attribution frameworks.
+
+| Work | Contribution described in the source | Relevance and boundary for cyber attribution |
+| --- | --- | --- |
+| Dynamic Multi-Mode Source Attribution (DMSA) | Describes real-time attribution using AI-driven threat intelligence, multimodal telemetry, evidence-graph fusion, and dynamic confidence scoring. The public abstract presents endpoint, network, cloud, and other intelligence inputs. | A close technical comparator for multimodal fusion and confidence-aware attribution. This entry is based on the public abstract; full-text review is needed before comparing its evidence lineage, claim-level provenance, dependency handling, or evaluation evidence with other attribution methods. |
+| Evidence-driven few-shot meta-learning for zero-day malware detection and forensic attributions | Presents a multi-stage few-shot learning system and causally grounded forensic signatures for zero-day malware detection. | Relevant to evidence-informed cyber forensics and model outputs that can be audited. Its target is principally malware detection and forensic characterization; it does not, from the article description, establish attribution of an operation to a responsible human operator, group, or sponsor. |
+
+These comparisons narrow broad novelty claims. AI-assisted fusion, evidence graphs, confidence estimation, and auditable forensic outputs already appear in adjacent work. A narrower research contribution would need to specify the unresolved analytical task and show how it differs, for example by testing claim-level evidence provenance, dependency-aware corroboration, and the separation of model confidence from analyst confidence. This repository comparison alone does not establish priority or novelty.
+
+## Additional References
+
+Beg, R., Nigam, N., Sharma, Y. K., Patel, A., Solanki, S., Sharma, S., & Kumar, L. (2026). Design of an integrated evidence-driven few-shot meta-learning for zero-day malware detection and forensic attributions. *Scientific Reports, 16*, Article 20974. https://doi.org/10.1038/s41598-026-43745-9
+
+Mangaiyarkarasi, V., et al. (2025). Real-time source attribution of cyberattacks via AI-driven threat intelligence. In *2025 International Conference on Innovations and Emerging Technologies in AI & Communication Systems (IETACS)*. IEEE. https://doi.org/10.1109/IETACS68750.2025.11385633
+
