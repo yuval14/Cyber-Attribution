@@ -250,6 +250,14 @@ The following tables provide a reference map of common academic, practitioner, p
 
 *Table 2. Frameworks for Influence Operations (IIO) Attribution, Industry, Public-Sector, and Practitioner Research.*
 
+## Recent IIAF Application: Evidence Thresholds and Confidence
+
+The 2026 NATO StratCom COE report applies and refines the Information Influence Attribution Framework (IIAF) through real-world Russian influence-operation case studies. The report's stated purpose includes clarifying practical evidential thresholds and confidence levels in a setting where attribution may face legal or regulatory scrutiny. This makes it a useful applied comparator for documenting what evidence supports an attribution and how confidence is communicated.
+
+The report is an application and refinement of IIAF, rather than a wholly separate attribution framework. Its relevance is the move from a conceptual framework to case-based evidentiary practice. The public description does not, by itself, establish that the report provides a generalizable numerical scoring rule or a universal threshold for all cases; those claims require checking the report text.
+
+Reference: Dikhtiarenko, S., Heap, B., Pamment, J., & Smith, V. (2026). *Attributing Russian information influence operations: Testing the Information Influence Attribution Framework with real-world case studies*. NATO Strategic Communications Centre of Excellence. https://stratcomcoe.org/publications/attributing-russian-information-influence-operations-testing-the-information-influence-attribution-framework-with-real-world-case-studies/340
+
 ## Research Datasets and Analytical Methods
 
 The following works support incident characterization and evidence organization. They are relevant to attribution research but are not standalone actor-attribution frameworks.
