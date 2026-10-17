@@ -132,6 +132,10 @@ For a detailed comparison of source reliability, evidence quality, independent c
 
 [Source and Evidence Evaluation](Frameworks/Source-and-Evidence-Evaluation.md)
 
+For execution-free Windows PE evidence, task boundaries, relevant comparators and provisional research claims:
+
+[Static PE Evidence and Attribution Comparison](Frameworks/Static-PE-Evidence-and-Attribution-Comparison.md)
+
 For structured investigation techniques:
 
 [Investigation Techniques](Frameworks/Investigation-Techniques.md)

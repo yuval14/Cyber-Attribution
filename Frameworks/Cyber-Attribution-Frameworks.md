@@ -1,45 +1,49 @@
 # Common Frameworks for Cyber Attribution
 
-This document lists common frameworks for cyber attribution, divided into academic research and industry research.
+This document maps attribution research, professional guidance and adjacent analytical models. Inclusion does not imply peer review, empirical validation or that every entry is a dedicated attribution algorithm. Planning and intrusion-lifecycle models provide context rather than direct actor-attribution baselines.
 
-## Academic Research
+## Research Guidance and Adjacent Models
 
 | No. | Framework Name | Publication Year | Reference |
 |---:|---|---:|---|
-| 1 | F2T2EA Model | 2000 | Tirpak, J. A. (2000). Find, fix, track, target, engage, assess. *Air Force Magazine, 83*(7), 24–29. |
-| 2 | Diamond Model | 2013 | Caltagirone, S., Pendergast, A., & Betz, C. (2013). *The diamond model of intrusion analysis*. ThreatConnect, 298(0704), 1–61. |
-| 3 | Q Model | 2014 | Rid, T., & Buchanan, B. (2014). Attributing cyber attacks. *Journal of Strategic Studies, 38*(1–2), 4–37. https://doi.org/10.1080/01402390.2014.977382 |
-| 4 | Intelligence Preparation of the Cyber Environment (IPCE): Finding the High Ground in Cyberspace | 2014 | Lemay, A., Knight, S., & Fernandez, J. M. (2014). Intelligence Preparation of the Cyber Environment (IPCE): Finding the high ground in cyberspace. *Journal of Information Warfare, 13*(3), 46–56. Based on U.S. Army FM 34-130 IPB, July 8, 1994. |
-| 5 | InCA (Intelligent Cyber Attribution) Framework | 2015 | Shakarian, P., Simari, G. I., Moores, G., & Parsons, S. (2015). Cyber attribution: An argumentation-based approach. In *Cyber warfare: Building the scientific foundation* (pp. 151–171). |
-| 6 | The Three-Level Attribution Framework | 2016 | Shamsi, J. A., Zeadally, S., Sheikh, F., & Flowers, A. (2016). Attribution in cyberspace: Techniques and legal implications. *Security and Communication Networks, 9*(15), 2886–2900. |
-| 7 | Local Advanced Model: Framework of Cyber Attack Attribution Based on Threat Intelligence | 2017 | Qiang, L., Zeming, Y., Baoxu, L., Zhengwei, J., & Jian, Y. (2017). Framework of cyber attack attribution based on threat intelligence. In *Interoperability, Safety and Security in IoT: Second International Conference, InterIoT 2016 and Third International Conference, SaSeIoT 2016, Paris, France, October 26–27, 2016, Revised Selected Papers 2* (pp. 92–103). Springer International Publishing. |
-| 8 | Unified Kill Chain (UKC) | 2017 | Pols, P., & van den Berg, J. (2017). *The unified kill chain*. CSA Thesis, Hague, 1–104. https://www.unifiedkillchain.com/ |
+| 1 | F2T2EA Model | 2000 | Tirpak, J. A. (2000). Find, fix, track, target, engage, assess. *Air Force Magazine, 83*(7), 24-29. |
+| 2 | Diamond Model | 2013 | Caltagirone, S., Pendergast, A., & Betz, C. (2013). *The diamond model of intrusion analysis*. ThreatConnect, 298(0704), 1-61. |
+| 3 | Q Model | 2015 | Rid, T., & Buchanan, B. (2015). Attributing cyber attacks. *Journal of Strategic Studies, 38*(1-2), 4-37. https://doi.org/10.1080/01402390.2014.977382 |
+| 4 | Intelligence Preparation of the Cyber Environment (IPCE): Finding the High Ground in Cyberspace | 2014 | Lemay, A., Knight, S., & Fernandez, J. M. (2014). Intelligence Preparation of the Cyber Environment (IPCE): Finding the high ground in cyberspace. *Journal of Information Warfare, 13*(3), 46-56. Based on U.S. Army FM 34-130 IPB, July 8, 1994. |
+| 5 | InCA (Intelligent Cyber Attribution) Framework | 2015 | Shakarian, P., Simari, G. I., Moores, G., & Parsons, S. (2015). Cyber attribution: An argumentation-based approach. In *Cyber warfare: Building the scientific foundation* (pp. 151-171). |
+| 6 | The Three-Level Attribution Framework | 2016 | Shamsi, J. A., Zeadally, S., Sheikh, F., & Flowers, A. (2016). Attribution in cyberspace: Techniques and legal implications. *Security and Communication Networks, 9*(15), 2886-2900. |
+| 7 | Local Advanced Model: Framework of Cyber Attack Attribution Based on Threat Intelligence | 2017 | Qiang, L., Zeming, Y., Baoxu, L., Zhengwei, J., & Jian, Y. (2017). Framework of cyber attack attribution based on threat intelligence. In *Interoperability, Safety and Security in IoT: Second International Conference, InterIoT 2016 and Third International Conference, SaSeIoT 2016, Paris, France, October 26-27, 2016, Revised Selected Papers 2* (pp. 92-103). Springer International Publishing. |
+| 8 | Unified Kill Chain (UKC) | 2017 | Pols, P., & van den Berg, J. (2017). *The unified kill chain*. CSA Thesis, Hague, 1-104. https://www.unifiedkillchain.com/ |
 | 9 | ODNI Cyber Attribution | 2018 | Office of the Director of National Intelligence. (2018, September 14). *A guide to cyber attribution*. Retrieved using the Wayback Machine from www.dni.gov/files/CTIIC/documents/ODNI_A_Guide_to_Cyber_Attribution.pdf |
-| 10 | Enhanced Cyber Attack Attribution (NEON) | 2018 | Pitropakis, N., Panaousis, E., Giannakoulias, A., Kalpakis, G., Rodriguez, R. D., & Sarigiannidis, P. (2018). An enhanced cyber attack attribution framework. In *Trust, Privacy and Security in Digital Business: 15th International Conference, TrustBus 2018, Regensburg, Germany, September 5–6, 2018, Proceedings 15* (pp. 213–228). Springer International Publishing. |
-| 11 | NO-DOUBT: Attack Attribution Based on Threat Intelligence Reports | 2019 | Perry, L., Shapira, B., & Puzis, R. (2019, July). No-doubt: Attack attribution based on threat intelligence reports. In *2019 IEEE International Conference on Intelligence and Security Informatics (ISI)* (pp. 80–85). IEEE. |
-| 12 | Deconstructing Cyber Attribution: A Proposed Framework and Lexicon | 2019 | Grotto, A. (2019). Deconstructing cyber attribution: A proposed framework and lexicon. *IEEE Security & Privacy, 18*(1), 12–20. |
+| 10 | Enhanced Cyber Attack Attribution (NEON) | 2018 | Pitropakis, N., Panaousis, E., Giannakoulias, A., Kalpakis, G., Rodriguez, R. D., & Sarigiannidis, P. (2018). An enhanced cyber attack attribution framework. In *Trust, Privacy and Security in Digital Business: 15th International Conference, TrustBus 2018, Regensburg, Germany, September 5-6, 2018, Proceedings 15* (pp. 213-228). Springer International Publishing. |
+| 11 | NO-DOUBT: Attack Attribution Based on Threat Intelligence Reports | 2019 | Perry, L., Shapira, B., & Puzis, R. (2019, July). No-doubt: Attack attribution based on threat intelligence reports. In *2019 IEEE International Conference on Intelligence and Security Informatics (ISI)* (pp. 80-85). IEEE. |
+| 12 | Deconstructing Cyber Attribution: A Proposed Framework and Lexicon | 2020 | Grotto, A. (2020). Deconstructing cyber attribution: A proposed framework and lexicon. *IEEE Security & Privacy, 18*(1), 12-20. |
 | 13 | Cyber Attribution Model (CAM) | 2019 | Pahi, T., & Skopik, F. (2019). *Cyber Attribution 2.0: Capture the False Flag*. AIT Austrian Institute of Technology, Vienna, Austria. |
 | 14 | Intelligence Driven Defense (IDD) | 2019 | Lockheed Martin. (2019). *A threat-driven approach to cybersecurity*. https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Threat-Driven-Approach.pdf |
-| 15 | Operational Framework for Interpreting the Objectives of Strategically Motivated Advanced Persistent Threat | 2019 | Ahmad, A., Webb, J., Desouza, K. C., & Boorman, J. (2019). Strategically motivated advanced persistent threat: Definition, process, tactics and a disinformation model of counterattack. *Computers & Security, 86*, 402–418. |
+| 15 | Operational Framework for Interpreting the Objectives of Strategically Motivated Advanced Persistent Threat | 2019 | Ahmad, A., Webb, J., Desouza, K. C., & Boorman, J. (2019). Strategically motivated advanced persistent threat: Definition, process, tactics and a disinformation model of counterattack. *Computers & Security, 86*, 402-418. |
 | 16 | MICTIC Framework | 2020 | Steffens, T. (2020). *Attribution of advanced persistent threats*. Springer. https://doi.org/10.1007/978-3-662-61313-9 |
 | 17 | An International Attribution Mechanism for Hostile Cyber Operations | 2020 | Shany, Y., & Schmitt, M. N. (2020). An international attribution mechanism for hostile cyber operations. *International Law Studies, 96*. https://digital-commons.usnwc.edu/ils/vol96/iss1/8/ |
-| 18 | MICTICSI Framework: Extension to MICTIC Framework | 2021 | Brandao, P. R. (2021). Advanced persistent threats (APT) attribution: MICTIC framework extension. *Journal of Computer Science, 17*(5), 470–479. https://doi.org/10.3844/jcssp.2021.470.479 |
+| 18 | MICTICSI Framework: Extension to MICTIC Framework | 2021 | Brandao, P. R. (2021). Advanced persistent threats (APT) attribution: MICTIC framework extension. *Journal of Computer Science, 17*(5), 470-479. https://doi.org/10.3844/jcssp.2021.470.479 |
 | 19 | An Illustrative Framework for Attribution | 2021 | Geneva Association. (2021). *Mapping a path to cyber attribution consensus*. Authors: Rachel A. Carter and Julian Enoizi. https://www.genevaassociation.org/publication/cyber/mapping-path-cyber-attribution-consensus |
-| 20 | The Triangle Model for Cyber Threat Attribution | 2021 | *The Triangle Model for Cyber Threat Attribution*. (2021). *Journal of Cyber Security Technology, 5*(3–4), 1–18. |
-| 21 | Public Attribution Framework | 2021 | Egloff, F. J., & Smeets, M. (2021). Publicly attributing cyber attacks: A framework. *Journal of Strategic Studies, 46*(3), 502–533. https://doi.org/10.1080/01402390.2021.1895117 |
-| 22 | Evidence-Based Attribution Model (EBAM) | 2023 | Čergeť, M., & Hudec, J. (2023). Cyber-security threats origins and their analysis. *Acta Polytechnica Hungarica, 20*(9). |
-| 23 | A Framework for Advanced Persistent Threat Attribution Using Zachman Ontology | 2023 | Putrevu, V. S. C., Chunduri, H., Putrevu, M. A., & Shukla, S. (2023, June). A framework for advanced persistent threat attribution using Zachman ontology. In *Proceedings of the 2023 European Interdisciplinary Cybersecurity Conference* (pp. 34–41). |
+| 20 | The Triangle Model for Cyber Threat Attribution [verification pending] | 2021 | *The Triangle Model for Cyber Threat Attribution*. (2021). *Journal of Cyber Security Technology, 5*(3-4), 1-18. |
+| 21 | Public Attribution Framework | 2023 | Egloff, F. J., & Smeets, M. (2023). Publicly attributing cyber attacks: A framework. *Journal of Strategic Studies, 46*(3), 502-533. https://doi.org/10.1080/01402390.2021.1895117 |
+| 22 | Public-data fusion and threat-origin analysis tool | 2023 | Čergeť, M., & Hudec, J. (2023). Cyber-security threats origins and their analysis. *Acta Polytechnica Hungarica, 20*(9), 23-41. https://acta.uni-obuda.hu/Cerget_Hudec_138.pdf. Adjacent IP/geolocation research; the paper does not substantiate the label EBAM. |
+| 23 | A Framework for Advanced Persistent Threat Attribution Using Zachman Ontology | 2023 | Putrevu, V. S. C., Chunduri, H., Putrevu, M. A., & Shukla, S. (2023, June). A framework for advanced persistent threat attribution using Zachman ontology. In *Proceedings of the 2023 European Interdisciplinary Cybersecurity Conference* (pp. 34-41). |
 | 24 | IPAttributor | 2024 | Xiang, X., Liu, H., Zeng, L., Zhang, H., & Gu, Z. (2024). IPAttributor: Cyber attacker attribution with threat intelligence-enriched intrusion data. *Mathematics, 12*(9), 1364. https://doi.org/10.3390/math12091364 |
 | 25 | Degrees of Cyber Attribution | 2024 | International Institute for Strategic Studies. (2024, September). *Cyber Power Matrix: Context and methodology*. https://www.iiss.org/globalassets/media-library---content--migration/files/research-papers/2024/10/cyber-methodology/the-iiss-cyber-power-matrix---context-and-methodology.pdf |
-| 26 | A Framework for Cyberwarfare Attribution Techniques | 2024 | Noor, M., Sithungu, S., & Lebea, K. (2024, February). A framework for cyberwarfare attribution techniques. In *International Congress on Information and Communication Technology* (pp. 407–417). Springer Nature Singapore. |
+| 26 | A Framework for Cyberwarfare Attribution Techniques | 2024 | Noor, M., Sithungu, S., & Lebea, K. (2024, February). A framework for cyberwarfare attribution techniques. In *International Congress on Information and Communication Technology* (pp. 407-417). Springer Nature Singapore. |
 | 27 | Framework for Comparative Attribution | 2025 | PricewaterhouseCoopers. (2025, June 20). *How we analyse, compare, and integrate multiple threat actor attribution assessments*. https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/threat-intelligence-comparative-attribution.html |
 | 28 | The FACT Attribution Framework | 2025 | Shavers, B. (2025). *The FACT Attribution Framework v1.0*. https://doi.org/10.5281/ZENODO.17745959 |
 | 29 | HexAttribution Model | 2026 | Szulcsányi, V., & Magyar, S. (2026). A comparative analysis of threat models in the context of cyber threat attribution. *International Journal of Information Security, 25*, Article 105. https://doi.org/10.1007/s10207-026-01272-8 |
 | 30 | Operational Analytic Confidence Rubric | 2026 | Szewczyk, Z. (2026). Making analytic confidence visible: An operational rubric for cyber analysis. *The Cyber Defense Review, 11*(3). https://doi.org/10.55682/cdr/rm2g-74cw |
 
-**Table 1. Frameworks for Cyber Attribution: Academic Research**
+**Table 1. Attribution research guidance and adjacent models**
 
-## Industry Research
+Publication years follow the cited final volume or edition where available; an earlier online-first year may differ. Rid and Buchanan are cited as 2015, Grotto as 2020, and Egloff and Smeets as 2023. The Triangle Model entry remains bibliographically incomplete and must not be treated as a verified comparator. Local scoring rubrics are proposals or heuristics unless independent validation is documented.
+
+For task boundaries, source types and the static PE research comparison, see [Static PE Evidence and Attribution Comparison](Static-PE-Evidence-and-Attribution-Comparison.md).
+
+## Industry Practice and Frameworks
 
 | No. | Framework Name | Publication Year | Reference |
 |---:|---|---:|---|
@@ -52,7 +56,7 @@ This document lists common frameworks for cyber attribution, divided into academ
 | 7 | Unit 42’s Attribution Framework | 2025 | Unit 42. (2025, July 31). *Introducing Unit 42’s Attribution Framework*. Palo Alto Networks. https://unit42.paloaltonetworks.com/unit-42-attribution-framework/ |
 | 8 | TrendAI | 2026 | Hilt, S. (2026, February 12). *Threat Attribution Framework: How TrendAI applies structure over speculation*. Trend Micro. https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/threat-attribution-framework-how-trendai-applies-structure-over-speculation |
 
-**Table 2. Frameworks for Cyber Attribution: Industry Research**
+**Table 2. Industry practice and attribution frameworks**
 
 ## Policy and Strategic Research
 
@@ -66,3 +70,4 @@ This document lists common frameworks for cyber attribution, divided into academ
 | Disinformation deterrence and attribution politics | 2025 | Hedling, E., & Ördén, H. (2025). Disinformation, deterrence and the politics of attribution. *International Affairs, 101*(3), 967-986. https://doi.org/10.1093/ia/iiaf012 |
 
 These policy and academic sources complement attribution models by connecting attribution to deterrence, response selection, legal constraints, and military policy. See the [RUSI framework summary](Multilevel-Cyber-Deterrence-Framework.md) and the [annotated comparative references](Cyber-Deterrence-and-Attribution-References.md).
+

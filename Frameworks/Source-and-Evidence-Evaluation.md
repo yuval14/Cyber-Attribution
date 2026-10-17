@@ -125,3 +125,9 @@ FACT is not included in the verified comparison because its original framework d
 - [False Flag Cyber Attribution](False-Flag-Cyber-Attribution.md)
 - [Cyber Attribution Frameworks](Cyber-Attribution-Frameworks.md)
 - [AI-Based Cyber Attribution](AI-Based-Cyber-Attribution.md)
+
+
+
+## Static PE research cross-reference
+
+The [Static PE Evidence and Attribution Comparison](Static-PE-Evidence-and-Attribution-Comparison.md) separates malicious-content detection, family classification, campaign linkage, actor attribution and State responsibility. Multiple correlated rules are not independent corroboration. Model scores, label quality, source reliability and analytic confidence require separate records. The framework index was corrected on 18 October 2026 to remove the unsupported EBAM label and to distinguish final-edition years from earlier online publication.
