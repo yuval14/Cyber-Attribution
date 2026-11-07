@@ -40,6 +40,16 @@ Credit belongs to the dataset creators, publishers, and maintainers identified b
 | [CTIBench - CTI-TAA](https://github.com/maveryn/cti-bench) | CTIBench authors and contributors | Downloadable threat actor attribution examples | Evaluate attribution from CTI descriptions against benchmark labels. |
 | [AttackER](https://arxiv.org/abs/2408.05149) | AttackER paper authors and dataset contributors | Annotated CTI text for named entity recognition. See publication for dataset details | Evaluate entity extraction as an input to attribution analysis. |
 
+## Static malware research datasets
+
+| Source | Credit | Coverage and access | Research use and limitations |
+| --- | --- | --- | --- |
+| [EMBER 2018](https://github.com/elastic/ember) | Hyrum S. Anderson and Phil Roth. Hosted by Elastic | Version 2 static features extracted from 1 million Windows PE files scanned in or before 2018. Downloadable feature archive | Historical baseline for static malware detection. The feature archive supports feature-based experiments. Evaluating YARA rules directly requires separately obtained samples. |
+| [EMBER2024](https://github.com/FutureComputing4AI/EMBER2024) | Robert J. Joyce, Gideon Miller, Phil Roth, Richard Zak, Elliott Zaresky-Williams, Hyrum Anderson, Edward Raff, and James Holt | Downloadable features and labels for approximately 3.2 million benign and malicious files across Win32, Win64, .NET, APK, ELF, and PDF | Supports detection, family classification, and behavior prediction. Restrict to Windows PE for PE-only comparisons and align feature definitions across releases. |
+| [MOTIF](https://github.com/boozallen/MOTIF) | Robert J. Joyce and coauthors. Hosted by Booz Allen Hamilton | 3,095 disarmed Windows PE malware samples from 454 families. Downloadable samples, JSONL metadata, EMBER v2 features, and family aliases | Supports family classification and alias analysis using labels curated from threat intelligence. Account for modified PE header fields when extracting features from the disarmed samples. |
+
+Maliciousness, malware family, and threat actor identity are separate labels. Use independent campaign evidence when evaluating actor attribution.
+
 ## Research notes
 
 - Record the dataset version, retrieval date, terms of use, original record ID, and underlying source. Use the publisher's recommended citation where provided.
