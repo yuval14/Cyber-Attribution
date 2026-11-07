@@ -25,6 +25,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 | Influence operations attribution | Frameworks and workflows for Information Influence Operations (IIO) and FIMI analysis |
 | Investigation techniques | Structured analytic techniques, alternative hypotheses, challenge analysis, and pre-mortem review |
 | Incident response frameworks | Incident response lifecycles, playbooks, CSIRT maturity, evidence preservation, and post incident learning |
+| Research data | Public incident datasets, source provenance, access conditions, and attribution benchmarks |
 | Evidence evaluation | Technical evidence, source reliability, alternative hypotheses, and uncertainty |
 | Technical attribution | Malware, infrastructure, TTPs, tooling, timing, victimology, and campaign patterns |
 | Strategic attribution | Intent, geopolitical context, operational continuity, sponsorship, and state responsibility |
@@ -64,6 +65,8 @@ The core principle is to separate evidence from assessment. Analysts should docu
 │   └── Vulnerability-Intelligence-Frameworks.md
 ├── Images/
 │   └── Future-of-Cyber-Attribution.png
+├── Research-Data/
+│   └── README.md
 └── Threat-Hunting/
     └── Threat-Hunting-Machine-Learning-Algorithms.md
 ```
@@ -75,6 +78,10 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ![Cyber Attack Creativity Scoring Model](Cyber-Attack-Creativity/Criteria%20for%20Assessing%20the%20Creativity%20Level%20of%20Cyber%20Attacks%20v1.0.png)
 
 ## Main documents
+
+For public cyber incident datasets, service disruption sources, and attribution benchmarks:
+
+[Research Data Library](Research-Data/README.md)
 
 For books and recommended reading:
 
