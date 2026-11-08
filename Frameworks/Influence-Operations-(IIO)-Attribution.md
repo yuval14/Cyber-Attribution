@@ -206,7 +206,13 @@ A recommended analytical sequence is:
 
 The analyst should assign evidence and confidence separately at each layer. A campaign may have high exposure and amplification while producing little demonstrated behavioral or strategic effect. Conversely, a relatively narrow campaign may generate significant strategic consequences if it reaches a highly influential target audience or decision-making process.
 
+### Evaluating FIMI Countermeasures
+
+ADAC.io's evaluation of Foreign Information Manipulation and Interference (FIMI) countermeasures compares technical, behavioural, operational, and strategic frameworks (Chapter 4) and examines evidence for detection and exposure, disruption, and legal action (Chapter 5). Use it alongside ADAC.io's IIO attribution framework and open-source field guide listed below. Record confidence in the attribution assessment separately from confidence that a response achieved its intended outcome. When assessing the response, document the outcome observed, the evidence linking it to the intervention, and plausible alternative explanations.
+
 ### References
+
+Ahonen, A., Borkowski, J., Innes, M., & Palmertz, B. (2026). *Evaluation of FIMI-related frameworks and countermeasures*. ADAC.io. https://adacio.eu/evaluation-of-fimi-related-frameworks-and-countermeasures
 
 Nimmo, B. (2020). *The Breakout Scale: Measuring the impact of influence operations*. Brookings Institution. https://www.brookings.edu/articles/the-breakout-scale-measuring-the-impact-of-influence-operations/
 
