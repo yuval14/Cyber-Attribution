@@ -71,3 +71,11 @@ For task boundaries, source types and the static PE research comparison, see [St
 
 These policy and academic sources complement attribution models by connecting attribution to deterrence, response selection, legal constraints, and military policy. See the [RUSI framework summary](Multilevel-Cyber-Deterrence-Framework.md) and the [annotated comparative references](Cyber-Deterrence-and-Attribution-References.md).
 
+
+## Public Attribution, Coalition Endorsement, and Influence Operations
+
+See [Public and Collective Attribution Literature](Public-and-Collective-Attribution-Literature.md) for annotated sources, APA 7 references, reading-depth disclosures, primary-source examples, and a provisional research design without interviews.
+
+The update covers Baram (2026) on four coordination modes of joint attribution; Efrony (2024) on collective attribution; Egloff (2020) and Egloff and Smeets (2023) on public attribution; Hedling and Ördén (2025) on disinformation attribution politics; Kargar and Rid (2024) on WikiSaudiLeaks; Prasad et al. (2025) on the broader attribution literature; and comparisons with HexAttribution, the CSMM principal-agent model, and the three ADAC.io reports.
+
+The proposed extension examines which specific claims coalition participants adopt or qualify. It is not a validated model or an established novelty claim. Political endorsement, disclosed evidence, independent investigation, and legal responsibility must remain distinct.
