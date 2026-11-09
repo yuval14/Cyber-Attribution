@@ -52,6 +52,7 @@ The core principle is to separate evidence from assessment. Analysts should docu
 ├── Frameworks/
 │   ├── AI-Based-Cyber-Attribution.md
 │   ├── Cyber-Attribution-Frameworks.md
+│   ├── Public-and-Collective-Attribution-Literature.md
 │   ├── Defensive-Frameworks-and-Countermeasures.md
 │   ├── Detection-Rule-Languages.md
 │   ├── False-Flag-Cyber-Attribution.md
@@ -98,6 +99,10 @@ For cross-domain, whole-of-government cyber deterrence and the role of attributi
 For annotated Oxford Academic, Springer Nature, and The Cyber Defense Review references on deterrence, attribution, response decisions, and military policy:
 
 [Cyber Deterrence and Attribution References](Frameworks/Cyber-Deterrence-and-Attribution-References.md)
+
+For annotated literature on public and collective attribution, coalition endorsement, source-access limitations, and a provisional document-based research design:
+
+[Public and Collective Attribution Literature](Frameworks/Public-and-Collective-Attribution-Literature.md)
 
 For adversary concealment, OpSec behavior, anonymity methods, anti-forensics, threat hunting, and concealment-based attribution:
 
