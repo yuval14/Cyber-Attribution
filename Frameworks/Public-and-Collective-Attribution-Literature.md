@@ -1,4 +1,4 @@
-# Public and Collective Cyber Attribution: Literature and Research Design
+# Public and Collective Cyber Attribution: Annotated Literature
 
 Last checked: 2026-11-09.
 
@@ -27,37 +27,7 @@ This is a targeted literature update, not a systematic review or a completed PRI
 
 The three ADAC.io reports are research/practitioner reports, not assumed to be peer-reviewed journal articles. Primary government statements below are research material, not independent validation of the identities they attribute.
 
-## What should not be presented as novel
-
-- Combining technical, behavioral, contextual, and geopolitical indicators.
-- Distinguishing operators from sponsors.
-- Describing public attribution as political signaling or coalition building.
-- Counting joint attribution cases without explaining what an additional analysis contributes.
-- Treating repeated attribution statements as independent corroboration.
-- Proposing uncertainty disclosure without comparing existing confidence and evidence frameworks.
-
-## Proposed research direction: the scope of coalition endorsement
-
-**Status:** A repository research proposal, not a finding of the cited publications or a validated framework.
-
-**Working title:** *What Do Allies Actually Endorse? Claim Scope and Public Evidence in Collective Cyber Attribution.*
-
-**Research question:** When governments and international organizations support a cyber attribution, which specific claims do they adopt, qualify, merely report, or leave unstated, and how does that pattern relate to the evidence disclosed publicly?
-
-The candidate contribution is a proposition-level comparison of coalition statements. It extends the unit of observation from an attribution event or coalition membership to a particular claim in a dated document. Its novelty remains provisional pending full-text comparison with Baram (2026), Efrony (2024), Hedling and Ördén (2025), and adjacent discourse and attribution research.
-
-Distinguish at least:
-1. The incident and affected target.
-2. The named operational actor.
-3. The actor's association with a state or institution.
-4. Alleged direction or control of the specific operation.
-5. The action alleged: reconnaissance, compromise, theft, publication, or amplification.
-6. Expressed uncertainty and whether an assessment is the speaker's own or attributed to another source.
-7. Condemnation, solidarity, or announced response.
-
-Association, sponsorship, direction, and legal responsibility are not interchangeable. An international organization's statement should not be duplicated into separate independent national assessments for every member.
-
-### Illustrative primary-source checks
+## Illustrative primary-source checks
 
 | Source | Observable distinction | What cannot be inferred |
 | --- | --- | --- |
@@ -65,60 +35,7 @@ Association, sponsorship, direction, and legal responsibility are not interchang
 | Foreign, Commonwealth & Development Office et al. (2024) | The release distinguishes the Electoral Commission compromise from a separate APT31 reconnaissance campaign against parliamentarians; it reports no successful compromise of parliamentary accounts. | Do not merge the two campaigns or automatically label the Electoral Commission incident as an APT31 operation. |
 | The same UK release | Different passages use different estimative language for the parliamentarian activity. | Preserve the wording and section of each claim; do not silently normalize an internally inconsistent release into a single probability. |
 
-These are coding illustrations, not a completed comparative analysis.
-
-## Proposed methodology without interviews
-
-### Design and sampling
-
-Use structured, focused comparison with document-based process tracing. Begin with a feasibility pilot of two episodes, then aim for six to eight episodes from 2017-2025. This is a target, not an achieved sample size.
-
-Identify candidate episodes using the [EuRepoC Attribution Tracker](https://eurepoc.eu/de/attribution-tracker/), the cases discussed by Baram (2026), and official national/EU/NATO records. The current tracker focuses on attributions since 2022; earlier episodes require historical sources or versioned datasets. Record dataset version and retrieval date.
-
-Include an episode when there is a public originating attribution and at least one relevant supporting or coordinated official statement. Select for variation in coordination mode, statement detail, and public disclosure, not for whether a claim appears overstated. Log exclusions and document availability. This sample cannot estimate why governments never attribute or never join a coalition.
-
-### Units and evidence record
-
-The primary unit is a **claim-document-episode** record. Documents and claims remain nested within episodes; they are not independent attacks.
-
-Record:
-- Episode ID, document ID, issuing institution, date, version, URL, and access date.
-- Original-language text, translation method where relevant, exact claim excerpt, and paragraph/page locator.
-- Actor, target, operation component, state relationship, and uncertainty wording.
-- Commitment category: own assessment, explicit endorsement, report of another's assessment, solidarity/condemnation without adopting the proposition, ambiguous, or not addressed.
-- Public support: disclosed technical or other material, linked external assessment, assertion without disclosed supporting material, or unavailable document.
-- Source lineage and shared upstream material; distinguish a citation link from evidence of an independent investigation.
-- Response announced in the same or subsequent official records.
-
-Do not rank all categories on a single confidence scale. Do not convert national confidence language into common probabilities without published, applicable mappings. Code unavailable documents separately from absent supporting material.
-
-### Hypotheses to test
-
-| Hypothesis | Observable implication | Evidence that would challenge it |
-| --- | --- | --- |
-| H1: Institutional solidarity statements reproduce fewer specific responsibility claims than originating national attribution statements within the same episode. | Lower coverage of explicit actor-role-control propositions, after accounting for document length and genre. | Institutional statements consistently preserve or expand the same specific propositions. |
-| H2: Statements providing a separately disclosed evidence contribution are more likely to express their own attribution assessment than statements only referring to an originating assessment. | Within-episode differences in assessment ownership associated with disclosed contributions. | No association, or own assessments equally prevalent in purely referential statements. |
-| H3: Claims about direction of a specific operation show less cross-statement agreement than identification of an operational actor. | More qualification, attribution-to-another-source, or omission for direction/control propositions. | Direction/control claims are as consistently endorsed as actor identity. |
-
-These are proposed associations. They are not claims about private intelligence access, deliberate deception, legal culpability, or causal effects on deterrence. H1 must be tested using a coordination classification defined independently of its outcome.
-
-### Analysis, reliability, and robustness
-
-- Freeze the codebook after the pilot, then recode the pilot under the final rules.
-- Compare claims within episodes before aggregating. Show denominators and distinguish claims not made from claims explicitly rejected.
-- Publish a case-by-claim matrix, source-lineage table, and dated document inventory.
-- If a second human coder is available, double-code a stratified subset and report agreement and a suitable reliability statistic, such as Krippendorff's alpha, separately by variable. A second coder is not an interview participant.
-- If only one researcher codes, conduct delayed blind recoding and report within-coder stability. Do not describe that as inter-coder reliability or external validation.
-- Test alternative endorsement rules, 7/30/90-day document windows, exclusion of duplicated releases, and treatment of ambiguous wording.
-- With six to eight episodes, prioritize descriptive comparison and counterexamples. Do not treat hundreds of nested claims as hundreds of independent cases or rely on an underpowered regression.
-- Consider competing explanations: diplomatic convention, document genre, length limits, timing, classification constraints, domestic mandates, and target sensitivity.
-- Do not infer causal influence of evidence disclosure on political choices from public wording alone.
-
-### Boundaries and originality checks
-
-The contribution must concern international politics and the scope of public commitments if aimed at an international-relations journal. A coding tool alone is not the theoretical contribution.
-
-Before submission, compare the proposed argument and corpus with any related manuscripts by the author. Distinguish new claims, data, and analyses explicitly; a new label or venue does not establish originality. This repository note is research planning assistance, not a submission-ready manuscript.
+These examples illustrate source-interpretation limits; they do not constitute a comparative study.
 
 ## References
 
