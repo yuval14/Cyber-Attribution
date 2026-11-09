@@ -100,7 +100,7 @@ For annotated Oxford Academic, Springer Nature, and The Cyber Defense Review ref
 
 [Cyber Deterrence and Attribution References](Frameworks/Cyber-Deterrence-and-Attribution-References.md)
 
-For annotated literature on public and collective attribution, coalition endorsement, source-access limitations, and a provisional document-based research design:
+For annotated literature on public and collective attribution, coalition endorsement, and source-access limitations:
 
 [Public and Collective Attribution Literature](Frameworks/Public-and-Collective-Attribution-Literature.md)
 
