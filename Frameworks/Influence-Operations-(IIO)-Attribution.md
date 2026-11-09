@@ -45,11 +45,15 @@ Attribution should not be treated as a single conclusion. It should be structure
 
 | Category | Description | Examples |
 | --- | --- | --- |
-| Direct evidence | Evidence that directly links an actor to the operation | Leaked tasking, platform takedown attribution, authenticated operator material |
+| Direct evidence | Evidence that directly links an actor to the operation | Authenticated tasking records or operator material explicitly linking the actor to the operation |
 | Strong circumstantial evidence | Multiple independent indicators pointing to the same actor or sponsor | Infrastructure reuse, coordinated assets, timing, language, known tradecraft |
 | Weak circumstantial evidence | Indicators that support a hypothesis but are not decisive alone | Narrative alignment, generic geopolitical benefit, stylistic similarity |
 | Contextual evidence | Background information that helps explain motive or timing | Elections, military conflict, sanctions, diplomatic disputes |
 | Negative evidence | Evidence that weakens or contradicts a hypothesis | Inconsistent language, incompatible timing, lack of expected infrastructure reuse |
+
+### Platform Attribution Statements
+
+A platform takedown announcement records the platform's attribution assessment; it is not automatically direct evidence linking the named actor to the operation. Record the attribution claim separately from the supporting evidence disclosed in the report. Assess each disclosed item for authenticity, relevance to the specific actor and role, and independence from other sources. If the underlying evidence is not public, mark it as unavailable for independent examination rather than treating the attribution as disproven. Multiple reports repeating the same platform statement do not constitute independent corroboration.
 
 ## Confidence Levels
 
@@ -251,7 +255,7 @@ The following tables provide a reference map of common academic, practitioner, p
 | 10 | FIMI Exposure Matrix: A Systematic Approach to Classifying and Attributing FIMI Infrastructure | 2025 | European External Action Service. (2025). *3rd EEAS report on foreign information manipulation and interference threats*. https://www.eeas.europa.eu/eeas/3rd-eeas-report-foreign-information-manipulation-and-interference-threats_en |
 | 11 | Information Influence Attribution Framework | 2026 | Dikhtiarenko, S., Heap, B., Pamment, J., & Smith, V. (2026). *Attributing Russian information influence operations: Testing the Information Influence Attribution Framework with real-world case studies* (53 pp.; ISBN 978-9934-619-68-7). NATO Strategic Communications Centre of Excellence. |
 | 12 | Beyond Deepfake Detection: MOSAIC, a Confidence-Aware and Counter-Deception Framework for Synthetic-Media Operation Attribution | 2026 | Sinay, Y. (2026). Beyond deepfake detection: MOSAIC, a confidence-aware and counter-deception framework for synthetic-media operation attribution. In *Proceedings of the 2nd ACM Deepfake, Deception, and Disinformation Security Workshop (3D-Sec '26)*. Association for Computing Machinery. https://doi.org/10.1145/3843205.3845625 |
-| 13 | Attribution and Information Influence Operations: A Field Guide for Open-Source Investigators and Researchers | 2025 | Innes, M., & Ahonen, A. (2025). *Attribution and information influence operations: A field guide for open-source investigators and researchers* (Project Deliverable 1.1). ADAC.io, Psychological Defence Research Institute, Lund University. https://adacio.eu/attribution-and-information-influence-operations-a-field-guide-for-open-source-investigators-and-researchers |
+| 13 | Attribution and Information Influence Operations: A Field Guide for Open-Source Investigators and Researchers | 2025 | Innes, M., & Ahonen, A. (2025). *Attribution and information influence operations: A field guide for open-source investigators and researchers* (Project Deliverable D1.2). ADAC.io, Security, Crime and Intelligence Innovation Institute, Cardiff University. https://adacio.eu/attribution-and-information-influence-operations-a-field-guide-for-open-source-investigators-and-researchers |
 | 14 | Information Manipulation Set (IMS) Framework | 2026 | VIGINUM. (2026). *Information Manipulation Set (IMS) framework*. Endorsed by the G7 Rapid Response Mechanism and agreed with the EEAS. See Global Affairs Canada, G7 Rapid Response Mechanism (2026, May), *Position statement on a common understanding of the Information Manipulation Set (IMS) framework*. https://international.canada.ca/en/global-affairs/corporate/reports/rapid-response-mechanism/news/2026-05-g7-ims; and DFRLab (2026, January 15), *Building a common operational picture of FIMI: Using IMS to strengthen technical attribution and disruption*. https://dfrlab.org/2026/01/15/building-a-common-operational-picture-of-fimi/ |
 
 *Table 2. Frameworks for Influence Operations (IIO) Attribution, Industry, Public-Sector, and Practitioner Research.*
