@@ -38,6 +38,7 @@ Tables are sorted by release year from oldest to newest within each thematic sec
 | The Threat Intelligence Handbook | Recorded Future | Recorded Future | Guide | 2019 | Practical guide to building and operating CTI programs. |
 | Practical Threat Intelligence and Data-Driven Threat Hunting: A Hands-on Guide to Threat Hunting with the ATT&CK Framework and Open Source Tools | Valentina Costa-Gazcón | Packt Publishing | Book | 2021 | Practical CTI and threat hunting reference that connects intelligence requirements, ATT&CK-based analysis, open source tooling, and data-driven hunting workflows. |
 | Visual Threat Intelligence: An Illustrated Guide for Threat Researchers | Thomas Roccia | SecurityBreak | Book | 2023 | Visual, practitioner-oriented CTI reference that helps analysts communicate threat intelligence concepts, adversary behavior, and research findings through structured illustrations. |
+| Cyber Threat Intelligence | Haydar Yener Arici | Rheinwerk Publishing | Book | 2026 | Comprehensive operational CTI guide covering the intelligence lifecycle, OSINT, HUMINT, SIGINT, intelligence gathering, adversary profiling, feed integrity, network and host forensics, incident response, threat hunting, and automation. |
 
 ## International Law, State Responsibility, and Public Attribution
 
@@ -83,37 +84,38 @@ The reading path is ordered by learning progression rather than release year.
 2. Cyber Threat Intelligence
 3. Practical Cyber Intelligence
 4. Visual Threat Intelligence
+5. Cyber Threat Intelligence (Haydar Yener Arici)
 
 ### Intermediate
 
-5. Practical Threat Intelligence and Data-Driven Threat Hunting
-6. Intelligence-Driven Incident Response
-7. Psychology of Intelligence Analysis
-8. Structured Analytic Techniques for Intelligence Analysis
-9. Strategies for Resolving the Cyber Attribution Challenge
-10. Attribution of Cyber Attacks
+6. Practical Threat Intelligence and Data-Driven Threat Hunting
+7. Intelligence-Driven Incident Response
+8. Psychology of Intelligence Analysis
+9. Structured Analytic Techniques for Intelligence Analysis
+10. Strategies for Resolving the Cyber Attribution Challenge
+11. Attribution of Cyber Attacks
 
 ### Advanced
 
-11. Attributing Cyber Attacks
-12. Artificial Intelligence Tools for Cyber Attribution
-13. Attribution of Advanced Persistent Threats
-14. The Hacker and the State
-15. Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations
-16. Cyber Operations and International Law
-17. Unilateral Remedies to Cyber Operations
-18. Defend Forward and Attribution
+12. Attributing Cyber Attacks
+13. Artificial Intelligence Tools for Cyber Attribution
+14. Attribution of Advanced Persistent Threats
+15. The Hacker and the State
+16. Tallinn Manual 2.0 on the International Law Applicable to Cyber Operations
+17. Cyber Operations and International Law
+18. Unilateral Remedies to Cyber Operations
+19. Defend Forward and Attribution
 
 ### Research and PhD Level
 
-19. Machine Learning for Authorship Attribution and Cyber Forensics
-20. Authorship Attribution
-21. Active Measures
-22. LikeWar
-23. Critical Thinking for Strategic Intelligence
-24. Fact-Finding and Cyber Attribution
-25. Cyber Attribution and its Challenges
-26. A Framework for Cyberwarfare Attribution Techniques
+20. Machine Learning for Authorship Attribution and Cyber Forensics
+21. Authorship Attribution
+22. Active Measures
+23. LikeWar
+24. Critical Thinking for Strategic Intelligence
+25. Fact-Finding and Cyber Attribution
+26. Cyber Attribution and its Challenges
+27. A Framework for Cyberwarfare Attribution Techniques
 
 ## Recommended Core Attribution Library
 
@@ -128,6 +130,8 @@ If limited to five books or core readings:
 These five works collectively cover technical attribution, APT investigation, AI-supported reasoning, confidence assessment, strategic context, and international law.
 
 ## APA 7 References
+
+Arici, H. Y. (2026). _Cyber threat intelligence_. Rheinwerk Publishing.
 
 Buchanan, B. (2020). _The hacker and the state: Cyber attacks and the new normal of geopolitics_. Harvard University Press.
 
