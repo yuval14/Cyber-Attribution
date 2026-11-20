@@ -46,6 +46,14 @@ Suggested citation for AIID: McGregor, S. (2021). Preventing repeated real world
 | [CTIBench - CTI-TAA](https://github.com/maveryn/cti-bench) | CTIBench authors and contributors | Downloadable threat actor attribution examples | Evaluate attribution from CTI descriptions against benchmark labels. |
 | [AttackER](https://arxiv.org/abs/2408.05149) | AttackER paper authors and dataset contributors | Annotated CTI text for named entity recognition. See publication for dataset details | Evaluate entity extraction as an input to attribution analysis. |
 
+## IoT intrusion detection datasets
+
+| Source | Publisher or maintainer | Coverage and unit | Access | Research use and limitations |
+| --- | --- | --- | --- | --- |
+| [BCCC-IoT-APT-ZWave-2026](https://www.yorku.ca/research/bccc/ucs-technical/cybersecurity-datasets-cds/multi-source-iot-apt-detection-dataset-bccc-iot-apt-zwave-2026/) | Behaviour-Centric Cybersecurity Center (BCCC), York University | 11 labeled, multi-stage APT scenarios in a Z-Wave smart-home testbed (April-May 2025). Five data sources: IP network traffic, Z-Wave communications, MQTT traffic, device telemetry, and application/service logs. | Available by request through the dataset page. | Evaluate multi-source intrusion detection and attack-stage analysis. Hold out entire episodes to reduce leakage across data sources. The testbed labels describe simulated activity and provide no ground truth for real-world actor attribution. |
+
+Suggested citation: Behaviour-Centric Cybersecurity Center. (2026). *Multi-source IoT APT detection dataset (BCCC-IoT-APT-ZWave-2026)* [Data set]. York University. https://www.yorku.ca/research/bccc/ucs-technical/cybersecurity-datasets-cds/multi-source-iot-apt-detection-dataset-bccc-iot-apt-zwave-2026/
+
 ## Static malware research datasets
 
 | Source | Credit | Coverage and access | Research use and limitations |
