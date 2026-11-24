@@ -218,6 +218,21 @@ UBC Provenance. (n.d.). *PIDSMaker* [Software and data documentation]. GitHub. h
 
 Yin, Z., Yan, H., Lu, H., Xiong, J., Li, X., Mei, R., & Zang, T. (2025). *APT-ClaritySet: A large-scale, high-fidelity labeled dataset for APT malware with alias normalization and graph-based deduplication* [Preprint]. arXiv. https://doi.org/10.48550/arXiv.2512.15039
 
+### SIEVE dataset citation
+
+Use the following BibTeX entry when citing the SIEVE dataset paper:
+
+```bibtex
+@article{artioli2025sieve,
+  title={SIEVE: Generating a cybersecurity log dataset collection for SIEM event classification},
+  author={Artioli, Pierpaolo and Dentamaro, Vincenzo and Galantucci, Stefano and Magr{\`\i}, Alessio and Pellegrini, Gianluca and Semeraro, Gianfranco},
+  journal={Computer Networks},
+  pages={111330},
+  year={2025},
+  publisher={Elsevier}
+}
+```
+
 ## Research notes
 
 - Record the dataset version, retrieval date, terms of use, original record ID, and underlying source. Use the publisher's recommended citation where provided.
