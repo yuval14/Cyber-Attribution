@@ -20,6 +20,7 @@ The categories distinguish research artifacts from knowledge bases, simulated ac
 | Host provenance | [System provenance and attack investigation datasets](#system-provenance-and-attack-investigation-datasets) | Causal reconstruction, graph analysis, and attack investigation |
 | Security telemetry | [SOC and multi-source security logs](#soc-and-multi-source-security-logs) | SIEM event classification, cross-source investigation, and detection analytics |
 | Adversary emulation | [Actor-inspired emulation datasets](#actor-inspired-emulation-datasets) | Controlled evaluation against a specified emulated behavior |
+| Network telemetry | [Network intrusion detection datasets](#network-intrusion-detection-datasets) | Layer-2 behavior, protocol-aware detection, and temporal analysis |
 | IoT telemetry | [IoT intrusion detection datasets](#iot-intrusion-detection-datasets) | Multi-source IoT detection and attack-stage analysis |
 | Static malware data | [Static malware research datasets](#static-malware-research-datasets) | Detection, family classification, and static feature evaluation |
 | Derived data and tooling | [Corrected datasets and research tooling](#corrected-datasets-and-research-tooling) | Data preparation and reproducible comparison |
@@ -27,7 +28,7 @@ The categories distinguish research artifacts from knowledge bases, simulated ac
 
 **Attribution boundary:** Maliciousness, malware family, campaign membership, reported group association, code authorship, and state responsibility are different targets. Preserve the original label meaning. An emulation of a named group's behavior is not an observed operation by that group. An original dataset and its corrected or preprocessed copy are not independent evaluation sets.
 
-Catalog additions reviewed: November 24, 2026. This date refers to documentation and repository checks, not to downloading or validating every underlying sample archive. Existing incident and static-malware entries retain their source-specific release information.
+Catalog additions reviewed: November 26, 2026. This date refers to documentation and repository checks, not to downloading or validating every underlying sample archive. Existing incident and static-malware entries retain their source-specific release information.
 
 ## Incident and campaign sources
 
@@ -119,6 +120,16 @@ These datasets record or represent relationships among system activities. Their 
 | --- | --- | --- | --- |
 | [APT Simulation Datasets](https://github.com/skrghosh/apt-dataset) | Sutanu Kumar Ghosh and project collaborators | Controlled Windows 10 simulations using CALDERA and adversary-emulation guidance, including FIN6, APT29, menuPass, OilRig, and Wizard Spider scenarios; additional malware scenarios and ground-truth documentation are provided | Supports reconstruction and matching observed activity to an emulated behavior profile. A scenario name is an emulation target, not evidence that the real group generated the logs. Hold out complete scenarios or independent runs and avoid learning environment artifacts. |
 
+## Network intrusion detection datasets
+
+| Source | Publisher or maintainer | Coverage and unit | Access | Research use and limitations |
+| --- | --- | --- | --- | --- |
+| [BCCC-DLLayer-IDS-2025](https://www.yorku.ca/research/bccc/ucs-technical/cybersecurity-datasets-cds/data-link-layer-intrusion-detection-dataset-bccc-dllayer-ids-2025/) | Behaviour-Centric Cybersecurity Center (BCCC), York University | Over 4.6 million labeled Layer-2 flows; 503.4 GB of raw Ethernet PCAP across 17 recording days; 352 features in 14 categories extracted using DLLFlowLyzer. Physical enterprise-style testbed with Cisco switches; benign traffic and 10 attack classes spanning ARP, DHCP, VLAN, CDP, STP, impersonation, switch spoofing, and CAM flooding. | Available by request through the dataset page; license and actual download access should be confirmed with the publisher. | Supports protocol-aware intrusion detection, temporal behavior analysis, explainable AI, and network-level evidence extraction. Hold out recording days or independent attack runs and check for MAC-address, topology, and scenario leakage. Attack-class labels are not real-world actor attribution labels. |
+
+Suggested catalog citation: Behaviour-Centric Cybersecurity Center. (2025). *Data link layer intrusion detection dataset (BCCC-DLLayer-IDS-2025)* [Data set]. York University. https://www.yorku.ca/research/bccc/ucs-technical/cybersecurity-datasets-cds/data-link-layer-intrusion-detection-dataset-bccc-dllayer-ids-2025/
+
+Associated paper (as listed by the publisher): Ahmadnejad Roudsari, A., & Lashkari, A. H. (2026). DLLFlowLyzer: Late-fusion deep learning for data link layer intrusion detection using CNN-LSTM-attention hybrid architecture (CLAH-IDS). *13th International Conference on Information Systems Security and Privacy (ICISSP).* Publication metadata and DOI have not been independently verified.
+
 ## IoT intrusion detection datasets
 
 | Source | Publisher or maintainer | Coverage and unit | Access | Research use and limitations |
@@ -168,6 +179,7 @@ The following are research-design recommendations, not publisher guarantees.
 | Attack-chain reconstruction from telemetry | ATLAS, DARPA TC, or a defined OpTC subset | Score recovered entities, steps, and relationships against the scenario evidence; do not report reconstruction accuracy as actor-attribution accuracy. |
 | SOC agent investigation | OTRF, BOTS v3, or LANL | Specify available tools, query budget, evidence required, and a held-out investigation set. |
 | SIEM event classification and log-text robustness | [SIEVE](https://www.cybersuite.it/en/sieve-cybersecurity-log-dataset-collection-forsiem-event-classification/) after obtaining access | Keep `category` labels out of model inputs; check shared source patterns across splits and report perturbation levels. Separate classification accuracy from any independently annotated evidence-retention measure; do not treat event classification as actor attribution. |
+| Layer-2 intrusion detection and behavioral evidence extraction | [BCCC-DLLayer-IDS-2025](https://www.yorku.ca/research/bccc/ucs-technical/cybersecurity-datasets-cds/data-link-layer-intrusion-detection-dataset-bccc-dllayer-ids-2025/) after obtaining access | Hold out recording days or independent runs, audit MAC-address and topology leakage, and evaluate per-class performance. Do not interpret attack-type classification as actor attribution. |
 | Controlled matching to actor-inspired behavior | APT Simulation Datasets | Evaluate scenario or behavior-profile identification and state the simulation boundary explicitly. |
 | Open-set attribution with abstention | Actor-labeled samples plus held-out groups and appropriately sourced unrelated malware | Keep entire unknown groups out of training and validation; report false attribution, coverage, and calibration alongside classification metrics. |
 
